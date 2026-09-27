@@ -95,21 +95,8 @@ const DEFAULT_DEMO_USERS: User[] = [
 ];
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [user, setUser] = useState<User | null>(() => {
-    const saved = localStorage.getItem('bhoomi_user');
-    if (saved) {
-      try {
-        return JSON.parse(saved);
-      } catch (e) {
-        return null;
-      }
-    }
-    return DEFAULT_DEMO_USERS[0];
-  });
-
-  const [token, setToken] = useState<string | null>(() => {
-    return localStorage.getItem('bhoomi_token') || 'demo-token-USR-CIT-1001';
-  });
+  const [user, setUser] = useState<User | null>(null);
+  const [token, setToken] = useState<string | null>(null);
 
   const [demoUsers, setDemoUsers] = useState<User[]>(DEFAULT_DEMO_USERS);
   const [loading, setLoading] = useState<boolean>(false);
