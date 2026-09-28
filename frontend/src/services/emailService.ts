@@ -4,10 +4,11 @@ import emailjs from '@emailjs/browser';
 export const EMAILJS_CONFIG = {
   PUBLIC_KEY: 'ND-9xDhEiCxAAO9mn',
   PRIVATE_KEY: '5CWXulu-9mA0RI7N4b2j5',
-  TEMPLATE_OTP_VERIFICATION: 'template_ukp132p', // Template 1
-  TEMPLATE_PASSWORD_RESET: 'template_v4zrs7r',   // Template 2
-  DEFAULT_SERVICE_ID: 'service_bhoomishield',   // Fallback service candidates
-  FALLBACK_SERVICE_IDS: ['service_bhoomishield', 'service_default', 'default_service', 'service_gmail', 'service_land']
+  SERVICE_ID: 'service_bctetzu',                 // Active Verified Email Service ID
+  TEMPLATE_OTP_VERIFICATION: 'template_ukp132p', // Template 1 (Registration / Login)
+  TEMPLATE_PASSWORD_RESET: 'template_v4zrs7r',   // Template 2 (Password Reset)
+  DEFAULT_SERVICE_ID: 'service_bctetzu',
+  FALLBACK_SERVICE_IDS: ['service_bctetzu']
 };
 
 export interface OtpRecord {
