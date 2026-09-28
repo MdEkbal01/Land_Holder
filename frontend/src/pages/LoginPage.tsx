@@ -6,6 +6,7 @@ import {
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { BhoomiLogo } from '../components/BhoomiLogo';
+import { GoogleAuthModal } from '../components/GoogleAuthModal';
 
 export const LoginPage: React.FC = () => {
   const navigate = useNavigate();
@@ -22,6 +23,7 @@ export const LoginPage: React.FC = () => {
   const [errorMessage, setErrorMessage] = useState<string>('');
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const [showQuickFill, setShowQuickFill] = useState<boolean>(false);
+  const [showGoogleModal, setShowGoogleModal] = useState<boolean>(false);
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -48,14 +50,8 @@ export const LoginPage: React.FC = () => {
     }
   };
 
-  const handleGoogleSignIn = async () => {
-    setIsSubmitting(true);
-    // Simulate seamless Google SSO login
-    const success = await demoLogin('USR-CIT-1001');
-    setIsSubmitting(false);
-    if (success) {
-      navigate(redirectTo);
-    }
+  const handleGoogleSignIn = () => {
+    setShowGoogleModal(true);
   };
 
   const handleQuickFillPersona = (user: string, pass: string) => {
@@ -324,6 +320,14 @@ export const LoginPage: React.FC = () => {
         </div>
 
       </div>
+
+      {/* Google Authentication & 2-Step Verification Modal */}
+      <GoogleAuthModal
+        isOpen={showGoogleModal}
+        onClose={() => setShowGoogleModal(false)}
+        onSuccess={() => navigate(redirectTo)}
+        defaultEmail={identifier.includes('@') ? identifier : 'zainulcorp71@fmail.com'}
+      />
     </div>
   );
 };
