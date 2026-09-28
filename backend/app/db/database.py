@@ -245,12 +245,37 @@ def init_db():
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS users (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
+        user_id TEXT UNIQUE,
         username TEXT UNIQUE NOT NULL,
         full_name TEXT NOT NULL,
         email TEXT UNIQUE NOT NULL,
+        mobile TEXT,
+        password_hash TEXT,
         role TEXT NOT NULL,
         department TEXT,
-        status TEXT DEFAULT 'ACTIVE'
+        designation TEXT,
+        employee_id TEXT,
+        jurisdiction_state TEXT DEFAULT 'Jharkhand',
+        jurisdiction_district TEXT,
+        jurisdiction_tehsil TEXT,
+        kyc_status TEXT DEFAULT 'AADHAAR_LINKED',
+        aadhaar_last4 TEXT,
+        pan_number TEXT,
+        status TEXT DEFAULT 'ACTIVE',
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    );
+    """)
+
+    # OTPs Table for EmailJS and Multi-Factor Auth
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS otps (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        email_or_mobile TEXT NOT NULL,
+        otp_code TEXT NOT NULL,
+        purpose TEXT NOT NULL,
+        expires_at TIMESTAMP NOT NULL,
+        is_used INTEGER DEFAULT 0,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     );
     """)
 

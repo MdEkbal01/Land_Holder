@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
-import { useTheme, ThemeMode } from '../context/ThemeContext';
+import { useTheme } from '../context/ThemeContext';
 import { SupportedLanguage } from '../i18n/translations';
 import { UserProfileModal } from './UserProfileModal';
 import { 
@@ -10,7 +10,7 @@ import {
   ShieldAlert, Menu, X, Globe2, FolderLock, Landmark, 
   LogIn, LogOut, User as UserIcon, ChevronDown, Calculator, Database,
   Sparkles, Compass, FileCheck, Layers, Grid, ArrowRight, ExternalLink, BadgeCheck, FileText,
-  Palette, Sun, Moon, Settings, Edit3
+  Sun, Moon, Settings, Edit3
 } from 'lucide-react';
 
 interface NavbarProps {
@@ -22,13 +22,14 @@ interface NavbarProps {
 
 export const Navbar: React.FC<NavbarProps> = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const [menuDrawerOpen, setMenuDrawerOpen] = useState(false);
   const [langDropdownOpen, setLangDropdownOpen] = useState(false);
-  const [themeDropdownOpen, setThemeDropdownOpen] = useState(false);
   const [profileModalOpen, setProfileModalOpen] = useState(false);
+  
   const { user, isAuthenticated, isOfficial, isAdmin, logout } = useAuth();
   const { lang, setLang, t, currentLangInfo, languages } = useLanguage();
-  const { theme, setTheme, currentThemeInfo, themes } = useTheme();
+  const { theme, toggleTheme, isDark } = useTheme();
   const isEn = lang === 'en';
 
   const toggleMenuDrawer = () => setMenuDrawerOpen(!menuDrawerOpen);
@@ -36,70 +37,26 @@ export const Navbar: React.FC<NavbarProps> = () => {
 
   return (
     <>
-      <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-xl text-slate-900 shadow-[0_4px_20px_rgba(0,0,0,0.05)] border-b border-emerald-100">
-        {/* Top Govt Bar */}
-        <div className="bg-emerald-950 px-4 py-1.5 text-xs text-emerald-100 flex justify-end items-center">
+      <header className="sticky top-0 z-40 bg-white/90 dark:bg-slate-900/90 backdrop-blur-xl text-slate-900 dark:text-white shadow-[0_4px_20px_rgba(0,0,0,0.05)] border-b border-emerald-100 dark:border-slate-800 transition-colors">
+        {/* Top Government Bar */}
+        <div className="bg-[#0e4d2f] dark:bg-slate-950 px-4 py-1.5 text-xs text-emerald-100 flex justify-end items-center border-b border-emerald-900/50">
           
           <div className="flex items-center space-x-2.5 shrink-0">
-            {/* 🎨 Theme Selector Dropdown */}
-            <div className="relative">
-              <button
-                onClick={() => {
-                  setThemeDropdownOpen(!themeDropdownOpen);
-                  setLangDropdownOpen(false);
-                }}
-                className="flex items-center space-x-1.5 hover:text-white transition-colors text-emerald-200 font-semibold bg-emerald-900/50 border border-emerald-800/80 px-2.5 py-1 rounded-lg text-xs cursor-pointer"
-                title="Change Color Theme (Dark, Light, Emerald Bhoomi, Cyber)"
-              >
-                <span>{currentThemeInfo.icon}</span>
-                <span className="hidden sm:inline">{currentThemeInfo.name}</span>
-                <ChevronDown className="w-3 h-3 opacity-70" />
-              </button>
-
-              {themeDropdownOpen && (
-                <div 
-                  className="absolute right-0 mt-1 w-64 bg-slate-900 border border-slate-700 rounded-xl shadow-2xl z-50 py-1.5 divide-y divide-slate-800"
-                  onMouseLeave={() => setThemeDropdownOpen(false)}
-                >
-                  <div className="px-3 py-1 text-[10px] uppercase font-bold text-slate-400 tracking-wider flex items-center space-x-1.5">
-                    <Palette className="w-3.5 h-3.5 text-sky-400" />
-                    <span>Select Color Theme (4)</span>
-                  </div>
-                  <div className="py-1">
-                    {themes.map((th) => (
-                      <button
-                        key={th.id}
-                        onClick={() => {
-                          setTheme(th.id);
-                          setThemeDropdownOpen(false);
-                        }}
-                        className={`w-full text-left px-3 py-2 text-xs flex items-center justify-between hover:bg-slate-800 transition-colors ${
-                          theme === th.id ? 'bg-sky-950/80 text-sky-400 font-bold' : 'text-slate-300'
-                        }`}
-                      >
-                        <div className="flex items-center space-x-2.5">
-                          <span className="text-base">{th.icon}</span>
-                          <div>
-                            <span className="block font-semibold">{th.name} ({th.nativeName})</span>
-                            <span className="text-[10px] text-slate-400 font-normal">{th.description}</span>
-                          </div>
-                        </div>
-                        {theme === th.id && <span className="text-sky-400 font-bold">✓</span>}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
+            {/* ☀️ / 🌙 Simple Light & Dark Mode Toggle (Requested) */}
+            <button
+              onClick={toggleTheme}
+              className="flex items-center space-x-1.5 hover:text-white transition-colors text-emerald-200 font-semibold bg-emerald-900/50 dark:bg-slate-800/80 border border-emerald-800/80 dark:border-slate-700 px-2.5 py-1 rounded-lg text-xs cursor-pointer shadow-sm"
+              title={isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}
+            >
+              {isDark ? <Sun className="w-3.5 h-3.5 text-amber-300" /> : <Moon className="w-3.5 h-3.5 text-sky-300" />}
+              <span className="hidden sm:inline">{isDark ? "Light Mode" : "Dark Mode"}</span>
+            </button>
 
             {/* 11 Indian Languages Dropdown Selector */}
             <div className="relative">
               <button
-                onClick={() => {
-                  setLangDropdownOpen(!langDropdownOpen);
-                  setThemeDropdownOpen(false);
-                }}
-                className="flex items-center space-x-1.5 hover:text-white transition-colors text-emerald-200 font-semibold bg-emerald-900/50 border border-emerald-800/80 px-2.5 py-1 rounded-lg text-xs cursor-pointer"
+                onClick={() => setLangDropdownOpen(!langDropdownOpen)}
+                className="flex items-center space-x-1.5 hover:text-white transition-colors text-emerald-200 font-semibold bg-emerald-900/50 dark:bg-slate-800/80 border border-emerald-800/80 dark:border-slate-700 px-2.5 py-1 rounded-lg text-xs cursor-pointer"
                 title="Change Language across 11 Indian Languages"
               >
                 <span>{currentLangInfo.flag}</span>
@@ -139,9 +96,9 @@ export const Navbar: React.FC<NavbarProps> = () => {
               )}
             </div>
 
-            {/* Quick Auth Status & User Profile Trigger */}
+            {/* User Profile Header Badge (Without Top Bar Logout Button) */}
             {isAuthenticated && user ? (
-              <div className="hidden sm:flex items-center space-x-2 bg-emerald-900/50 px-2.5 py-1 rounded-lg border border-emerald-800/80 text-emerald-100">
+              <div className="hidden sm:flex items-center space-x-2 bg-emerald-900/50 dark:bg-slate-800/80 px-2.5 py-1 rounded-lg border border-emerald-800/80 dark:border-slate-700 text-emerald-100">
                 <button
                   onClick={() => setProfileModalOpen(true)}
                   className="flex items-center space-x-2 hover:text-white transition-colors cursor-pointer group"
@@ -160,13 +117,6 @@ export const Navbar: React.FC<NavbarProps> = () => {
                 }`}>
                   {isAdmin ? 'Admin' : isOfficial ? 'Official' : 'Citizen'}
                 </span>
-                <button
-                  onClick={logout}
-                  title="Sign Out"
-                  className="text-slate-400 hover:text-rose-400 ml-1 cursor-pointer"
-                >
-                  <LogOut className="w-3 h-3" />
-                </button>
               </div>
             ) : (
               <Link
@@ -180,41 +130,45 @@ export const Navbar: React.FC<NavbarProps> = () => {
           </div>
         </div>
 
-        {/* Main Clean Navbar Bar */}
+        {/* Main Navbar */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           
           {/* Top Left: Menu Button & Platform Logo */}
           <div className="flex items-center space-x-3 sm:space-x-4">
             
-            {/* 🌟 Dedicated Top-Left Menu Trigger Button */}
+            {/* Dedicated Top-Left Menu Trigger Button */}
             <button
               onClick={toggleMenuDrawer}
               className={`px-4 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center space-x-2 border cursor-pointer ${
                 menuDrawerOpen
-                  ? 'bg-emerald-100 text-emerald-800 border-emerald-300 shadow-inner'
-                  : 'bg-white text-slate-700 border-slate-200 hover:bg-slate-50 hover:border-emerald-300 shadow-sm'
+                  ? 'bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 border-emerald-300 shadow-inner'
+                  : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 shadow-sm'
               }`}
-              title="Open All Features & Services Menu"
+              title="Open Features & Services Menu"
             >
               {menuDrawerOpen ? (
-                <X className="w-4 h-4 text-emerald-600" />
+                <X className="w-4 h-4 text-[#137a4d]" />
               ) : (
-                <Menu className="w-4 h-4 text-emerald-600" />
+                <Menu className="w-4 h-4 text-[#137a4d]" />
               )}
               <span className="font-extrabold tracking-wide">{isEn ? "Menu" : "मेनू"}</span>
-              <span className="bg-emerald-100 text-emerald-700 text-[10px] px-1.5 py-0.5 rounded-full font-mono font-bold">
-                11+
+              <span className="bg-emerald-100 dark:bg-emerald-900/60 text-[#137a4d] dark:text-emerald-300 text-[10px] px-1.5 py-0.5 rounded-full font-mono font-bold">
+                10+
               </span>
             </button>
 
-            {/* Platform Logo & DILRMP National Layer Badge */}
+            {/* Platform Logo */}
             <Link to="/" onClick={closeMenuDrawer} className="flex items-center space-x-2.5 group">
-              <div className="p-2 bg-gradient-to-tr from-emerald-500 to-emerald-700 rounded-xl shadow-lg shadow-emerald-600/20 group-hover:scale-105 transition-transform">
+              <div className="p-2 bg-gradient-to-tr from-[#0e5c38] to-[#137a4d] rounded-xl shadow-lg shadow-emerald-700/20 group-hover:scale-105 transition-transform">
                 <ShieldCheck className="w-5 h-5 text-white" />
               </div>
               <div className="flex flex-col">
-                <span className="font-extrabold text-lg sm:text-2xl tracking-tight text-slate-900 leading-tight">BhoomiShield</span>
-                <span className="text-[10px] font-bold text-emerald-600 tracking-wider uppercase">DILRMP National Layer</span>
+                <span className="font-extrabold text-lg sm:text-2xl tracking-tight text-slate-900 dark:text-white leading-tight">
+                  Bhoomi<span className="text-[#137a4d]">Shield</span>
+                </span>
+                <span className="text-[10px] font-bold text-[#137a4d] dark:text-emerald-400 tracking-wider uppercase">
+                  DILRMP National Layer
+                </span>
               </div>
             </Link>
           </div>
@@ -226,12 +180,12 @@ export const Navbar: React.FC<NavbarProps> = () => {
             <Link
               to="/search"
               className={`px-4 py-2 rounded-xl text-xs font-bold transition-all hidden md:flex items-center space-x-2 border ${
-                location.pathname === '/search' || location.pathname === '/land-search'
-                  ? 'bg-emerald-50 text-emerald-700 border-emerald-200'
-                  : 'bg-white text-slate-600 hover:bg-slate-50 border-slate-200 hover:border-emerald-300'
+                location.pathname === '/search'
+                  ? 'bg-emerald-50 dark:bg-emerald-950/60 text-[#137a4d] border-emerald-200 dark:border-emerald-800'
+                  : 'bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-50 border-slate-200 dark:border-slate-700'
               }`}
             >
-              <Search className="w-4 h-4 text-emerald-600" />
+              <Search className="w-4 h-4 text-[#137a4d]" />
               <span>{isEn ? "Land Search" : "भूमि खोज"}</span>
             </Link>
 
@@ -240,11 +194,11 @@ export const Navbar: React.FC<NavbarProps> = () => {
               to="/vault"
               className={`px-4 py-2 rounded-xl text-xs font-bold transition-all hidden md:flex items-center space-x-2 border ${
                 location.pathname === '/vault'
-                  ? 'bg-emerald-50 text-emerald-700 border-emerald-200'
-                  : 'bg-white text-slate-600 hover:bg-slate-50 border-slate-200 hover:border-emerald-300'
+                  ? 'bg-emerald-50 dark:bg-emerald-950/60 text-[#137a4d] border-emerald-200 dark:border-emerald-800'
+                  : 'bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-50 border-slate-200 dark:border-slate-700'
               }`}
             >
-              <FolderLock className="w-4 h-4 text-emerald-600" />
+              <FolderLock className="w-4 h-4 text-[#137a4d]" />
               <span>{isEn ? "My Vault" : "मेरी वॉल्ट"}</span>
             </Link>
 
@@ -252,34 +206,25 @@ export const Navbar: React.FC<NavbarProps> = () => {
             {!isAuthenticated ? (
               <Link
                 to="/login"
-                className="px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white text-xs font-bold flex items-center space-x-2 shadow-lg shadow-emerald-600/20 cursor-pointer"
+                className="px-4 py-2 rounded-xl bg-[#137a4d] hover:bg-[#0f633e] text-white text-xs font-bold flex items-center space-x-2 shadow-md shadow-[#137a4d]/25 cursor-pointer"
               >
                 <LogIn className="w-4 h-4" />
                 <span>{isEn ? "Sign In" : "लॉग इन"}</span>
               </Link>
             ) : (
-              <div className="flex items-center space-x-1.5">
-                <button
-                  onClick={() => setProfileModalOpen(true)}
-                  className="px-3 py-1.5 rounded-xl bg-sky-600/20 hover:bg-sky-600/30 text-sky-300 border border-sky-500/40 text-xs font-bold flex items-center space-x-2 transition-all cursor-pointer shadow-sm"
-                  title="Manage Profile & Security Settings"
-                >
-                  <img
-                    src={user?.avatar_url || 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=40'}
-                    alt="Profile"
-                    className="w-4 h-4 rounded-full object-cover"
-                  />
-                  <span>{user?.full_name?.split(' ')[0] || 'Profile'}</span>
-                  <Settings className="w-3 h-3 text-sky-400" />
-                </button>
-                <Link
-                  to="/login"
-                  className="p-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white border border-slate-700 transition-colors"
-                  title="Switch Persona Account"
-                >
-                  <UserIcon className="w-3.5 h-3.5" />
-                </Link>
-              </div>
+              <button
+                onClick={() => setProfileModalOpen(true)}
+                className="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700 text-xs font-bold flex items-center space-x-2 transition-all cursor-pointer shadow-sm"
+                title="Manage Profile & Settings"
+              >
+                <img
+                  src={user?.avatar_url || 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=40'}
+                  alt="Profile"
+                  className="w-4 h-4 rounded-full object-cover"
+                />
+                <span>{user?.full_name?.split(' ')[0] || 'Profile'}</span>
+                <Settings className="w-3.5 h-3.5 text-slate-500" />
+              </button>
             )}
           </div>
         </div>
@@ -293,240 +238,228 @@ export const Navbar: React.FC<NavbarProps> = () => {
           <div className="fixed inset-0" onClick={closeMenuDrawer}></div>
 
           {/* Slide-over Content Panel */}
-          <div className="relative w-full max-w-md bg-white/95 backdrop-blur-2xl border-r border-emerald-100 shadow-[20px_0_50px_rgba(0,0,0,0.1)] h-full flex flex-col z-10 overflow-y-auto">
+          <div className="relative w-full max-w-md bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800 shadow-[20px_0_50px_rgba(0,0,0,0.15)] h-full flex flex-col z-10 overflow-y-auto">
             
             {/* Drawer Header */}
-            <div className="p-5 border-b border-emerald-100 flex items-center justify-between sticky top-0 bg-white/95 backdrop-blur z-20">
+            <div className="p-5 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between sticky top-0 bg-white/95 dark:bg-slate-900/95 backdrop-blur z-20">
               <div className="flex items-center space-x-2.5">
-                <div className="p-2 rounded-xl bg-emerald-100 text-emerald-600 border border-emerald-200">
+                <div className="p-2 rounded-xl bg-emerald-50 dark:bg-emerald-950 text-[#137a4d] border border-emerald-200 dark:border-emerald-800">
                   <Grid className="w-4 h-4" />
                 </div>
-                <h2 className="text-sm font-black text-slate-800 tracking-tight uppercase">
+                <h2 className="text-sm font-black text-slate-800 dark:text-white tracking-tight uppercase">
                   {isEn ? "Features & Services" : "सेवाएँ एवं मेनू"}
                 </h2>
               </div>
 
               <button
                 onClick={closeMenuDrawer}
-                className="p-1.5 rounded-xl bg-slate-100 text-slate-500 hover:text-slate-800 hover:bg-slate-200 transition-colors cursor-pointer"
+                className="p-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 hover:text-slate-800 dark:hover:text-white hover:bg-slate-200 transition-colors cursor-pointer"
                 title="Close Menu"
               >
                 <X className="w-4 h-4" />
               </button>
             </div>
 
-            {/* Feature Options (Represented by Name Only) */}
+            {/* Feature Options List */}
             <div className="p-5 space-y-6 flex-1">
               
               {/* Category 1: National Layer & Land Discovery */}
               <div className="space-y-2">
-                <div className="text-[10px] font-bold text-emerald-700 uppercase tracking-wider px-1 mb-1">
+                <div className="text-[10px] font-bold text-[#137a4d] dark:text-emerald-400 uppercase tracking-wider px-1 mb-1">
                   1. National Layer & Land Discovery
                 </div>
 
                 <Link
                   to="/"
                   onClick={closeMenuDrawer}
-                  className="flex items-center justify-between px-4 py-3 rounded-xl bg-white hover:bg-emerald-50 text-slate-700 hover:text-emerald-700 border border-slate-200 hover:border-emerald-300 shadow-sm hover:shadow-md transition-all font-semibold text-xs group"
+                  className="flex items-center justify-between px-4 py-3 rounded-xl bg-white dark:bg-slate-800/80 hover:bg-emerald-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 hover:text-[#137a4d] border border-slate-200 dark:border-slate-700 shadow-sm transition-all font-semibold text-xs group"
                 >
                   <div className="flex items-center space-x-3">
                     <Globe2 className="w-4 h-4 text-sky-500" />
                     <span>National Portal Overview</span>
                   </div>
-                  <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-emerald-500 group-hover:translate-x-0.5 transition-transform" />
+                  <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-[#137a4d] group-hover:translate-x-0.5 transition-transform" />
                 </Link>
 
                 <Link
                   to="/search"
                   onClick={closeMenuDrawer}
-                  className="flex items-center justify-between px-4 py-3 rounded-xl bg-white hover:bg-emerald-50 text-slate-700 hover:text-emerald-700 border border-slate-200 hover:border-emerald-300 shadow-sm hover:shadow-md transition-all font-semibold text-xs group"
+                  className="flex items-center justify-between px-4 py-3 rounded-xl bg-white dark:bg-slate-800/80 hover:bg-emerald-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 hover:text-[#137a4d] border border-slate-200 dark:border-slate-700 shadow-sm transition-all font-semibold text-xs group"
                 >
                   <div className="flex items-center space-x-3">
                     <Search className="w-4 h-4 text-emerald-500" />
                     <span>Universal Land Search</span>
                   </div>
-                  <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-emerald-500 group-hover:translate-x-0.5 transition-transform" />
+                  <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-[#137a4d] group-hover:translate-x-0.5 transition-transform" />
                 </Link>
 
                 <Link
                   to="/check-buy"
                   onClick={closeMenuDrawer}
-                  className="flex items-center justify-between px-4 py-3 rounded-xl bg-white hover:bg-emerald-50 text-slate-700 hover:text-emerald-700 border border-slate-200 hover:border-emerald-300 shadow-sm hover:shadow-md transition-all font-semibold text-xs group"
+                  className="flex items-center justify-between px-4 py-3 rounded-xl bg-white dark:bg-slate-800/80 hover:bg-emerald-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 hover:text-[#137a4d] border border-slate-200 dark:border-slate-700 shadow-sm transition-all font-semibold text-xs group"
                 >
                   <div className="flex items-center space-x-3">
                     <ShieldCheck className="w-4 h-4 text-amber-500" />
                     <span>Check Before You Buy</span>
                   </div>
-                  <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-emerald-500 group-hover:translate-x-0.5 transition-transform" />
+                  <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-[#137a4d] group-hover:translate-x-0.5 transition-transform" />
                 </Link>
 
                 <Link
                   to="/track-mutation"
                   onClick={closeMenuDrawer}
-                  className="flex items-center justify-between px-4 py-3 rounded-xl bg-white hover:bg-emerald-50 text-slate-700 hover:text-emerald-700 border border-slate-200 hover:border-emerald-300 shadow-sm hover:shadow-md transition-all font-semibold text-xs group"
+                  className="flex items-center justify-between px-4 py-3 rounded-xl bg-white dark:bg-slate-800/80 hover:bg-emerald-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 hover:text-[#137a4d] border border-slate-200 dark:border-slate-700 shadow-sm transition-all font-semibold text-xs group"
                 >
                   <div className="flex items-center space-x-3">
                     <Sparkles className="w-4 h-4 text-amber-500" />
                     <span>Live Mutation Tracker</span>
                   </div>
-                  <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-emerald-500 group-hover:translate-x-0.5 transition-transform" />
+                  <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-[#137a4d] group-hover:translate-x-0.5 transition-transform" />
                 </Link>
 
+                {/* ✅ Stamp Duty & Valuation (Working Route: /stamp-duty & /valuation) */}
                 <Link
-                  to="/valuation"
+                  to="/stamp-duty"
                   onClick={closeMenuDrawer}
-                  className="flex items-center justify-between px-4 py-3 rounded-xl bg-white hover:bg-emerald-50 text-slate-700 hover:text-emerald-700 border border-slate-200 hover:border-emerald-300 shadow-sm hover:shadow-md transition-all font-semibold text-xs group"
+                  className="flex items-center justify-between px-4 py-3 rounded-xl bg-white dark:bg-slate-800/80 hover:bg-emerald-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 hover:text-[#137a4d] border border-slate-200 dark:border-slate-700 shadow-sm transition-all font-semibold text-xs group"
                 >
                   <div className="flex items-center space-x-3">
                     <Calculator className="w-4 h-4 text-amber-500" />
                     <span>Stamp Duty & Valuation</span>
                   </div>
-                  <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-emerald-500 group-hover:translate-x-0.5 transition-transform" />
+                  <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-[#137a4d] group-hover:translate-x-0.5 transition-transform" />
                 </Link>
 
+                {/* ✅ Report Verification (Working Route: /verify) */}
                 <Link
                   to="/verify"
                   onClick={closeMenuDrawer}
-                  className="flex items-center justify-between px-4 py-3 rounded-xl bg-white hover:bg-emerald-50 text-slate-700 hover:text-emerald-700 border border-slate-200 hover:border-emerald-300 shadow-sm hover:shadow-md transition-all font-semibold text-xs group"
+                  className="flex items-center justify-between px-4 py-3 rounded-xl bg-white dark:bg-slate-800/80 hover:bg-emerald-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 hover:text-[#137a4d] border border-slate-200 dark:border-slate-700 shadow-sm transition-all font-semibold text-xs group"
                 >
                   <div className="flex items-center space-x-3">
                     <FileCheck className="w-4 h-4 text-sky-500" />
                     <span>Report Verification</span>
                   </div>
-                  <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-emerald-500 group-hover:translate-x-0.5 transition-transform" />
+                  <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-[#137a4d] group-hover:translate-x-0.5 transition-transform" />
                 </Link>
               </div>
 
-              {/* Category 2: Citizen Rights & Locker */}
+              {/* Category 2: Citizen Locker & Legal Redressal */}
               <div className="space-y-2">
-                <div className="text-[10px] font-bold text-emerald-700 uppercase tracking-wider px-1 mb-1">
+                <div className="text-[10px] font-bold text-[#137a4d] dark:text-emerald-400 uppercase tracking-wider px-1 mb-1">
                   2. Citizen Locker & Legal Redressal
                 </div>
 
                 <Link
                   to="/vault"
                   onClick={closeMenuDrawer}
-                  className="flex items-center justify-between px-4 py-3 rounded-xl bg-white hover:bg-emerald-50 text-slate-700 hover:text-emerald-700 border border-slate-200 hover:border-emerald-300 shadow-sm hover:shadow-md transition-all font-semibold text-xs group"
+                  className="flex items-center justify-between px-4 py-3 rounded-xl bg-white dark:bg-slate-800/80 hover:bg-emerald-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 hover:text-[#137a4d] border border-slate-200 dark:border-slate-700 shadow-sm transition-all font-semibold text-xs group"
                 >
                   <div className="flex items-center space-x-3">
                     <FolderLock className="w-4 h-4 text-sky-500" />
                     <span>My Bhoomi Vault</span>
                   </div>
-                  <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-emerald-500 group-hover:translate-x-0.5 transition-transform" />
+                  <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-[#137a4d] group-hover:translate-x-0.5 transition-transform" />
                 </Link>
 
                 <Link
                   to="/legal-advisor"
                   onClick={closeMenuDrawer}
-                  className="flex items-center justify-between px-4 py-3 rounded-xl bg-white hover:bg-emerald-50 text-slate-700 hover:text-emerald-700 border border-slate-200 hover:border-emerald-300 shadow-sm hover:shadow-md transition-all font-semibold text-xs group"
+                  className="flex items-center justify-between px-4 py-3 rounded-xl bg-white dark:bg-slate-800/80 hover:bg-emerald-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 hover:text-[#137a4d] border border-slate-200 dark:border-slate-700 shadow-sm transition-all font-semibold text-xs group"
                 >
                   <div className="flex items-center space-x-3">
                     <Scale className="w-4 h-4 text-emerald-500" />
                     <span>AI Legal Advisor</span>
                   </div>
-                  <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-emerald-500 group-hover:translate-x-0.5 transition-transform" />
+                  <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-[#137a4d] group-hover:translate-x-0.5 transition-transform" />
                 </Link>
 
                 <Link
                   to="/complaints"
                   onClick={closeMenuDrawer}
-                  className="flex items-center justify-between px-4 py-3 rounded-xl bg-white hover:bg-emerald-50 text-slate-700 hover:text-emerald-700 border border-slate-200 hover:border-emerald-300 shadow-sm hover:shadow-md transition-all font-semibold text-xs group"
+                  className="flex items-center justify-between px-4 py-3 rounded-xl bg-white dark:bg-slate-800/80 hover:bg-emerald-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 hover:text-[#137a4d] border border-slate-200 dark:border-slate-700 shadow-sm transition-all font-semibold text-xs group"
                 >
                   <div className="flex items-center space-x-3">
                     <ShieldAlert className="w-4 h-4 text-rose-500" />
                     <span>Grievance Portal</span>
                   </div>
-                  <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-emerald-500 group-hover:translate-x-0.5 transition-transform" />
+                  <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-[#137a4d] group-hover:translate-x-0.5 transition-transform" />
                 </Link>
               </div>
 
-              {/* Category 3: Authorized Portals */}
-              <div className="space-y-2">
-                <div className="flex items-center justify-between px-1 mb-1">
-                  <span className="text-[10px] font-bold text-emerald-700 uppercase tracking-wider">
-                    3. Authorized Portals (Protected)
-                  </span>
-                  <span className="text-[9px] bg-rose-100 text-rose-600 border border-rose-200 px-1.5 py-0.2 rounded font-mono uppercase font-bold">
-                    Credentials
-                  </span>
-                </div>
-
-                <Link
-                  to="/official"
-                  onClick={closeMenuDrawer}
-                  className="flex items-center justify-between px-4 py-3 rounded-xl bg-emerald-50/50 hover:bg-emerald-100 text-slate-700 hover:text-emerald-800 border border-emerald-100 hover:border-emerald-300 shadow-sm hover:shadow-md transition-all font-semibold text-xs group"
+              {/* Clean Light / Dark Theme Switcher inside Drawer */}
+              <div className="pt-4 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between px-1">
+                <span className="text-xs font-bold text-slate-600 dark:text-slate-400 flex items-center space-x-2">
+                  {isDark ? <Moon className="w-4 h-4 text-sky-400" /> : <Sun className="w-4 h-4 text-amber-500" />}
+                  <span>Display Theme</span>
+                </span>
+                <button
+                  onClick={toggleTheme}
+                  className="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 text-slate-800 dark:text-slate-200 text-xs font-bold rounded-lg border border-slate-200 dark:border-slate-700 cursor-pointer transition-colors flex items-center space-x-1.5"
                 >
-                  <div className="flex items-center space-x-3">
-                    <Landmark className="w-4 h-4 text-emerald-600" />
-                    <span>Revenue Officer Workspace</span>
-                  </div>
-                  <span className="text-[8px] font-bold px-2 py-0.5 rounded bg-emerald-600 text-white border border-emerald-700 uppercase shadow-sm">
-                    Officer Gate
-                  </span>
-                </Link>
-
-                <Link
-                  to="/admin"
-                  onClick={closeMenuDrawer}
-                  className="flex items-center justify-between px-4 py-3 rounded-xl bg-purple-50/50 hover:bg-purple-100 text-slate-700 hover:text-purple-800 border border-purple-100 hover:border-purple-300 shadow-sm hover:shadow-md transition-all font-semibold text-xs group"
-                >
-                  <div className="flex items-center space-x-3">
-                    <Database className="w-4 h-4 text-purple-600" />
-                    <span>Central DB & Admin Panel</span>
-                  </div>
-                  <span className="text-[8px] font-bold px-2 py-0.5 rounded bg-purple-600 text-white border border-purple-700 uppercase shadow-sm">
-                    Admin Gate
-                  </span>
-                </Link>
-
-                <Link
-                  to="/login"
-                  onClick={closeMenuDrawer}
-                  className="flex items-center justify-between px-4 py-3 rounded-xl bg-sky-50/50 hover:bg-sky-100 text-slate-700 hover:text-sky-800 border border-sky-100 hover:border-sky-300 shadow-sm hover:shadow-md transition-all font-semibold text-xs group"
-                >
-                  <div className="flex items-center space-x-3">
-                    <UserCheck className="w-4 h-4 text-sky-600" />
-                    <span>Single Sign-On Gateway</span>
-                  </div>
-                  <span className="text-[8px] font-bold px-2 py-0.5 rounded bg-sky-600 text-white border border-sky-700 uppercase shadow-sm">
-                    Sign In / Switch
-                  </span>
-                </Link>
-              </div>
-
-              {/* Theme Selector Section in Drawer */}
-              <div className="pt-4 border-t border-slate-200 space-y-3">
-                <div className="flex items-center justify-between px-1">
-                  <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider flex items-center space-x-1.5">
-                    <Palette className="w-3.5 h-3.5 text-emerald-500" />
-                    <span>Visual Theme / दृश्य थीम</span>
-                  </span>
-                  <span className="text-[10px] text-emerald-600 font-bold">{currentThemeInfo.name}</span>
-                </div>
-
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
-                  {themes.map((th) => (
-                    <button
-                      key={th.id}
-                      onClick={() => setTheme(th.id)}
-                      className={`p-2 rounded-xl text-xs font-semibold flex items-center justify-center space-x-1.5 border transition-all cursor-pointer ${
-                        theme === th.id
-                          ? 'bg-emerald-100 text-emerald-700 border-emerald-300 shadow-sm'
-                          : 'bg-slate-50 hover:bg-white text-slate-600 border-slate-200 hover:border-emerald-200 hover:shadow-sm'
-                      }`}
-                    >
-                      <span>{th.icon}</span>
-                      <span className="text-[11px] truncate">{th.name.split(' ')[0]}</span>
-                    </button>
-                  ))}
-                </div>
+                  <span>{isDark ? "☀️ Light Mode" : "🌙 Dark Mode"}</span>
+                </button>
               </div>
 
             </div>
 
-            {/* Drawer Footer */}
-            <div className="p-4 border-t border-emerald-100 bg-emerald-50 text-center text-[10px] font-semibold text-emerald-700">
-              BhoomiShield National Land Governance Platform • DILRMP Compliant
+            {/* Drawer Account & Logout Footer (Proper Website Design) */}
+            <div className="p-4 border-t border-slate-200 dark:border-slate-800 bg-slate-50/95 dark:bg-slate-950/95 backdrop-blur sticky bottom-0 z-20 space-y-3">
+              {isAuthenticated && user ? (
+                <>
+                  {/* User Profile Card */}
+                  <div className="flex items-center justify-between p-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+                    <div className="flex items-center space-x-3 overflow-hidden">
+                      <img
+                        src={user.avatar_url || 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=60'}
+                        alt={user.full_name}
+                        className="w-9 h-9 rounded-full object-cover ring-2 ring-[#137a4d] shrink-0"
+                      />
+                      <div className="overflow-hidden">
+                        <div className="text-xs font-bold text-slate-900 dark:text-white truncate">
+                          {user.full_name}
+                        </div>
+                        <div className="text-[10px] text-slate-500 truncate">
+                          {user.email || `@${user.username}`}
+                        </div>
+                      </div>
+                    </div>
+
+                    <span className={`text-[9px] font-bold px-2 py-0.5 rounded-full uppercase shrink-0 ${
+                      isAdmin ? 'bg-purple-100 text-purple-700 border border-purple-200' : isOfficial ? 'bg-emerald-100 text-emerald-700 border border-emerald-200' : 'bg-sky-100 text-sky-700 border border-sky-200'
+                    }`}>
+                      {isAdmin ? 'Admin' : isOfficial ? 'Official' : 'Citizen'}
+                    </span>
+                  </div>
+
+                  {/* Clean Logout Button */}
+                  <button
+                    onClick={() => {
+                      logout();
+                      closeMenuDrawer();
+                      navigate('/login');
+                    }}
+                    className="w-full py-2.5 px-4 rounded-xl text-xs font-bold text-rose-700 hover:text-rose-800 bg-rose-50 hover:bg-rose-100/80 border border-rose-200 hover:border-rose-300 transition-all flex items-center justify-center space-x-2 cursor-pointer shadow-sm active:scale-[0.99]"
+                    title="Sign Out of BhoomiShield"
+                  >
+                    <LogOut className="w-4 h-4" />
+                    <span>{isEn ? "Log Out of Account" : "खाते से लॉग आउट करें"}</span>
+                  </button>
+                </>
+              ) : (
+                <Link
+                  to="/login"
+                  onClick={closeMenuDrawer}
+                  className="w-full py-2.5 px-4 rounded-xl text-xs font-bold text-white bg-[#137a4d] hover:bg-[#0f633e] transition-all flex items-center justify-center space-x-2 cursor-pointer shadow-md shadow-[#137a4d]/20"
+                >
+                  <LogIn className="w-4 h-4" />
+                  <span>{isEn ? "Sign In to Your Account" : "अपने खाते में लॉग इन करें"}</span>
+                </Link>
+              )}
+
+              <div className="text-center text-[10px] text-slate-400 font-medium">
+                BhoomiShield National Land Governance Platform • DILRMP Compliant
+              </div>
             </div>
 
           </div>
@@ -541,5 +474,3 @@ export const Navbar: React.FC<NavbarProps> = () => {
     </>
   );
 };
-
-

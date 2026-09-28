@@ -26,3 +26,5 @@ __pycache__/
 backend/generated_complaints/*.pdf
 backend/generated_reports/*.pdf
 *.log
+*.zip
+
