@@ -344,26 +344,6 @@ export const ForgotPasswordPage: React.FC = () => {
               </p>
             </div>
 
-            {/* Auto Fill Helper */}
-            {generatedOtp && (
-              <div className="mb-5 p-2.5 rounded-xl bg-emerald-50/70 border border-emerald-200 flex items-center justify-between text-xs">
-                <div className="flex items-center space-x-1.5">
-                  <span className="text-slate-600 font-medium">OTP Code:</span>
-                  <span className="font-mono font-bold text-[#137a4d] tracking-widest bg-white px-2 py-0.5 rounded border border-emerald-300">
-                    {generatedOtp}
-                  </span>
-                </div>
-                <button
-                  type="button"
-                  onClick={handleCopyOtp}
-                  className="inline-flex items-center space-x-1 px-2 py-1 bg-white hover:bg-emerald-100 text-[#137a4d] font-bold rounded-lg border border-emerald-200 transition-colors cursor-pointer text-[11px]"
-                >
-                  {copied ? <Check className="w-3 h-3 text-[#137a4d]" /> : <Copy className="w-3 h-3" />}
-                  <span>{copied ? 'Filled' : 'Auto Fill'}</span>
-                </button>
-              </div>
-            )}
-
             <form onSubmit={handleVerifyOtp} className="space-y-6">
               {/* 6 Digit Inputs */}
               <div className="flex justify-center items-center gap-2 sm:gap-2.5">

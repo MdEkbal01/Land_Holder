@@ -120,11 +120,13 @@ export const sendOtpEmail = async ({
   try {
     emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY);
 
-    // Attempt sending with candidate service IDs
+    // Attempt sending with configured and candidate service IDs
+    const userCustomServiceId = typeof window !== 'undefined' ? localStorage.getItem('bhoomi_emailjs_service_id') : null;
     const serviceIdsToTry = [
-      localStorage.getItem('bhoomi_emailjs_service_id') || EMAILJS_CONFIG.DEFAULT_SERVICE_ID,
+      userCustomServiceId,
+      EMAILJS_CONFIG.DEFAULT_SERVICE_ID,
       ...EMAILJS_CONFIG.FALLBACK_SERVICE_IDS
-    ];
+    ].filter(Boolean) as string[];
 
     for (const serviceId of Array.from(new Set(serviceIdsToTry))) {
       try {
@@ -137,11 +139,12 @@ export const sendOtpEmail = async ({
 
         if (response.status === 200 || response.text === 'OK') {
           deliveredViaEmailJs = true;
-          console.log(`[EmailJS] OTP sent successfully to ${toEmail} via service ${serviceId}`);
+          console.log(`[EmailJS] OTP sent successfully to ${toEmail} via service: ${serviceId}`);
           break;
         }
       } catch (err: any) {
         emailJsError = err?.text || err?.message || 'EmailJS service connection error';
+        console.warn(`[EmailJS] Attempt with service '${serviceId}' failed:`, emailJsError);
       }
     }
   } catch (err: any) {
@@ -149,26 +152,22 @@ export const sendOtpEmail = async ({
     console.warn('[EmailJS] SDK dispatch caught error:', emailJsError);
   }
 
-  // Also try backend proxy endpoint if available
-  if (!deliveredViaEmailJs) {
-    try {
-      const backendRes = await fetch('/api/auth/request-otp', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          email: toEmail,
-          purpose,
-          user_name: toName,
-          otp: otpCode
-        })
-      });
-      if (backendRes.ok) {
-        console.log('[Backend] OTP registered on backend server');
-      }
-    } catch {
-      // Offline fallback is already active
+  // Also register on backend server
+  try {
+    const backendRes = await fetch('/api/auth/request-otp', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        email: toEmail,
+        purpose,
+        user_name: toName,
+        otp: otpCode
+      })
+    });
+    if (backendRes.ok) {
+      console.log('[Backend] OTP registered in backend database');
     }
-  }
+  } catch {}
 
   return {
     success: true,
@@ -176,8 +175,8 @@ export const sendOtpEmail = async ({
     deliveredViaEmailJs,
     expiresInMinutes,
     message: deliveredViaEmailJs
-      ? `OTP sent successfully to ${toEmail}`
-      : `OTP generated and dispatched (Ready for verification)`
+      ? `Verification OTP sent to ${toEmail}`
+      : `OTP dispatched to ${toEmail}`
   };
 };
 
