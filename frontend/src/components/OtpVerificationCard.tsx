@@ -130,9 +130,19 @@ export const OtpVerificationCard: React.FC<OtpVerificationCardProps> = ({
 
   const handleCopyOtp = () => {
     if (currentOtp) {
-      navigator.clipboard.writeText(currentOtp);
+      try {
+        navigator.clipboard.writeText(currentOtp);
+      } catch {}
+      const chars = currentOtp.slice(0, 6).split('');
+      const newDigits = ['', '', '', '', '', ''];
+      for (let i = 0; i < 6; i++) {
+        newDigits[i] = chars[i] || '';
+      }
+      setDigits(newDigits);
+      setError('');
       setCopied(true);
       setTimeout(() => setCopied(false), 2500);
+      inputRefs.current[5]?.focus();
     }
   };
 
