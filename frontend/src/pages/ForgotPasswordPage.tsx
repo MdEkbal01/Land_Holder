@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { 
   Lock, Mail, KeyRound, Eye, EyeOff, Check, ArrowRight, ArrowLeft, 
   RefreshCw, AlertCircle, Sparkles, CheckCircle2, Copy
@@ -10,13 +10,14 @@ import { useAuth } from '../context/AuthContext';
 
 export const ForgotPasswordPage: React.FC = () => {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const { demoUsers } = useAuth();
 
   // 4 Steps: 1 = Email Input, 2 = OTP Verification, 3 = New Password, 4 = Success
   const [step, setStep] = useState<1 | 2 | 3 | 4>(1);
 
   // Form State
-  const [identifier, setIdentifier] = useState<string>('ramesh.sharma@example.in');
+  const [identifier, setIdentifier] = useState<string>('');
   const [targetEmail, setTargetEmail] = useState<string>('');
   const [targetUserName, setTargetUserName] = useState<string>('');
 
@@ -39,6 +40,22 @@ export const ForgotPasswordPage: React.FC = () => {
   const [errorMessage, setErrorMessage] = useState<string>('');
 
   const inputRefs = useRef<(HTMLInputElement | null)[]>([]);
+
+  // Auto-detect reset link query parameters (e.g. ?email=...&otp=...)
+  useEffect(() => {
+    const emailParam = searchParams.get('email');
+    const otpParam = searchParams.get('otp') || searchParams.get('code');
+    if (emailParam) {
+      setTargetEmail(emailParam);
+      setIdentifier(emailParam);
+      if (otpParam && otpParam.length === 6) {
+        setDigits(otpParam.split(''));
+        setStep(3); // Directly advance to Step 3: Set New Password
+      } else {
+        setStep(2);
+      }
+    }
+  }, [searchParams]);
 
   // Countdown timer for Resend OTP (00:45)
   useEffect(() => {
@@ -90,7 +107,19 @@ export const ForgotPasswordPage: React.FC = () => {
         resolvedEmail = found.email;
         resolvedName = found.full_name;
       } else {
-        resolvedEmail = `${identifier.trim()}@example.in`;
+        try {
+          const rawRegUsers = localStorage.getItem('bhoomi_registered_users');
+          if (rawRegUsers) {
+            const parsed = JSON.parse(rawRegUsers);
+            const regFound = parsed.find(
+              (u: any) => u.username?.toLowerCase() === identifier.toLowerCase().trim()
+            );
+            if (regFound && regFound.email) {
+              resolvedEmail = regFound.email;
+              resolvedName = regFound.full_name || regFound.username;
+            }
+          }
+        } catch {}
       }
     }
 
@@ -235,6 +264,23 @@ export const ForgotPasswordPage: React.FC = () => {
       localStorage.setItem(`bhoomi_pass_${targetUserName.toLowerCase()}`, newPassword);
     }
 
+    try {
+      const rawRegUsers = localStorage.getItem('bhoomi_registered_users');
+      if (rawRegUsers) {
+        const parsed = JSON.parse(rawRegUsers);
+        const idx = parsed.findIndex(
+          (u: any) => u.email.toLowerCase() === targetEmail.toLowerCase() ||
+                      (targetUserName && u.username.toLowerCase() === targetUserName.toLowerCase())
+        );
+        if (idx >= 0) {
+          parsed[idx].password = newPassword;
+          localStorage.setItem('bhoomi_registered_users', JSON.stringify(parsed));
+        }
+      }
+    } catch (e) {
+      console.error('Failed to sync new password with registered users registry', e);
+    }
+
     setIsSubmitting(false);
     setStep(4); // Advance to Success Screen (Mockup 7)
   };
@@ -243,9 +289,21 @@ export const ForgotPasswordPage: React.FC = () => {
     <div className="min-h-screen bg-[#f4f7f6] flex items-center justify-center py-8 sm:py-12 px-4 sm:px-6 font-sans">
       <div className="max-w-md w-full bg-white rounded-3xl shadow-[0_10px_40px_rgba(0,0,0,0.06)] border border-slate-100 p-8 sm:p-10 relative overflow-hidden">
         
-        {/* Top Logo */}
-        <div className="mb-6">
-          <BhoomiLogo theme="light" />
+        {/* Top Bar: Back to Home & Logo */}
+        <div className="flex items-center justify-between mb-6">
+          <Link
+            to="/"
+            className="inline-flex items-center space-x-1.5 text-xs font-bold text-slate-500 hover:text-[#137a4d] transition-colors group cursor-pointer"
+          >
+            <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform text-[#137a4d]" />
+            <span>Back to Home</span>
+          </Link>
+
+          <div>
+            <Link to="/">
+              <BhoomiLogo theme="light" />
+            </Link>
+          </div>
         </div>
 
         {/* Error Message */}

@@ -5,8 +5,8 @@ export const EMAILJS_CONFIG = {
   PUBLIC_KEY: 'ND-9xDhEiCxAAO9mn',
   PRIVATE_KEY: '5CWXulu-9mA0RI7N4b2j5',
   SERVICE_ID: 'service_bctetzu',                 // Active Verified Email Service ID
-  TEMPLATE_OTP_VERIFICATION: 'template_ukp132p', // Template 1 (Registration / Login)
-  TEMPLATE_PASSWORD_RESET: 'template_v4zrs7r',   // Template 2 (Password Reset)
+  TEMPLATE_OTP_VERIFICATION: 'template_v4zrs7r', // Template for Registration / Welcome / Login Verification
+  TEMPLATE_PASSWORD_RESET: 'template_ukp132p',   // Template for Password Reset with Link
   DEFAULT_SERVICE_ID: 'service_bctetzu',
   FALLBACK_SERVICE_IDS: ['service_bctetzu']
 };
@@ -89,25 +89,44 @@ export const sendOtpEmail = async ({
     ? EMAILJS_CONFIG.TEMPLATE_PASSWORD_RESET
     : EMAILJS_CONFIG.TEMPLATE_OTP_VERIFICATION;
 
+  const baseUrl = typeof window !== 'undefined' && window.location.origin
+    ? window.location.origin
+    : 'https://bhoomishield-portal.pages.dev';
+
+  const resetUrl = `${baseUrl}/forgot-password?email=${encodeURIComponent(toEmail)}&otp=${otpCode}`;
+
   const purposeLabels: Record<string, string> = {
-    REGISTRATION: 'Citizen & Official Portal Registration',
-    LOGIN: 'Secure 2-Factor Authentication Login',
-    FORGOT_PASSWORD: 'Account Password Reset Request'
+    REGISTRATION: 'Welcome & Citizen Portal Registration',
+    LOGIN: 'Secure Login Verification',
+    FORGOT_PASSWORD: 'Password Reset Request'
   };
+
+  const messageText = purpose === 'FORGOT_PASSWORD'
+    ? `Your BhoomiShield Password Reset OTP is ${otpCode}. You can also reset your password directly by clicking this link: ${resetUrl}`
+    : `Welcome to BhoomiShield! Your verification OTP code is ${otpCode}. It is valid for ${expiresInMinutes} minutes. Never share your OTP with anyone.`;
 
   const templateParams = {
     to_name: toName,
     user_name: toName,
+    name: toName,
     to_email: toEmail,
     email: toEmail,
     user_email: toEmail,
     recipient: toEmail,
+    reply_to: toEmail,
     otp: otpCode,
     passcode: otpCode,
     otp_code: otpCode,
     verification_code: otpCode,
+    reset_code: otpCode,
+    reset_link: resetUrl,
+    reset_url: resetUrl,
+    link: resetUrl,
+    url: resetUrl,
+    action_url: resetUrl,
+    verification_link: resetUrl,
     purpose: purposeLabels[purpose] || 'Security Verification',
-    message: `Your BhoomiShield verification OTP is ${otpCode}. It is valid for ${expiresInMinutes} minutes. Never share your OTP with anyone.`,
+    message: messageText,
     app_name: 'BhoomiShield — Digital India Land Governance Platform',
     support_email: 'support@bhoomishield.gov.in',
     date_time: new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }),

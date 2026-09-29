@@ -13,6 +13,7 @@ import { LandMap } from '../components/LandMap';
 import { LandMap3D } from '../components/LandMap3D';
 import { AIAssistant } from '../components/AIAssistant';
 import { useLanguage } from '../context/LanguageContext';
+import { generateRecordOfRightsPDF, downloadPDF } from '../services/pdfService';
 
 interface LandProfilePageProps {
   lang?: string;
@@ -515,14 +516,18 @@ export const LandProfilePage: React.FC<LandProfilePageProps> = ({ onShowToast })
             </div>
           </div>
           <div className="flex items-center space-x-2 shrink-0">
-            <a
-              href={generatedReport.download_url}
-              target="_blank"
-              rel="noreferrer"
-              className="px-3 py-1.5 bg-emerald-700 hover:bg-emerald-600 text-white font-semibold rounded-lg shadow"
+            <button
+              type="button"
+              onClick={() => {
+                const doc = generateRecordOfRightsPDF(parcel);
+                downloadPDF(doc, `Official_RoR_Certificate_${parcel.land_identity_id}.pdf`);
+                if (onShowToast) onShowToast('success', 'Official RoR Downloaded', `Certificate for ${parcel.land_identity_id} downloaded.`);
+              }}
+              className="px-3.5 py-1.5 bg-emerald-700 hover:bg-emerald-600 text-white font-semibold rounded-lg shadow flex items-center space-x-1.5 cursor-pointer"
             >
-              Download PDF
-            </a>
+              <Download className="w-3.5 h-3.5" />
+              <span>Download Official RoR PDF</span>
+            </button>
             <Link
               to={generatedReport.verify_url}
               className="px-3 py-1.5 bg-white dark:bg-slate-900 text-emerald-700 dark:text-emerald-400 font-semibold rounded-lg border border-emerald-300 dark:border-emerald-700 flex items-center space-x-1"

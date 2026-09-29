@@ -8,6 +8,7 @@ import {
   Search, Filter, MapPin, Hash, Building2, User, Key, Lock, 
   Sparkles, RefreshCw, X, Copy, Check, FileCheck, Layers
 } from 'lucide-react';
+import { generateDocumentVerificationCertificatePDF, downloadPDF } from '../services/pdfService';
 
 const API_BASE = '/api';
 
@@ -307,6 +308,15 @@ export const UserVaultPage: React.FC<UserVaultPageProps> = ({ onShowToast }) => 
     } catch (err) {
       console.error('Delete error:', err);
     }
+  };
+
+  const handleDownloadDocCertificate = (docData: UserDocument) => {
+    const doc = generateDocumentVerificationCertificatePDF(
+      docData,
+      docData.verified_by_officer || 'Revenue Authority (BhoomiShield)'
+    );
+    downloadPDF(doc, `Verification_Certificate_${docData.document_id}.pdf`);
+    if (onShowToast) onShowToast('success', 'PDF Downloaded', `Certificate for ${docData.document_id} downloaded.`);
   };
 
   const handleRequestVerification = async (documentId: string) => {
@@ -674,6 +684,15 @@ export const UserVaultPage: React.FC<UserVaultPageProps> = ({ onShowToast }) => 
                       >
                         <Eye className="w-3.5 h-3.5" />
                         <span>Preview & Cert</span>
+                      </button>
+
+                      <button
+                        onClick={() => handleDownloadDocCertificate(doc)}
+                        className="py-1.5 px-2.5 rounded-lg bg-emerald-950/60 hover:bg-emerald-900/60 text-emerald-300 border border-emerald-800/60 text-xs font-semibold flex items-center space-x-1 transition-colors"
+                        title="Download Official Certificate (PDF)"
+                      >
+                        <Download className="w-3.5 h-3.5" />
+                        <span>PDF</span>
                       </button>
 
                       {doc.verification_status === 'PENDING' && (
@@ -1215,17 +1234,14 @@ export const UserVaultPage: React.FC<UserVaultPageProps> = ({ onShowToast }) => 
               >
                 Close
               </button>
-              <a
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                  alert(`Downloading cryptographic package for ${previewDoc.file_name} with verification certificate.`);
-                }}
-                className="px-4 py-2 rounded-xl bg-sky-600 hover:bg-sky-500 text-xs font-bold text-white flex items-center space-x-1.5 shadow-lg shadow-sky-600/20"
+              <button
+                type="button"
+                onClick={() => handleDownloadDocCertificate(previewDoc)}
+                className="px-4 py-2 rounded-xl bg-sky-600 hover:bg-sky-500 text-xs font-bold text-white flex items-center space-x-1.5 shadow-lg shadow-sky-600/20 cursor-pointer"
               >
                 <Download className="w-3.5 h-3.5" />
-                <span>Download Secure PDF</span>
-              </a>
+                <span>Download Official Certificate (PDF)</span>
+              </button>
             </div>
           </div>
         </div>

@@ -31,23 +31,13 @@ const DEVICE_STORAGE_KEY = 'bhoomi_device_google_accounts';
 const INITIAL_DEVICE_ACCOUNTS: DeviceGoogleAccount[] = [
   {
     id: 'acc-zainul-1',
-    name: 'Zainul Corp',
-    email: 'zainulcorp71@fmail.com',
+    name: 'Zainul Abideen',
+    email: 'zainulcorp71@gmail.com',
     avatarBg: 'bg-emerald-600',
     avatarLetter: 'Z',
     role: 'Citizen & Verified Landholder',
     lastUsed: 'Active on this device',
     isDeviceDefault: true
-  },
-  {
-    id: 'acc-zainul-2',
-    name: 'Zainul Abideen (Personal)',
-    email: 'zainulcorp71@gmail.com',
-    avatarBg: 'bg-teal-600',
-    avatarLetter: 'Z',
-    role: 'Citizen & Landowner',
-    lastUsed: 'Signed in on this browser',
-    isDeviceDefault: false
   },
   {
     id: 'acc-ramesh',
@@ -106,8 +96,8 @@ export const GoogleAuthModal: React.FC<GoogleAuthModalProps> = ({
       if (!list || list.length === 0) {
         list = [...INITIAL_DEVICE_ACCOUNTS];
       } else {
-        // Ensure zainulcorp71@fmail.com exists in recognized accounts
-        const hasZainul = list.some(a => a.email.toLowerCase() === 'zainulcorp71@fmail.com');
+        // Ensure zainulcorp71@gmail.com exists in recognized accounts
+        const hasZainul = list.some(a => a.email.toLowerCase() === 'zainulcorp71@gmail.com');
         if (!hasZainul) {
           list.unshift(INITIAL_DEVICE_ACCOUNTS[0]);
         }
@@ -405,7 +395,7 @@ export const GoogleAuthModal: React.FC<GoogleAuthModalProps> = ({
                   type="email"
                   value={customEmail}
                   onChange={(e) => setCustomEmail(e.target.value)}
-                  placeholder="name@gmail.com or name@fmail.com"
+                  placeholder="name@gmail.com"
                   required
                   className="w-full px-4 py-3 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-800 dark:text-white text-sm focus:outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20"
                 />

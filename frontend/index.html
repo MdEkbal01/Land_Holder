@@ -1,15 +1,384 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BhoomiShield — Jharkhand Land Identity & Risk Intelligence</title>
-    <!-- Leaflet CSS -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Primary Page Metadata -->
+    <title>BhoomiShield — Jharkhand Land Identity &amp; Risk Intelligence</title>
+    <meta name="title" content="BhoomiShield — Jharkhand Land Identity &amp; Risk Intelligence" />
+    <meta name="description" content="BhoomiShield is India's next-generation digital land records platform providing tamper-proof cadastral maps, ULPIN / Bhu-Aadhaar verification, dispute resolution, and citizen registry services." />
+    <meta name="keywords" content="BhoomiShield, Land Records Jharkhand, Bhu-Aadhaar, ULPIN, Land Registry, Mutation, Cadastral Maps, DILRMP, Land Identity, Property Verification, Jharbhoomi" />
+    <meta name="author" content="BhoomiShield Digital Land Governance" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="theme-color" content="#137a4d" />
+    <meta name="application-name" content="BhoomiShield" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://bhoomishield-portal.pages.dev/" />
+
+    <!-- Favicon and App Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+
+    <!-- Open Graph / Facebook / WhatsApp Social Previews -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="BhoomiShield" />
+    <meta property="og:url" content="https://bhoomishield-portal.pages.dev/" />
+    <meta property="og:title" content="BhoomiShield — Jharkhand Land Identity &amp; Risk Intelligence" />
+    <meta property="og:description" content="Secure, tamper-proof land records, Bhu-Aadhaar verification, and risk intelligence portal for citizens and revenue officers." />
+    <meta property="og:image" content="https://bhoomishield-portal.pages.dev/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="BhoomiShield — Jharkhand Land Identity &amp; Risk Intelligence" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter / X Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://bhoomishield-portal.pages.dev/" />
+    <meta name="twitter:title" content="BhoomiShield — Jharkhand Land Identity &amp; Risk Intelligence" />
+    <meta name="twitter:description" content="Secure, tamper-proof land records, Bhu-Aadhaar verification, and risk intelligence portal." />
+    <meta name="twitter:image" content="https://bhoomishield-portal.pages.dev/og-image.png" />
+    <meta name="twitter:image:alt" content="BhoomiShield Land Governance Portal" />
+
+    <!-- Resource Preconnects for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://api.emailjs.com" crossorigin />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <!-- JSON-LD Structured Data: WebSite, Organization & FAQs -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://bhoomishield-portal.pages.dev/#website",
+          "url": "https://bhoomishield-portal.pages.dev/",
+          "name": "BhoomiShield",
+          "description": "Jharkhand Land Identity & Risk Intelligence Platform",
+          "publisher": {
+            "@id": "https://bhoomishield-portal.pages.dev/#organization"
+          },
+          "inLanguage": "en-IN",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://bhoomishield-portal.pages.dev/records?search={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "GovernmentOrganization",
+          "@id": "https://bhoomishield-portal.pages.dev/#organization",
+          "name": "BhoomiShield — Digital India Land Records Initiative",
+          "url": "https://bhoomishield-portal.pages.dev/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://bhoomishield-portal.pages.dev/favicon.svg"
+          },
+          "description": "Comprehensive digital public infrastructure for tamper-proof land registries, Bhu-Aadhaar ULPIN assignment, spatial cadastral verification, and dispute resolution.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Jharkhand",
+            "addressCountry": "IN"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Citizen Support & Grievance Redressal",
+            "email": "support@bhoomishield.gov.in",
+            "availableLanguage": ["English", "Hindi"]
+          }
+        },
+        {
+          "@type": "WebApplication",
+          "@id": "https://bhoomishield-portal.pages.dev/#webapp",
+          "name": "BhoomiShield Land Governance Portal",
+          "applicationCategory": "GovernmentApplication",
+          "operatingSystem": "All modern web browsers",
+          "url": "https://bhoomishield-portal.pages.dev/",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "INR"
+          },
+          "featureList": [
+            "14-Digit ULPIN (Bhu-Aadhaar) Parcel Identity Verification",
+            "Interactive Multi-Layer GIS Cadastral Boundary Mapping",
+            "Tamper-Proof Immutable Mutation & Ownership Audit Trails",
+            "Proactive Dispute and Encroachment Risk Detection",
+            "Direct Citizen Login and OTP Email Verification"
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://bhoomishield-portal.pages.dev/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is BhoomiShield and how does it protect land records?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "BhoomiShield is a modern land governance and risk intelligence platform that digitizes cadastral maps, assigns unique 14-digit ULPIN (Bhu-Aadhaar) identifiers to plots, and provides tamper-proof audit trails for land mutations and ownership transfers."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is ULPIN (Bhu-Aadhaar) in Jharkhand land records?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Unique Land Parcel Identification Number (ULPIN), also known as Bhu-Aadhaar, is a 14-digit alphanumeric code generated from the geo-coordinates of the plot's boundary vertices, creating a unique single identity for each land parcel."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How can citizens check land records and mutation status on BhoomiShield?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Citizens can log in to BhoomiShield with their registered account or email OTP to search land records by ULPIN, Plot Number, or Khatian Number, view interactive cadastral boundaries, and track real-time e-mutation status."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
   </head>
-  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-sky-500 selection:text-white">
-    <div id="root"></div>
+  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-emerald-600 selection:text-white">
+    <!-- React Root Mount Point with Rich Crawl-Friendly Fallback Content -->
+    <div id="root">
+      <!-- Semantic Crawler-Friendly Content Shell (Preserved for SEO crawlers and Instant Initial Paint) -->
+      <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem; color: #1e293b;">
+        
+        <!-- Navigation Header -->
+        <header style="border-bottom: 1px solid #e2e8f0; padding-bottom: 1.5rem; margin-bottom: 2rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem;">
+          <div>
+            <span style="font-size: 1.5rem; font-weight: 900; color: #0f172a;">Bhoomi<span style="color: #137a4d;">Shield</span></span>
+            <p style="font-size: 0.8rem; color: #64748b; margin-top: 0.2rem;">Digital India Land Governance &amp; Identity Platform</p>
+          </div>
+          <nav aria-label="Main Navigation" style="display: flex; flex-wrap: wrap; gap: 1rem; font-size: 0.875rem; font-weight: 600;">
+            <a href="/" style="color: #137a4d; text-decoration: none;">Home</a>
+            <a href="/login" style="color: #334155; text-decoration: none;">Citizen Login</a>
+            <a href="/register" style="color: #334155; text-decoration: none;">Create Account</a>
+            <a href="/map" style="color: #334155; text-decoration: none;">Cadastral Map</a>
+            <a href="/records" style="color: #334155; text-decoration: none;">Land Records</a>
+            <a href="/mutations" style="color: #334155; text-decoration: none;">e-Mutation</a>
+            <a href="/disputes" style="color: #334155; text-decoration: none;">Dispute Registry</a>
+            <a href="/analytics" style="color: #334155; text-decoration: none;">Risk Analytics</a>
+            <a href="/blockchain" style="color: #334155; text-decoration: none;">Audit Trail</a>
+          </nav>
+        </header>
+
+        <!-- Main Content Area -->
+        <main>
+          <!-- Hero Section with Page-Level H1 -->
+          <section style="background: linear-gradient(135deg, #0e5c38, #137a4d, #0a462a); color: #ffffff; border-radius: 1.5rem; padding: 3rem 2rem; margin-bottom: 2.5rem; box-shadow: 0 10px 30px rgba(14, 92, 56, 0.15);">
+            <div style="max-width: 800px;">
+              <span style="display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); padding: 0.35rem 0.85rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem;">
+                DILRMP • Jharkhand Land Identity Gateway
+              </span>
+              <h1 style="font-size: 2.5rem; font-weight: 900; line-height: 1.2; margin-bottom: 1rem; letter-spacing: -0.02em;">
+                BhoomiShield — Land Identity &amp; Risk Intelligence
+              </h1>
+              <p style="font-size: 1.1rem; line-height: 1.6; color: #d1fae5; margin-bottom: 2rem;">
+                A unified, tamper-proof digital infrastructure for cadastral land records, 14-digit ULPIN (Bhu-Aadhaar) parcel mapping, proactive encroachment detection, and automated mutation audits across Jharkhand.
+              </p>
+              <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                <a href="/login" style="display: inline-block; background: #ffffff; color: #0e5c38; font-weight: 700; font-size: 0.95rem; padding: 0.85rem 1.75rem; border-radius: 0.75rem; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                  Citizen &amp; Official Login &rarr;
+                </a>
+                <a href="/register" style="display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.4); color: #ffffff; font-weight: 700; font-size: 0.95rem; padding: 0.85rem 1.75rem; border-radius: 0.75rem; text-decoration: none;">
+                  Register New Account
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 1: What BhoomiShield Does -->
+          <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.75rem; font-weight: 800; color: #0f172a; margin-bottom: 1rem; border-left: 4px solid #137a4d; padding-left: 0.75rem;">
+              What BhoomiShield Does
+            </h2>
+            <p style="font-size: 1rem; line-height: 1.7; color: #475569; margin-bottom: 1rem;">
+              BhoomiShield solves the systemic challenges in traditional land records management—such as fraudulent transfers, boundary overlaps, multiple deed registrations, and slow mutation lifecycles. By integrating GIS cadastral boundaries with spatial coordinates, BhoomiShield provides a single source of truth for landholders, buyers, financial institutions, and government revenue departments.
+            </p>
+            <p style="font-size: 1rem; line-height: 1.7; color: #475569;">
+              Each land parcel is assigned a unique 14-digit Bhu-Aadhaar (ULPIN) number, binding the legal khatian, register-II details, plot coordinates, and mutation history into an immutable verification ledger.
+            </p>
+          </section>
+
+          <!-- Section 2: Core Capabilities -->
+          <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.75rem; font-weight: 800; color: #0f172a; margin-bottom: 1.5rem; border-left: 4px solid #137a4d; padding-left: 0.75rem;">
+              Core Capabilities &amp; Digital Services
+            </h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+              <article style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
+                <h3 style="font-size: 1.15rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">
+                  1. 14-Digit ULPIN (Bhu-Aadhaar)
+                </h3>
+                <p style="font-size: 0.9rem; color: #64748b; line-height: 1.6;">
+                  Geo-referenced unique identifier based on international ECEF/WGS-84 vertex coordinates, eliminating duplicate registrations and parcel identity disputes.
+                </p>
+              </article>
+              <article style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
+                <h3 style="font-size: 1.15rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">
+                  2. Interactive Cadastral GIS Maps
+                </h3>
+                <p style="font-size: 0.9rem; color: #64748b; line-height: 1.6;">
+                  High-precision cadastral polygon mapping with multi-layer overlays for Mauza, Tehsil, Khatian, Plot borders, and satellite imagery verification.
+                </p>
+              </article>
+              <article style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
+                <h3 style="font-size: 1.15rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">
+                  3. Tamper-Proof Audit Trail
+                </h3>
+                <p style="font-size: 0.9rem; color: #64748b; line-height: 1.6;">
+                  Cryptographic hashing and timestamped mutation ledger ensuring every ownership change, correction, or sub-division is permanently verifiable.
+                </p>
+              </article>
+              <article style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
+                <h3 style="font-size: 1.15rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">
+                  4. Automated e-Mutation Workflow
+                </h3>
+                <p style="font-size: 0.9rem; color: #64748b; line-height: 1.6;">
+                  Streamlined digital application, objection filing, and verification by Circle Officers (CO) and Revenue Sub-Inspectors (CI) with real-time status alerts.
+                </p>
+              </article>
+              <article style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
+                <h3 style="font-size: 1.15rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">
+                  5. Dispute &amp; Encroachment Detection
+                </h3>
+                <p style="font-size: 0.9rem; color: #64748b; line-height: 1.6;">
+                  AI and spatial algorithms analyzing plot overlap, stay orders, litigations, and buffer-zone violations to score transaction risk before property purchases.
+                </p>
+              </article>
+              <article style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
+                <h3 style="font-size: 1.15rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">
+                  6. Secure Citizen OTP Authentication
+                </h3>
+                <p style="font-size: 0.9rem; color: #64748b; line-height: 1.6;">
+                  Multi-factor authentication via automated email OTP dispatch, secure password resets, and role-based permissions protecting citizen land portfolios.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <!-- Section 3: Step-by-Step Workflow -->
+          <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.75rem; font-weight: 800; color: #0f172a; margin-bottom: 1.5rem; border-left: 4px solid #137a4d; padding-left: 0.75rem;">
+              How the Land Verification Workflow Operates
+            </h2>
+            <ol style="list-style: none; padding: 0; counter-reset: workflow-counter; display: flex; flex-direction: column; gap: 1rem;">
+              <li style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.25rem; display: flex; gap: 1rem; align-items: flex-start;">
+                <span style="display: flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; border-radius: 9999px; background: #137a4d; color: #ffffff; font-weight: 800; font-size: 0.875rem; flex-shrink: 0;">1</span>
+                <div>
+                  <h3 style="font-size: 1rem; font-weight: 700; color: #0f172a; margin-bottom: 0.25rem;">Parcel Search &amp; Spatial Inspection</h3>
+                  <p style="font-size: 0.875rem; color: #64748b; margin: 0;">Enter State, District, Anchal/Circle, Mauza, and Plot Number to pull up certified land records and boundary coordinates.</p>
+                </div>
+              </li>
+              <li style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.25rem; display: flex; gap: 1rem; align-items: flex-start;">
+                <span style="display: flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; border-radius: 9999px; background: #137a4d; color: #ffffff; font-weight: 800; font-size: 0.875rem; flex-shrink: 0;">2</span>
+                <div>
+                  <h3 style="font-size: 1rem; font-weight: 700; color: #0f172a; margin-bottom: 0.25rem;">Title &amp; Encumbrance Verification</h3>
+                  <p style="font-size: 0.875rem; color: #64748b; margin: 0;">Cross-verify land type, recorded tenant (Raiyat), area in acres/decimals, and check for active court injunctions or loan mortgages.</p>
+                </div>
+              </li>
+              <li style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.25rem; display: flex; gap: 1rem; align-items: flex-start;">
+                <span style="display: flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; border-radius: 9999px; background: #137a4d; color: #ffffff; font-weight: 800; font-size: 0.875rem; flex-shrink: 0;">3</span>
+                <div>
+                  <h3 style="font-size: 1rem; font-weight: 700; color: #0f172a; margin-bottom: 0.25rem;">Digital e-Mutation &amp; Notice Period</h3>
+                  <p style="font-size: 0.875rem; color: #64748b; margin: 0;">Submit transfer deed documents online. Automated 14-day statutory public notice issued with instant objection logging.</p>
+                </div>
+              </li>
+              <li style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.25rem; display: flex; gap: 1rem; align-items: flex-start;">
+                <span style="display: flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; border-radius: 9999px; background: #137a4d; color: #ffffff; font-weight: 800; font-size: 0.875rem; flex-shrink: 0;">4</span>
+                <div>
+                  <h3 style="font-size: 1rem; font-weight: 700; color: #0f172a; margin-bottom: 0.25rem;">Immutable Bhu-Aadhaar Certificate Issuance</h3>
+                  <p style="font-size: 0.875rem; color: #64748b; margin: 0;">Upon Circle Officer approval, Register-II is updated and a digitally signed Bhu-Aadhaar Land Identity Certificate is generated.</p>
+                </div>
+              </li>
+            </ol>
+          </section>
+
+          <!-- Section 4: Trust, Security & Compliance -->
+          <section style="margin-bottom: 3rem; background: #f1f5f9; border-radius: 1rem; padding: 2rem;">
+            <h2 style="font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 1rem;">
+              Trust, Security &amp; Data Governance
+            </h2>
+            <p style="font-size: 0.95rem; line-height: 1.6; color: #475569; margin-bottom: 1rem;">
+              BhoomiShield adheres to rigorous digital governance benchmarks established by the Digital India Land Records Modernization Programme (DILRMP). All sensitive API traffic is protected by end-to-end TLS/HTTPS encryption, strict Content Security Policies (CSP), HTTP Strict Transport Security (HSTS), and role-based multi-factor access protocols.
+            </p>
+            <p style="font-size: 0.95rem; line-height: 1.6; color: #475569; margin: 0;">
+              Public records are synchronized with state revenue datasets from Jharbhoomi and state cadastre repositories, maintaining non-repudiation and transparency.
+            </p>
+          </section>
+
+          <!-- Section 5: FAQs -->
+          <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.75rem; font-weight: 800; color: #0f172a; margin-bottom: 1.5rem; border-left: 4px solid #137a4d; padding-left: 0.75rem;">
+              Frequently Asked Questions (FAQ)
+            </h2>
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.25rem;">
+                <h3 style="font-size: 1rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">
+                  How do I find my plot's 14-digit ULPIN?
+                </h3>
+                <p style="font-size: 0.875rem; color: #64748b; line-height: 1.6; margin: 0;">
+                  You can search by your District (e.g., Bokaro), Anchal (e.g., Chas), and Plot Number in the <a href="/records" style="color: #137a4d; font-weight: 600;">Land Records Search</a> or directly locate your parcel on the <a href="/map" style="color: #137a4d; font-weight: 600;">Interactive Cadastral Map</a>.
+                </p>
+              </div>
+              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.25rem;">
+                <h3 style="font-size: 1rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">
+                  What should I do if my password needs to be reset?
+                </h3>
+                <p style="font-size: 0.875rem; color: #64748b; line-height: 1.6; margin: 0;">
+                  Visit the <a href="/forgot-password" style="color: #137a4d; font-weight: 600;">Password Reset Portal</a>, enter your registered email address, and you will receive a secure 6-digit OTP along with a one-click reset link.
+                </p>
+              </div>
+              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.25rem;">
+                <h3 style="font-size: 1rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">
+                  Who can register on the BhoomiShield portal?
+                </h3>
+                <p style="font-size: 0.875rem; color: #64748b; line-height: 1.6; margin: 0;">
+                  Both individual citizens (landowners, buyers) and authorized Revenue Department officials can register via the <a href="/register" style="color: #137a4d; font-weight: 600;">Citizen Registration</a> gateway with instant email verification.
+                </p>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer style="border-top: 1px solid #e2e8f0; padding-top: 2rem; margin-top: 3rem; color: #64748b; font-size: 0.875rem;">
+          <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1.5rem; margin-bottom: 1.5rem;">
+            <div>
+              <span style="font-weight: 700; color: #0f172a; display: block; margin-bottom: 0.25rem;">BhoomiShield Portal</span>
+              <p style="font-size: 0.8rem; margin: 0;">Jharkhand State Digital Land Identity &amp; Risk Intelligence</p>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
+              <a href="/login" style="color: #475569; text-decoration: none;">Citizen Login</a>
+              <a href="/register" style="color: #475569; text-decoration: none;">New Registration</a>
+              <a href="/forgot-password" style="color: #475569; text-decoration: none;">Reset Password</a>
+              <a href="/map" style="color: #475569; text-decoration: none;">GIS Cadastral Map</a>
+              <a href="/records" style="color: #475569; text-decoration: none;">Land Records</a>
+              <a href="/mutations" style="color: #475569; text-decoration: none;">e-Mutation</a>
+              <a href="/disputes" style="color: #475569; text-decoration: none;">Dispute Registry</a>
+            </div>
+          </div>
+          <div style="border-top: 1px solid #f1f5f9; padding-top: 1rem; display: flex; flex-wrap: wrap; justify-content: space-between; font-size: 0.75rem; color: #94a3b8;">
+            <p style="margin: 0;">&copy; 2026 BhoomiShield — Digital India Land Records Governance. All rights reserved.</p>
+            <p style="margin: 0;">Support Helpline: support@bhoomishield.gov.in | +91 651 2400000</p>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+
+    <!-- Application Script Bundle -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

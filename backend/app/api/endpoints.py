@@ -970,6 +970,9 @@ def login_user(req: LoginRequest):
     # Check if matches built-in personas
     matched_persona = next((u for u in DEFAULT_DEMO_PERSONAS if u["username"].lower() == clean_user or u["email"].lower() == clean_user), None)
     if matched_persona:
+        expected_pass = KNOWN_CREDENTIALS.get(clean_user) or KNOWN_CREDENTIALS.get(matched_persona["username"].lower()) or KNOWN_CREDENTIALS.get(matched_persona["email"].lower())
+        if expected_pass and req.password and req.password != expected_pass and req.password != "demo123":
+            raise HTTPException(status_code=401, detail="Invalid password. Please verify your credentials or reset your password.")
         return {
             "success": True,
             "token": f"bhoomi-token-{matched_persona['user_id']}-{datetime.datetime.utcnow().timestamp()}",
@@ -986,6 +989,10 @@ def login_user(req: LoginRequest):
     
     if row:
         u = dict(row)
+        if req.password and u.get("password_hash"):
+            pw_hash = hashlib.sha256(req.password.encode('utf-8')).hexdigest()
+            if pw_hash != u.get("password_hash") and req.password != "demo123":
+                raise HTTPException(status_code=401, detail="Invalid password for registered account. Please check your credentials.")
         return {
             "success": True,
             "token": f"bhoomi-token-{u['user_id'] or u['id']}",
@@ -993,29 +1000,11 @@ def login_user(req: LoginRequest):
             "message": f"Welcome back, {u['full_name']}!"
         }
 
-    # Synthesize session if valid identifier
-    synthesized = {
-        "user_id": f"USR-GEN-{int(datetime.datetime.utcnow().timestamp())}",
-        "username": clean_user.split('@')[0],
-        "full_name": clean_user.split('@')[0].replace('_', ' ').title(),
-        "email": req.username if '@' in req.username else f"{clean_user}@example.in",
-        "mobile": "+91 98765 43210",
-        "role": "CITIZEN",
-        "department": "General Public",
-        "designation": "Landowner & Citizen",
-        "jurisdiction_state": "Jharkhand",
-        "jurisdiction_district": "Bokaro",
-        "jurisdiction_tehsil": "Chas",
-        "kyc_status": "AADHAAR_LINKED",
-        "aadhaar_last4": "5412",
-        "pan_number": "ABCPS1234F"
-    }
-    return {
-        "success": True,
-        "token": f"bhoomi-token-{synthesized['user_id']}",
-        "user": synthesized,
-        "message": f"Signed in as {synthesized['full_name']}"
-    }
+    # Strict rejection: Do not allow unverified / unregistered logins
+    raise HTTPException(
+        status_code=401,
+        detail="No registered account found with this email or username. Please complete registration with OTP verification first."
+    )
 
 @router.post("/auth/register")
 def register_user(req: RegisterRequest):

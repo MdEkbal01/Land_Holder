@@ -7,7 +7,7 @@ import { SupportedLanguage } from '../i18n/translations';
 import { UserProfileModal } from './UserProfileModal';
 import { 
   ShieldCheck, Search, Lock, Languages, UserCheck, Scale, 
-  ShieldAlert, Menu, X, Globe2, FolderLock, Landmark, 
+  ShieldAlert, Menu, X, Globe2, FolderLock, Landmark, Building2,
   LogIn, LogOut, User as UserIcon, ChevronDown, Calculator, Database,
   Sparkles, Compass, FileCheck, Layers, Grid, ArrowRight, ExternalLink, BadgeCheck, FileText,
   Sun, Moon, Settings, Edit3
@@ -202,6 +202,36 @@ export const Navbar: React.FC<NavbarProps> = () => {
               <span>{isEn ? "My Vault" : "मेरी वॉल्ट"}</span>
             </Link>
 
+            {/* Quick Admin Portal Button (When Admin) */}
+            {isAdmin && (
+              <Link
+                to="/admin"
+                className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all hidden sm:flex items-center space-x-1.5 border shadow-sm ${
+                  location.pathname === '/admin'
+                    ? 'bg-purple-600 text-white border-purple-700'
+                    : 'bg-purple-50 text-purple-700 hover:bg-purple-100 border-purple-200'
+                }`}
+              >
+                <Building2 className="w-4 h-4" />
+                <span>Admin Command</span>
+              </Link>
+            )}
+
+            {/* Quick Tehsildar Desk Button (When Officer) */}
+            {isOfficial && !isAdmin && (
+              <Link
+                to="/official"
+                className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all hidden sm:flex items-center space-x-1.5 border shadow-sm ${
+                  location.pathname === '/official'
+                    ? 'bg-[#137a4d] text-white border-emerald-700'
+                    : 'bg-emerald-50 text-[#137a4d] hover:bg-emerald-100 border-emerald-200'
+                }`}
+              >
+                <Landmark className="w-4 h-4" />
+                <span>Tehsildar Desk</span>
+              </Link>
+            )}
+
             {/* Account / User Profile Pill */}
             {!isAuthenticated ? (
               <Link
@@ -384,6 +414,37 @@ export const Navbar: React.FC<NavbarProps> = () => {
                     <span>Grievance Portal</span>
                   </div>
                   <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-[#137a4d] group-hover:translate-x-0.5 transition-transform" />
+                </Link>
+              </div>
+
+              {/* Category 3: Administrative & Revenue Governance */}
+              <div className="space-y-2">
+                <div className="text-[10px] font-bold text-[#137a4d] dark:text-emerald-400 uppercase tracking-wider px-1 mb-1">
+                  3. Administrative & Revenue Desks
+                </div>
+
+                <Link
+                  to="/admin"
+                  onClick={closeMenuDrawer}
+                  className="flex items-center justify-between px-4 py-3 rounded-xl bg-purple-50/60 dark:bg-purple-950/40 hover:bg-purple-100/80 text-purple-900 dark:text-purple-200 border border-purple-200 dark:border-purple-800 shadow-sm transition-all font-bold text-xs group"
+                >
+                  <div className="flex items-center space-x-3">
+                    <Building2 className="w-4 h-4 text-purple-600" />
+                    <span>Admin Command Center</span>
+                  </div>
+                  <ArrowRight className="w-3.5 h-3.5 text-purple-500 group-hover:translate-x-0.5 transition-transform" />
+                </Link>
+
+                <Link
+                  to="/official"
+                  onClick={closeMenuDrawer}
+                  className="flex items-center justify-between px-4 py-3 rounded-xl bg-emerald-50/60 dark:bg-emerald-950/40 hover:bg-emerald-100/80 text-emerald-900 dark:text-emerald-200 border border-emerald-200 dark:border-emerald-800 shadow-sm transition-all font-bold text-xs group"
+                >
+                  <div className="flex items-center space-x-3">
+                    <Landmark className="w-4 h-4 text-[#137a4d]" />
+                    <span>Tehsildar & Revenue Officer Desk</span>
+                  </div>
+                  <ArrowRight className="w-3.5 h-3.5 text-emerald-600 group-hover:translate-x-0.5 transition-transform" />
                 </Link>
               </div>
 

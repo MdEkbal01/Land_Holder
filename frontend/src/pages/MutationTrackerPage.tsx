@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Activity, Clock, CheckCircle2, AlertTriangle, ArrowRight, Search, FileText } from 'lucide-react';
+import { Activity, Clock, CheckCircle2, AlertTriangle, ArrowRight, Search, FileText, Download } from 'lucide-react';
+import { generateMutationOrderPDF, downloadPDF } from '../services/pdfService';
 
 export const MutationTrackerPage: React.FC = () => {
   const { appNo } = useParams<{ appNo?: string }>();
@@ -106,6 +107,46 @@ export const MutationTrackerPage: React.FC = () => {
                 </div>
               ))}
             </div>
+          </div>
+
+          {/* Download Official Order PDF */}
+          <div className="pt-4 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center">
+            <span className="text-slate-500 font-medium">
+              Statutory Mutation Certificate registered under Section 14 State Land Revenue Act.
+            </span>
+            <button
+              type="button"
+              onClick={() => {
+                const doc = generateMutationOrderPDF({
+                  id: data.application_no || 'REQ-MUT-2026-8941',
+                  land_identity_id: data.land_identity_id || 'JH-BOK-CHA-KURA-K125-K450-2',
+                  change_type: 'MUTATION_SALE',
+                  state: 'Jharkhand',
+                  district: 'Bokaro',
+                  tehsil: 'Chas',
+                  mauza: 'Kura',
+                  khata_no: '125',
+                  khesra_no: '450/2',
+                  current_owner: data.buyer || 'Ramesh Sharma',
+                  proposed_owner: data.applicant || 'Ramesh Sharma',
+                  current_area_acre: 1.85,
+                  proposed_area_acre: 1.85,
+                  justification: 'Registered Sale Deed executed with 30-day notice period completed.',
+                  field_inspection_report: 'Halka Karamchari & Circle Amin verified boundary pillars and possession.',
+                  officer_user_id: 'USR-OFF-2001',
+                  officer_name: 'Vikramaditya Rao',
+                  officer_designation: 'Tahsildar / Circle Officer',
+                  memo_reference_no: `CHAS/REV/2026/${data.application_no || '8941'}`,
+                  status: data.current_stage === 'ORDER_ISSUANCE' ? 'APPROVED_IMPLEMENTED' : 'PENDING_ADMIN_APPROVAL',
+                  submitted_at: '2026-03-15 10:30 AM'
+                });
+                downloadPDF(doc, `Official_Mutation_Order_${data.application_no || '8941'}.pdf`);
+              }}
+              className="py-2.5 px-4 bg-[#137a4d] hover:bg-[#0f633e] text-white font-bold rounded-xl text-xs flex items-center space-x-2 shadow-md transition-all cursor-pointer"
+            >
+              <Download className="w-4 h-4" />
+              <span>Download Official Mutation Order (PDF)</span>
+            </button>
           </div>
         </div>
       )}

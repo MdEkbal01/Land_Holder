@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
 import { AuthProvider, useAuth } from './context/AuthContext';
@@ -10,6 +10,7 @@ import { Footer } from './components/Footer';
 import { LoginPage } from './pages/LoginPage';
 import { RegisterPage } from './pages/RegisterPage';
 import { ForgotPasswordPage } from './pages/ForgotPasswordPage';
+import { LandingPage } from './pages/LandingPage';
 import { AuthPage } from './pages/AuthPage';
 import { HomePage } from './pages/HomePage';
 import { LandSearchPage } from './pages/LandSearchPage';
@@ -27,26 +28,45 @@ import { ECourtsLitigationPage } from './pages/ECourtsLitigationPage';
 import { StatePortalsDirectoryPage } from './pages/StatePortalsDirectoryPage';
 import { JharbhoomiDirectoryPage } from './pages/JharbhoomiDirectoryPage';
 
+import { OfficialWorkspacePage } from './pages/OfficialWorkspacePage';
+import { MaintenanceBanner } from './components/MaintenanceBanner';
+
 export const AppContent: React.FC = () => {
-  const { isAuthenticated } = useAuth();
+  const { isAuthenticated, isAdmin, user } = useAuth();
   const [lang, setLang] = useState<'en' | 'hi'>('en');
   const [userRole, setUserRole] = useState<string>('CITIZEN');
+
+  const [isMaintenanceActive, setIsMaintenanceActive] = useState<boolean>(() => {
+    return localStorage.getItem('bhoomi_maintenance_mode') === 'true';
+  });
+
+  useEffect(() => {
+    const checkMaintenance = () => {
+      setIsMaintenanceActive(localStorage.getItem('bhoomi_maintenance_mode') === 'true');
+    };
+    window.addEventListener('storage', checkMaintenance);
+    window.addEventListener('focus', checkMaintenance);
+    return () => {
+      window.removeEventListener('storage', checkMaintenance);
+      window.removeEventListener('focus', checkMaintenance);
+    };
+  }, []);
 
   return (
     <Router>
       <div className="min-h-screen flex flex-col transition-colors duration-300 bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100">
+        <MaintenanceBanner />
         {isAuthenticated && <Navbar />}
 
         <main className="flex-1">
           <Routes>
-            {/* Authentication Routes */}
+            {/* Public Landing & Authentication Routes */}
+            <Route path="/" element={isAuthenticated ? <HomePage lang={lang} /> : <LandingPage />} />
+            <Route path="/landing" element={<LandingPage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />
             <Route path="/forgot-password" element={<ForgotPasswordPage />} />
-            <Route path="/auth" element={<AuthPage />} />
-
-            {/* Core Application Routes */}
-            <Route path="/" element={isAuthenticated ? <HomePage lang={lang} /> : <Navigate to="/login" />} />
+            <Route path="/auth" element={<LandingPage />} />
             <Route path="/search" element={<LandSearchPage lang={lang} />} />
             <Route path="/land/:landIdentityId" element={<LandProfilePage lang={lang} />} />
             <Route path="/legal-advisor" element={<LegalAdvisorPage />} />
@@ -58,7 +78,12 @@ export const AppContent: React.FC = () => {
             <Route path="/vault" element={<MyBhoomiVaultPage />} />
             <Route path="/verify" element={<ReportVerificationPage />} />
             <Route path="/verify/:reportId" element={<ReportVerificationPage />} />
-            <Route path="/admin" element={<AdminDashboard userRole={userRole} />} />
+            
+            {/* Administrative & Revenue Officer Desks */}
+            <Route path="/admin" element={<AdminDashboard userRole={user?.role || userRole} />} />
+            <Route path="/official" element={<OfficialWorkspacePage />} />
+            <Route path="/tehsildar" element={<OfficialWorkspacePage />} />
+            <Route path="/officer-workspace" element={<OfficialWorkspacePage />} />
             
             {/* National & State Directory Portals */}
             <Route path="/bhu-aadhaar" element={<BhuAadhaarHubPage />} />

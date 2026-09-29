@@ -3,6 +3,13 @@ import { User } from '../types';
 
 const API_BASE = '/api';
 
+export interface RegisteredUserDetailed extends User {
+  password?: string;
+  isVerified?: boolean;
+  registeredAt?: number | string;
+  status?: 'ACTIVE' | 'SUSPENDED';
+}
+
 interface AuthContextType {
   user: User | null;
   token: string | null;
@@ -21,6 +28,12 @@ interface AuthContextType {
   twoFactorEnabled: boolean;
   demoUsers: User[];
   loading: boolean;
+  // Admin User Management Features
+  getAllRegisteredUsersDetailed: () => RegisteredUserDetailed[];
+  adminUpdateUser: (userId: string, updates: Partial<RegisteredUserDetailed>) => boolean;
+  adminDeleteUser: (userId: string) => boolean;
+  adminCreateUser: (userData: any) => RegisteredUserDetailed;
+  adminToggleUserStatus: (userId: string) => boolean;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -130,11 +143,46 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     'ramesh.sharma@example.in': 'Citizen@Ramesh2026#',
   };
 
+  const REGISTERED_USERS_KEY = 'bhoomi_registered_users';
+
+  const getStoredRegisteredUsers = (): RegisteredUserDetailed[] => {
+    try {
+      const raw = localStorage.getItem(REGISTERED_USERS_KEY);
+      return raw ? JSON.parse(raw) : [];
+    } catch {
+      return [];
+    }
+  };
+
+  const saveRegisteredUserRecord = (userRecord: RegisteredUserDetailed) => {
+    try {
+      const users = getStoredRegisteredUsers();
+      const existingIdx = users.findIndex(
+        u => u.email?.toLowerCase() === userRecord.email?.toLowerCase() ||
+             u.username?.toLowerCase() === userRecord.username?.toLowerCase()
+      );
+      if (existingIdx >= 0) {
+        users[existingIdx] = { ...users[existingIdx], ...userRecord };
+      } else {
+        users.push(userRecord);
+      }
+      localStorage.setItem(REGISTERED_USERS_KEY, JSON.stringify(users));
+      if (userRecord.password) {
+        localStorage.setItem(`bhoomi_pass_${userRecord.email.toLowerCase()}`, userRecord.password);
+        localStorage.setItem(`bhoomi_pass_${userRecord.username.toLowerCase()}`, userRecord.password);
+      }
+    } catch (e) {
+      console.error('Failed to save registered user record:', e);
+    }
+  };
+
   const login = async (username: string, password?: string): Promise<{ success: boolean; message: string }> => {
     setLoading(true);
     const cleanUsername = username.trim();
     const cleanPassword = password ? password.trim() : '';
+    const normalizedId = cleanUsername.toLowerCase();
 
+    // 1. Attempt Backend API Authentication if available
     try {
       const res = await fetch(`${API_BASE}/auth/login`, {
         method: 'POST',
@@ -151,24 +199,16 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           setLoading(false);
           return { success: true, message: data.message || 'Login successful' };
         }
-      } else {
-        // Explicit rejection from backend (e.g. 401 wrong password)
+      } else if (res.status === 401 || res.status === 400) {
+        // Explicit rejection from backend
         setLoading(false);
         return { success: false, message: data.detail || 'Authentication failed. Please verify credentials.' };
       }
     } catch (err: any) {
-      console.warn('Backend login offline, activating client validation');
+      // Backend offline/standalone frontend mode -> Proceed with strict client verification
     }
 
-    // Client-side fallback check
-    const normalizedId = cleanUsername.toLowerCase();
-    const expectedPass = KNOWN_CREDENTIALS[normalizedId] || KNOWN_CREDENTIALS[cleanUsername];
-
-    if (expectedPass && cleanPassword && cleanPassword !== expectedPass && cleanPassword !== 'demo123') {
-      setLoading(false);
-      return { success: false, message: 'Invalid password or security passcode. Access Denied.' };
-    }
-
+    // 2. Check Official Demo Personas
     const foundDemo = demoUsers.find(
       u => u.username.toLowerCase() === normalizedId || u.email?.toLowerCase() === normalizedId
     ) || DEFAULT_DEMO_USERS.find(
@@ -176,6 +216,17 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     );
 
     if (foundDemo) {
+      const expectedPass = localStorage.getItem(`bhoomi_pass_${foundDemo.email.toLowerCase()}`) ||
+                           localStorage.getItem(`bhoomi_pass_${foundDemo.username.toLowerCase()}`) ||
+                           KNOWN_CREDENTIALS[normalizedId] ||
+                           KNOWN_CREDENTIALS[foundDemo.username.toLowerCase()] ||
+                           KNOWN_CREDENTIALS[foundDemo.email.toLowerCase()];
+
+      if (expectedPass && cleanPassword !== expectedPass && cleanPassword !== 'demo123') {
+        setLoading(false);
+        return { success: false, message: 'Invalid password. Please verify your credentials or reset your password.' };
+      }
+
       setUser(foundDemo);
       const demoTok = `token-${foundDemo.user_id}-${Date.now()}`;
       setToken(demoTok);
@@ -185,35 +236,85 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       return { success: true, message: `Welcome back, ${foundDemo.full_name}!` };
     }
 
-    // If custom user, create authenticated session
-    const synthesizedUser: User = {
-      user_id: `USR-${Date.now().toString().slice(-6)}`,
-      username: username.includes('@') ? username.split('@')[0] : username,
-      full_name: username.includes('@') ? username.split('@')[0].toUpperCase() : username,
-      email: username.includes('@') ? username : `${username}@example.in`,
-      mobile: '+91 98765 43210',
-      role: username.toLowerCase().includes('officer') || username.toLowerCase().includes('tahsildar') || username.toLowerCase().includes('admin') ? 'REVENUE_OFFICER' : 'CITIZEN',
-      department: username.toLowerCase().includes('officer') ? 'Revenue & Land Reforms' : 'General Public',
-      designation: username.toLowerCase().includes('officer') ? 'Tahsildar / Circle Officer' : 'Landowner & Citizen',
-      jurisdiction_state: 'Uttar Pradesh',
-      jurisdiction_district: 'Gautam Buddha Nagar',
-      jurisdiction_tehsil: 'Dadri',
-      kyc_status: 'AADHAAR_LINKED',
-      aadhaar_last4: '5412',
-      pan_number: 'ABCPS1234F'
-    };
+    // 3. Check Persistent Registered & OTP-Verified Users
+    const registeredUsers = getStoredRegisteredUsers();
+    const matchedRegisteredUser = registeredUsers.find(
+      u => u.email.toLowerCase() === normalizedId || u.username.toLowerCase() === normalizedId
+    );
 
-    setUser(synthesizedUser);
-    const synthToken = `token-${synthesizedUser.user_id}`;
-    setToken(synthToken);
-    localStorage.setItem('bhoomi_user', JSON.stringify(synthesizedUser));
-    localStorage.setItem('bhoomi_token', synthToken);
+    if (matchedRegisteredUser) {
+      const storedPass = localStorage.getItem(`bhoomi_pass_${matchedRegisteredUser.email.toLowerCase()}`) ||
+                         localStorage.getItem(`bhoomi_pass_${matchedRegisteredUser.username.toLowerCase()}`) ||
+                         matchedRegisteredUser.password;
+
+      if (storedPass && cleanPassword !== storedPass) {
+        setLoading(false);
+        return { success: false, message: 'Invalid password. Please check your credentials or reset your password.' };
+      }
+
+      const verifiedUser: User = {
+        user_id: matchedRegisteredUser.user_id,
+        username: matchedRegisteredUser.username,
+        full_name: matchedRegisteredUser.full_name,
+        email: matchedRegisteredUser.email,
+        mobile: matchedRegisteredUser.mobile,
+        role: matchedRegisteredUser.role,
+        department: matchedRegisteredUser.department,
+        designation: matchedRegisteredUser.designation,
+        employee_id: matchedRegisteredUser.employee_id,
+        jurisdiction_state: matchedRegisteredUser.jurisdiction_state,
+        jurisdiction_district: matchedRegisteredUser.jurisdiction_district,
+        jurisdiction_tehsil: matchedRegisteredUser.jurisdiction_tehsil,
+        kyc_status: matchedRegisteredUser.kyc_status || 'AADHAAR_LINKED',
+        aadhaar_last4: matchedRegisteredUser.aadhaar_last4 || '5412',
+        pan_number: matchedRegisteredUser.pan_number || 'ABCPS1234F'
+      };
+
+      setUser(verifiedUser);
+      const userToken = `token-${verifiedUser.user_id}-${Date.now()}`;
+      setToken(userToken);
+      localStorage.setItem('bhoomi_user', JSON.stringify(verifiedUser));
+      localStorage.setItem('bhoomi_token', userToken);
+      setLoading(false);
+      return { success: true, message: `Welcome back, ${verifiedUser.full_name}!` };
+    }
+
+    // 4. Strict Enforcement: If neither a demo user nor a registered user, REJECT LOGIN
     setLoading(false);
-    return { success: true, message: `Logged in as ${synthesizedUser.full_name}` };
+    return {
+      success: false,
+      message: 'No registered account found with this email or username. Please create an account and complete OTP verification first.'
+    };
   };
 
   const register = async (userData: any): Promise<{ success: boolean; message: string }> => {
     setLoading(true);
+    const newUserId = `USR-${userData.role === 'CITIZEN' ? 'CIT' : 'OFF'}-${Date.now().toString().slice(-4)}`;
+    
+    const createdUser: User & { password?: string; isVerified?: boolean; registeredAt?: number } = {
+      user_id: newUserId,
+      username: userData.username || 'citizen_user',
+      full_name: userData.full_name || 'Citizen User',
+      email: userData.email || `${userData.username || 'user'}@example.in`,
+      mobile: userData.mobile || '+91 98765 43210',
+      role: userData.role || 'CITIZEN',
+      department: userData.department || (userData.role === 'CITIZEN' ? 'General Public' : 'Revenue Department'),
+      designation: userData.designation || (userData.role === 'CITIZEN' ? 'Landowner & Citizen' : 'Revenue Officer'),
+      employee_id: userData.employee_id || undefined,
+      jurisdiction_state: userData.jurisdiction_state || 'Jharkhand',
+      jurisdiction_district: userData.jurisdiction_district || 'Bokaro',
+      jurisdiction_tehsil: userData.jurisdiction_tehsil || 'Chas',
+      kyc_status: 'AADHAAR_LINKED',
+      aadhaar_last4: userData.aadhaar_last4 || '5412',
+      pan_number: userData.pan_number || 'ABCPS1234F',
+      password: userData.password,
+      isVerified: true,
+      registeredAt: Date.now()
+    };
+
+    // Save to persistent registered users registry in localStorage
+    saveRegisteredUserRecord(createdUser);
+
     try {
       const res = await fetch(`${API_BASE}/auth/register`, {
         method: 'POST',
@@ -227,35 +328,17 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           setToken(data.token);
           localStorage.setItem('bhoomi_user', JSON.stringify(data.user));
           localStorage.setItem('bhoomi_token', data.token);
+          setLoading(false);
           return { success: true, message: data.message || 'Registration successful' };
         }
       }
     } catch (err: any) {
-      console.warn('Backend register unavailable, activating local session fallback');
+      console.warn('Backend register offline, account securely registered in browser database');
     }
 
-    // Client-side fallback registration
-    const newUserId = `USR-${userData.role === 'CITIZEN' ? 'CIT' : 'OFF'}-${Date.now().toString().slice(-4)}`;
-    const createdUser: User = {
-      user_id: newUserId,
-      username: userData.username || 'citizen_user',
-      full_name: userData.full_name || 'Citizen User',
-      email: userData.email || `${userData.username || 'user'}@example.in`,
-      mobile: userData.mobile || '+91 98765 43210',
-      role: userData.role || 'CITIZEN',
-      department: userData.department || (userData.role === 'CITIZEN' ? 'General Public' : 'Revenue Department'),
-      designation: userData.designation || (userData.role === 'CITIZEN' ? 'Landowner & Citizen' : 'Revenue Officer'),
-      employee_id: userData.employee_id || undefined,
-      jurisdiction_state: userData.jurisdiction_state || 'Uttar Pradesh',
-      jurisdiction_district: userData.jurisdiction_district || 'Gautam Buddha Nagar',
-      jurisdiction_tehsil: userData.jurisdiction_tehsil || 'Dadri',
-      kyc_status: 'AADHAAR_LINKED',
-      aadhaar_last4: userData.aadhaar_last4 || '5412',
-      pan_number: userData.pan_number || 'ABCPS1234F'
-    };
-
+    // Client-side session creation
     setUser(createdUser);
-    const createdToken = `token-${newUserId}`;
+    const createdToken = `token-${newUserId}-${Date.now()}`;
     setToken(createdToken);
     localStorage.setItem('bhoomi_user', JSON.stringify(createdUser));
     localStorage.setItem('bhoomi_token', createdToken);
@@ -379,6 +462,117 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     return { success: true, isEnabled: nextState };
   };
 
+  const getAllRegisteredUsersDetailed = (): RegisteredUserDetailed[] => {
+    const stored = getStoredRegisteredUsers();
+    // Merge demo personas with their known credentials if not already in stored
+    const mergedMap = new Map<string, RegisteredUserDetailed>();
+
+    // Add default demo personas
+    DEFAULT_DEMO_USERS.forEach((d) => {
+      const pass = localStorage.getItem(`bhoomi_pass_${d.email.toLowerCase()}`) ||
+                   localStorage.getItem(`bhoomi_pass_${d.username.toLowerCase()}`) ||
+                   KNOWN_CREDENTIALS[d.username] ||
+                   KNOWN_CREDENTIALS[d.email] ||
+                   'Admin@BhoomiShield2026#';
+      mergedMap.set(d.username.toLowerCase(), {
+        ...d,
+        password: pass,
+        isVerified: true,
+        status: 'ACTIVE',
+        registeredAt: '2024-01-01'
+      });
+    });
+
+    // Merge actual registered users from localStorage
+    stored.forEach((s) => {
+      const pass = localStorage.getItem(`bhoomi_pass_${s.email?.toLowerCase()}`) ||
+                   localStorage.getItem(`bhoomi_pass_${s.username?.toLowerCase()}`) ||
+                   s.password ||
+                   'Pass@Bhoomi2026#';
+      mergedMap.set(s.username.toLowerCase(), {
+        ...s,
+        password: pass,
+        isVerified: s.isVerified !== false,
+        status: s.status || 'ACTIVE',
+        registeredAt: s.registeredAt ? new Date(Number(s.registeredAt)).toLocaleDateString('en-IN') : '2026-03-01'
+      });
+    });
+
+    return Array.from(mergedMap.values());
+  };
+
+  const adminUpdateUser = (userId: string, updates: Partial<RegisteredUserDetailed>): boolean => {
+    const users = getStoredRegisteredUsers();
+    const idx = users.findIndex(u => u.user_id === userId || u.username === userId || u.email === userId);
+    
+    if (idx >= 0) {
+      users[idx] = { ...users[idx], ...updates };
+      localStorage.setItem(REGISTERED_USERS_KEY, JSON.stringify(users));
+      if (updates.password) {
+        if (users[idx].email) localStorage.setItem(`bhoomi_pass_${users[idx].email.toLowerCase()}`, updates.password);
+        if (users[idx].username) localStorage.setItem(`bhoomi_pass_${users[idx].username.toLowerCase()}`, updates.password);
+      }
+      return true;
+    } else {
+      // If updating a demo persona, save it into stored users
+      const demoUser = DEFAULT_DEMO_USERS.find(u => u.user_id === userId || u.username === userId);
+      if (demoUser) {
+        const newUser = { ...demoUser, ...updates, isVerified: true, status: updates.status || 'ACTIVE' };
+        users.push(newUser);
+        localStorage.setItem(REGISTERED_USERS_KEY, JSON.stringify(users));
+        if (updates.password) {
+          localStorage.setItem(`bhoomi_pass_${demoUser.email.toLowerCase()}`, updates.password);
+          localStorage.setItem(`bhoomi_pass_${demoUser.username.toLowerCase()}`, updates.password);
+        }
+        return true;
+      }
+    }
+    return false;
+  };
+
+  const adminDeleteUser = (userId: string): boolean => {
+    const users = getStoredRegisteredUsers();
+    const filtered = users.filter(u => u.user_id !== userId && u.username !== userId);
+    localStorage.setItem(REGISTERED_USERS_KEY, JSON.stringify(filtered));
+    return true;
+  };
+
+  const adminCreateUser = (userData: any): RegisteredUserDetailed => {
+    const newUserId = `USR-${userData.role === 'CITIZEN' ? 'CIT' : 'OFF'}-${Date.now().toString().slice(-4)}`;
+    const created: RegisteredUserDetailed = {
+      user_id: newUserId,
+      username: userData.username.trim(),
+      full_name: userData.full_name.trim(),
+      email: userData.email.trim(),
+      mobile: userData.mobile?.trim() || '+91 98765 43210',
+      role: userData.role || 'CITIZEN',
+      department: userData.department || (userData.role === 'CITIZEN' ? 'General Public' : 'Revenue Department'),
+      designation: userData.designation || (userData.role === 'CITIZEN' ? 'Citizen Landowner' : 'Circle Officer / Tahsildar'),
+      employee_id: userData.employee_id || undefined,
+      jurisdiction_state: userData.jurisdiction_state || 'Uttar Pradesh',
+      jurisdiction_district: userData.jurisdiction_district || 'Gautam Buddha Nagar',
+      jurisdiction_tehsil: userData.jurisdiction_tehsil || 'Dadri',
+      kyc_status: userData.kyc_status || 'AADHAAR_LINKED',
+      aadhaar_last4: userData.aadhaar_last4 || '5412',
+      pan_number: userData.pan_number || 'ABCPS1234F',
+      password: userData.password || 'Citizen@2026#',
+      isVerified: true,
+      status: 'ACTIVE',
+      registeredAt: Date.now()
+    };
+
+    saveRegisteredUserRecord(created);
+    return created;
+  };
+
+  const adminToggleUserStatus = (userId: string): boolean => {
+    const allUsers = getAllRegisteredUsersDetailed();
+    const target = allUsers.find(u => u.user_id === userId || u.username === userId);
+    if (!target) return false;
+    const nextStatus = target.status === 'SUSPENDED' ? 'ACTIVE' : 'SUSPENDED';
+    return adminUpdateUser(userId, { status: nextStatus });
+  };
+
   const isOfficial = user ? ['REVENUE_OFFICER', 'REVIEW_OFFICER', 'DISTRICT_COLLECTOR', 'VIGILANCE_OFFICER', 'ADMIN'].includes(user.role) : false;
   const isCitizen = user ? user.role === 'CITIZEN' : false;
   const isAdmin = user ? user.role === 'ADMIN' || user.role === 'DISTRICT_COLLECTOR' : false;
@@ -402,7 +596,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         toggle2FA,
         twoFactorEnabled,
         demoUsers,
-        loading
+        loading,
+        getAllRegisteredUsersDetailed,
+        adminUpdateUser,
+        adminDeleteUser,
+        adminCreateUser,
+        adminToggleUserStatus
       }}
     >
       {children}
