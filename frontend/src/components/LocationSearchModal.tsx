@@ -92,12 +92,12 @@ export const LocationSearchModal: React.FC<LocationSearchModalProps> = ({ isOpen
     }
 
     const statePrefixMap: Record<string, { prefix: string, dist: string, sub: string, vil: string, owner: string }> = {
-      "Uttar Pradesh": { prefix: "UP-GAU-DAD-BHAN-P340-PL112-1", dist: "Gautam Buddha Nagar (Noida)", sub: "Dadri", vil: "Bhangel", owner: "Rajesh Sharma" },
+      "Uttar Pradesh": { prefix: "UP-GAU-DAD-BHAN-P340-PL112-1", dist: "Gautam Buddha Nagar", sub: "Dadri", vil: "Bhangel", owner: "Rajesh Sharma" },
       "Maharashtra": { prefix: "MH-PUN-HAV-HINJ-G145-P23-B", dist: "Pune", sub: "Haveli", vil: "Hinjawadi", owner: "Suresh Baburao Kadam" },
       "Karnataka": { prefix: "KA-BLR-SOU-WHIT-S89-P3-A", dist: "Bengaluru Urban", sub: "Bengaluru South", vil: "Whitefield", owner: "Venkatesh Murthy" },
       "Jharkhand": { prefix: "JH-BOK-CHA-KURA-K125-K450-2", dist: "Bokaro", sub: "Chas", vil: "Kura", owner: "Sunil Kumar Singh" },
       "Bihar": { prefix: "BR-PAT-DAN-KHAG-K201-P56-3", dist: "Patna", sub: "Danapur", vil: "Khagaul", owner: "Abhay Narayan Sinha" },
-      "Delhi": { prefix: "DL-SOU-HAU-MEH-K56-P12-A", dist: "South Delhi", sub: "Hauz Khas", vil: "Mehrauli", owner: "Vikram Malhotra" }
+      "Delhi (NCT)": { prefix: "DL-SOU-HAU-MEH-K56-P12-A", dist: "South Delhi", sub: "Hauz Khas", vil: "Mehrauli", owner: "Vikram Malhotra" }
     };
 
     const stInfo = statePrefixMap[matched.state] || statePrefixMap["Uttar Pradesh"];

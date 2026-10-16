@@ -56,9 +56,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Alluri Sitharama Raju Sadar": [
           "Alluri Sitharama Raju Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Alluri Sitharama Raju Rural": [
           "Gram Alluri Sitharama Raju",
@@ -72,9 +72,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Anakapalli Sadar": [
           "Anakapalli Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Anakapalli Rural": [
           "Gram Anakapalli",
@@ -88,9 +88,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Ananthapuramu Sadar": [
           "Ananthapuramu Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Ananthapuramu Rural": [
           "Gram Ananthapuramu",
@@ -104,9 +104,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Annamayya Sadar": [
           "Annamayya Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Annamayya Rural": [
           "Gram Annamayya",
@@ -120,9 +120,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bapatla Sadar": [
           "Bapatla Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bapatla Rural": [
           "Gram Bapatla",
@@ -136,9 +136,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Chittoor Sadar": [
           "Chittoor Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Chittoor Rural": [
           "Gram Chittoor",
@@ -152,9 +152,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Dr. B.R. Ambedkar Konaseema Sadar": [
           "Dr. B.R. Ambedkar Konaseema Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dr. B.R. Ambedkar Konaseema Rural": [
           "Gram Dr. B.R. Ambedkar Konaseema",
@@ -168,9 +168,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "East Godavari Sadar": [
           "East Godavari Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "East Godavari Rural": [
           "Gram East Godavari",
@@ -184,9 +184,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Eluru Sadar": [
           "Eluru Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Eluru Rural": [
           "Gram Eluru",
@@ -200,9 +200,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Guntur Sadar": [
           "Guntur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Guntur Rural": [
           "Gram Guntur",
@@ -210,15 +210,25 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Mangalagiri": [
+          "Amaravati Core",
+          "Nidamarru",
+          "Nowlur"
+        ],
+        "Guntur Urban": [
+          "Kothapet",
+          "Arundelpet",
+          "Brodipet"
         ]
       },
       "Kakinada": {
         "Kakinada Sadar": [
           "Kakinada Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kakinada Rural": [
           "Gram Kakinada",
@@ -232,9 +242,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Krishna Sadar": [
           "Krishna Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Krishna Rural": [
           "Gram Krishna",
@@ -248,9 +258,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kurnool Sadar": [
           "Kurnool Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kurnool Rural": [
           "Gram Kurnool",
@@ -264,9 +274,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Nandyal Sadar": [
           "Nandyal Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Nandyal Rural": [
           "Gram Nandyal",
@@ -280,9 +290,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "NTR Sadar": [
           "NTR Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "NTR Rural": [
           "Gram NTR",
@@ -290,15 +300,25 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Vijayawada Urban": [
+          "Governorpet",
+          "Benz Circle",
+          "Patamata"
+        ],
+        "Gannavaram": [
+          "Kesarapalle",
+          "Atkur",
+          "Gannavaram Airport"
         ]
       },
       "Palnadu": {
         "Palnadu Sadar": [
           "Palnadu Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Palnadu Rural": [
           "Gram Palnadu",
@@ -312,9 +332,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Parvathipuram Manyam Sadar": [
           "Parvathipuram Manyam Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Parvathipuram Manyam Rural": [
           "Gram Parvathipuram Manyam",
@@ -328,9 +348,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Prakasam Sadar": [
           "Prakasam Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Prakasam Rural": [
           "Gram Prakasam",
@@ -344,9 +364,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Srikakulam Sadar": [
           "Srikakulam Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Srikakulam Rural": [
           "Gram Srikakulam",
@@ -360,9 +380,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sri Potti Sriramulu Nellore Sadar": [
           "Sri Potti Sriramulu Nellore Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sri Potti Sriramulu Nellore Rural": [
           "Gram Sri Potti Sriramulu Nellore",
@@ -376,9 +396,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sri Sathya Sai Sadar": [
           "Sri Sathya Sai Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sri Sathya Sai Rural": [
           "Gram Sri Sathya Sai",
@@ -392,9 +412,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Tirupati Sadar": [
           "Tirupati Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Tirupati Rural": [
           "Gram Tirupati",
@@ -405,26 +425,38 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Visakhapatnam": {
+        "Visakhapatnam Sadar": [
+          "Visakhapatnam Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
+        ],
+        "Visakhapatnam Rural": [
+          "Gram Visakhapatnam",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
+        ],
+        "Gajuwaka": [
+          "Sheelanagar",
+          "Duvvada",
+          "Kurmannapalem"
+        ],
         "Visakhapatnam Urban": [
           "MVP Colony",
-          "Gajuwaka",
-          "Madhurawada",
-          "Rushikonda",
-          "Seethammadhara"
-        ],
-        "Anandapuram": [
-          "Anandapuram Town",
-          "Gambheeram",
-          "Vemulavalasa"
+          "Siripuram",
+          "Madhurawada"
         ]
       },
       "Vizianagaram": {
         "Vizianagaram Sadar": [
           "Vizianagaram Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Vizianagaram Rural": [
           "Gram Vizianagaram",
@@ -438,9 +470,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "West Godavari Sadar": [
           "West Godavari Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "West Godavari Rural": [
           "Gram West Godavari",
@@ -454,9 +486,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "YSR Kadapa Sadar": [
           "YSR Kadapa Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "YSR Kadapa Rural": [
           "Gram YSR Kadapa",
@@ -478,9 +510,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Anjaw Sadar": [
           "Anjaw Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Anjaw Rural": [
           "Gram Anjaw",
@@ -494,9 +526,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Changlang Sadar": [
           "Changlang Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Changlang Rural": [
           "Gram Changlang",
@@ -510,9 +542,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Dibang Valley Sadar": [
           "Dibang Valley Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dibang Valley Rural": [
           "Gram Dibang Valley",
@@ -526,9 +558,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "East Kameng Sadar": [
           "East Kameng Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "East Kameng Rural": [
           "Gram East Kameng",
@@ -542,9 +574,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "East Siang Sadar": [
           "East Siang Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "East Siang Rural": [
           "Gram East Siang",
@@ -558,9 +590,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kamle Sadar": [
           "Kamle Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kamle Rural": [
           "Gram Kamle",
@@ -574,9 +606,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kra Daadi Sadar": [
           "Kra Daadi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kra Daadi Rural": [
           "Gram Kra Daadi",
@@ -590,9 +622,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kurung Kumey Sadar": [
           "Kurung Kumey Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kurung Kumey Rural": [
           "Gram Kurung Kumey",
@@ -606,9 +638,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Lepa Rada Sadar": [
           "Lepa Rada Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Lepa Rada Rural": [
           "Gram Lepa Rada",
@@ -622,9 +654,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Lohit Sadar": [
           "Lohit Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Lohit Rural": [
           "Gram Lohit",
@@ -638,9 +670,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Longding Sadar": [
           "Longding Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Longding Rural": [
           "Gram Longding",
@@ -654,9 +686,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Lower Dibang Valley Sadar": [
           "Lower Dibang Valley Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Lower Dibang Valley Rural": [
           "Gram Lower Dibang Valley",
@@ -670,9 +702,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Lower Siang Sadar": [
           "Lower Siang Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Lower Siang Rural": [
           "Gram Lower Siang",
@@ -686,9 +718,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Lower Subansiri Sadar": [
           "Lower Subansiri Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Lower Subansiri Rural": [
           "Gram Lower Subansiri",
@@ -702,9 +734,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Namsai Sadar": [
           "Namsai Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Namsai Rural": [
           "Gram Namsai",
@@ -718,9 +750,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Pakke Kessang Sadar": [
           "Pakke Kessang Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Pakke Kessang Rural": [
           "Gram Pakke Kessang",
@@ -734,9 +766,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Papum Pare Sadar": [
           "Papum Pare Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Papum Pare Rural": [
           "Gram Papum Pare",
@@ -750,9 +782,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Shi Yomi Sadar": [
           "Shi Yomi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Shi Yomi Rural": [
           "Gram Shi Yomi",
@@ -766,9 +798,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Siang Sadar": [
           "Siang Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Siang Rural": [
           "Gram Siang",
@@ -782,9 +814,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Tawang Sadar": [
           "Tawang Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Tawang Rural": [
           "Gram Tawang",
@@ -798,9 +830,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Tirap Sadar": [
           "Tirap Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Tirap Rural": [
           "Gram Tirap",
@@ -814,9 +846,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Upper Siang Sadar": [
           "Upper Siang Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Upper Siang Rural": [
           "Gram Upper Siang",
@@ -830,9 +862,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Upper Subansiri Sadar": [
           "Upper Subansiri Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Upper Subansiri Rural": [
           "Gram Upper Subansiri",
@@ -846,9 +878,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "West Kameng Sadar": [
           "West Kameng Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "West Kameng Rural": [
           "Gram West Kameng",
@@ -862,9 +894,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "West Siang Sadar": [
           "West Siang Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "West Siang Rural": [
           "Gram West Siang",
@@ -878,9 +910,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Itanagar Capital Complex Sadar": [
           "Itanagar Capital Complex Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Itanagar Capital Complex Rural": [
           "Gram Itanagar Capital Complex",
@@ -902,9 +934,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Baksa Sadar": [
           "Baksa Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Baksa Rural": [
           "Gram Baksa",
@@ -918,9 +950,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Barpeta Sadar": [
           "Barpeta Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Barpeta Rural": [
           "Gram Barpeta",
@@ -934,9 +966,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Biswanath Sadar": [
           "Biswanath Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Biswanath Rural": [
           "Gram Biswanath",
@@ -950,9 +982,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bongaigaon Sadar": [
           "Bongaigaon Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bongaigaon Rural": [
           "Gram Bongaigaon",
@@ -966,9 +998,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Cachar Sadar": [
           "Cachar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Cachar Rural": [
           "Gram Cachar",
@@ -976,15 +1008,24 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Sonai": [
+          "Sonai Khas",
+          "Dholai"
+        ],
+        "Silchar": [
+          "Tarapur",
+          "Meherpur",
+          "Rangirkhari"
         ]
       },
       "Charaideo": {
         "Charaideo Sadar": [
           "Charaideo Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Charaideo Rural": [
           "Gram Charaideo",
@@ -998,9 +1039,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Chirang Sadar": [
           "Chirang Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Chirang Rural": [
           "Gram Chirang",
@@ -1014,9 +1055,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Darrang Sadar": [
           "Darrang Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Darrang Rural": [
           "Gram Darrang",
@@ -1030,9 +1071,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Dhemaji Sadar": [
           "Dhemaji Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dhemaji Rural": [
           "Gram Dhemaji",
@@ -1046,9 +1087,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Dhubri Sadar": [
           "Dhubri Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dhubri Rural": [
           "Gram Dhubri",
@@ -1062,9 +1103,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Dibrugarh Sadar": [
           "Dibrugarh Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dibrugarh Rural": [
           "Gram Dibrugarh",
@@ -1078,9 +1119,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Dima Hasao Sadar": [
           "Dima Hasao Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dima Hasao Rural": [
           "Gram Dima Hasao",
@@ -1094,9 +1135,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Goalpara Sadar": [
           "Goalpara Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Goalpara Rural": [
           "Gram Goalpara",
@@ -1110,9 +1151,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Golaghat Sadar": [
           "Golaghat Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Golaghat Rural": [
           "Gram Golaghat",
@@ -1126,9 +1167,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Hailakandi Sadar": [
           "Hailakandi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Hailakandi Rural": [
           "Gram Hailakandi",
@@ -1142,9 +1183,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Hojai Sadar": [
           "Hojai Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Hojai Rural": [
           "Gram Hojai",
@@ -1158,9 +1199,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Jorhat Sadar": [
           "Jorhat Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jorhat Rural": [
           "Gram Jorhat",
@@ -1174,9 +1215,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kamrup Sadar": [
           "Kamrup Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kamrup Rural": [
           "Gram Kamrup",
@@ -1190,9 +1231,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kamrup Metropolitan Sadar": [
           "Kamrup Metropolitan Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kamrup Metropolitan Rural": [
           "Gram Kamrup Metropolitan",
@@ -1200,15 +1241,26 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Dispur": [
+          "Khanapara",
+          "GS Road",
+          "Beltola",
+          "Six Mile"
+        ],
+        "Guwahati": [
+          "Ulubari",
+          "Chandmari",
+          "Paltan Bazar"
         ]
       },
       "Karbi Anglong": {
         "Karbi Anglong Sadar": [
           "Karbi Anglong Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Karbi Anglong Rural": [
           "Gram Karbi Anglong",
@@ -1222,9 +1274,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Karimganj Sadar": [
           "Karimganj Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Karimganj Rural": [
           "Gram Karimganj",
@@ -1238,9 +1290,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kokrajhar Sadar": [
           "Kokrajhar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kokrajhar Rural": [
           "Gram Kokrajhar",
@@ -1254,9 +1306,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Lakhimpur Sadar": [
           "Lakhimpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Lakhimpur Rural": [
           "Gram Lakhimpur",
@@ -1270,9 +1322,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Majuli Sadar": [
           "Majuli Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Majuli Rural": [
           "Gram Majuli",
@@ -1286,9 +1338,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Morigaon Sadar": [
           "Morigaon Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Morigaon Rural": [
           "Gram Morigaon",
@@ -1302,9 +1354,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Nagaon Sadar": [
           "Nagaon Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Nagaon Rural": [
           "Gram Nagaon",
@@ -1318,9 +1370,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Nalbari Sadar": [
           "Nalbari Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Nalbari Rural": [
           "Gram Nalbari",
@@ -1334,9 +1386,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sivasagar Sadar": [
           "Sivasagar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sivasagar Rural": [
           "Gram Sivasagar",
@@ -1350,9 +1402,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sonitpur Sadar": [
           "Sonitpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sonitpur Rural": [
           "Gram Sonitpur",
@@ -1366,9 +1418,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "South Salmara-Mankachar Sadar": [
           "South Salmara-Mankachar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "South Salmara-Mankachar Rural": [
           "Gram South Salmara-Mankachar",
@@ -1382,9 +1434,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Tamulpur Sadar": [
           "Tamulpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Tamulpur Rural": [
           "Gram Tamulpur",
@@ -1398,9 +1450,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Tinsukia Sadar": [
           "Tinsukia Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Tinsukia Rural": [
           "Gram Tinsukia",
@@ -1414,9 +1466,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Udalguri Sadar": [
           "Udalguri Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Udalguri Rural": [
           "Gram Udalguri",
@@ -1430,9 +1482,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "West Karbi Anglong Sadar": [
           "West Karbi Anglong Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "West Karbi Anglong Rural": [
           "Gram West Karbi Anglong",
@@ -1446,9 +1498,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bajali Sadar": [
           "Bajali Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bajali Rural": [
           "Gram Bajali",
@@ -1470,9 +1522,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Araria Sadar": [
           "Araria Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Araria Rural": [
           "Gram Araria",
@@ -1486,9 +1538,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Arwal Sadar": [
           "Arwal Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Arwal Rural": [
           "Gram Arwal",
@@ -1502,9 +1554,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Aurangabad Sadar": [
           "Aurangabad Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Aurangabad Rural": [
           "Gram Aurangabad",
@@ -1518,9 +1570,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Banka Sadar": [
           "Banka Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Banka Rural": [
           "Gram Banka",
@@ -1534,9 +1586,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Begusarai Sadar": [
           "Begusarai Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Begusarai Rural": [
           "Gram Begusarai",
@@ -1550,9 +1602,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bhagalpur Sadar": [
           "Bhagalpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bhagalpur Rural": [
           "Gram Bhagalpur",
@@ -1560,15 +1612,25 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Sultanganj": [
+          "Sultanganj Khas",
+          "Shahkund"
+        ],
+        "Jagdishpur": [
+          "Naugachia",
+          "Sabour",
+          "Nathnagar",
+          "Kahalgon"
         ]
       },
       "Bhojpur": {
         "Bhojpur Sadar": [
           "Bhojpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bhojpur Rural": [
           "Gram Bhojpur",
@@ -1582,9 +1644,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Buxar Sadar": [
           "Buxar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Buxar Rural": [
           "Gram Buxar",
@@ -1598,9 +1660,12 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Darbhanga Sadar": [
           "Darbhanga Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony",
+          "Benipur",
+          "Baheri",
+          "Laheriasarai"
         ],
         "Darbhanga Rural": [
           "Gram Darbhanga",
@@ -1608,15 +1673,20 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Hayaghat": [
+          "Keoti",
+          "Hayaghat Khas",
+          "Singhwara"
         ]
       },
       "East Champaran": {
         "East Champaran Sadar": [
           "East Champaran Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "East Champaran Rural": [
           "Gram East Champaran",
@@ -1628,22 +1698,28 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
       },
       "Gaya": {
         "Gaya Sadar": [
-          "Bodhgaya",
-          "Manpur",
+          "Gaya Khas",
           "Civil Lines",
-          "Delha",
-          "Rampur"
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
+        ],
+        "Gaya Rural": [
+          "Gram Gaya",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ],
         "Sherghati": [
-          "Sherghati Khas",
           "Dobhi",
-          "Barachatti",
-          "Hunterganj"
+          "Sherghati Khas",
+          "Barachatti"
         ],
-        "Tekari": [
-          "Tekari Khas",
-          "Konch",
-          "Guraru",
+        "Gaya Town": [
+          "Tekari",
+          "Manpur",
+          "Bodh Gaya",
           "Belaganj"
         ]
       },
@@ -1651,9 +1727,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Gopalganj Sadar": [
           "Gopalganj Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Gopalganj Rural": [
           "Gram Gopalganj",
@@ -1667,9 +1743,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Jamui Sadar": [
           "Jamui Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jamui Rural": [
           "Gram Jamui",
@@ -1683,9 +1759,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Jehanabad Sadar": [
           "Jehanabad Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jehanabad Rural": [
           "Gram Jehanabad",
@@ -1699,9 +1775,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kaimur Sadar": [
           "Kaimur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kaimur Rural": [
           "Gram Kaimur",
@@ -1715,9 +1791,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Katihar Sadar": [
           "Katihar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Katihar Rural": [
           "Gram Katihar",
@@ -1731,9 +1807,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Khagaria Sadar": [
           "Khagaria Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Khagaria Rural": [
           "Gram Khagaria",
@@ -1747,9 +1823,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kishanganj Sadar": [
           "Kishanganj Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kishanganj Rural": [
           "Gram Kishanganj",
@@ -1763,9 +1839,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Lakhisarai Sadar": [
           "Lakhisarai Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Lakhisarai Rural": [
           "Gram Lakhisarai",
@@ -1779,9 +1855,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Madhepura Sadar": [
           "Madhepura Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Madhepura Rural": [
           "Gram Madhepura",
@@ -1795,9 +1871,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Madhubani Sadar": [
           "Madhubani Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Madhubani Rural": [
           "Gram Madhubani",
@@ -1811,9 +1887,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Munger Sadar": [
           "Munger Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Munger Rural": [
           "Gram Munger",
@@ -1824,32 +1900,39 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Muzaffarpur": {
-        "Musahari": [
-          "Muzaffarpur Town",
+        "Muzaffarpur Sadar": [
+          "Muzaffarpur Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
+        ],
+        "Muzaffarpur Rural": [
+          "Gram Muzaffarpur",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
+        ],
+        "Mushahari": [
+          "Ahiyapur",
+          "Motipur",
           "Kanti",
-          "Brahampura",
-          "Mithanpura",
-          "Damodarpur"
+          "Brahmpura"
         ],
         "Sakra": [
-          "Sakra Khas",
           "Dholi",
-          "Piar",
-          "Machhahi"
-        ],
-        "Motipur": [
-          "Motipur Khas",
-          "Baruraj",
-          "Sahebganj"
+          "Muraul",
+          "Sakra Khas"
         ]
       },
       "Nalanda": {
         "Nalanda Sadar": [
           "Nalanda Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Nalanda Rural": [
           "Gram Nalanda",
@@ -1863,9 +1946,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Nawada Sadar": [
           "Nawada Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Nawada Rural": [
           "Gram Nawada",
@@ -1877,41 +1960,41 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
       },
       "Patna": {
         "Patna Sadar": [
-          "Kankarbagh",
-          "Boring Road",
-          "Bailey Road",
-          "Patliputra Colony",
+          "Patna Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony",
           "Rajendra Nagar",
-          "Digha"
+          "Phulwari Sharif",
+          "Kankarbagh"
+        ],
+        "Patna Rural": [
+          "Gram Patna",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ],
         "Danapur": [
-          "Danapur Cantt",
           "Khagaul",
-          "Saguna More",
-          "Mustafapur",
-          "Maner"
+          "Maner",
+          "Digha",
+          "Saguna"
         ],
-        "Phulwari Sharif": [
-          "Phulwari Khas",
-          "Janipur",
-          "Walmi",
-          "Bhikha Chak",
-          "Sampatchak"
-        ],
-        "Fatwah": [
-          "Fatwah Khas",
-          "Daniawan",
-          "Surungpur",
-          "Bakhtiarpur"
+        "Barh": [
+          "Mokama",
+          "Barh Khas",
+          "Bakhtiyarpur"
         ]
       },
       "Purnia": {
         "Purnia Sadar": [
           "Purnia Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Purnia Rural": [
           "Gram Purnia",
@@ -1925,9 +2008,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Rohtas Sadar": [
           "Rohtas Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Rohtas Rural": [
           "Gram Rohtas",
@@ -1941,9 +2024,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Saharsa Sadar": [
           "Saharsa Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Saharsa Rural": [
           "Gram Saharsa",
@@ -1957,9 +2040,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Samastipur Sadar": [
           "Samastipur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Samastipur Rural": [
           "Gram Samastipur",
@@ -1973,9 +2056,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Saran Sadar": [
           "Saran Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Saran Rural": [
           "Gram Saran",
@@ -1989,9 +2072,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sheikhpura Sadar": [
           "Sheikhpura Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sheikhpura Rural": [
           "Gram Sheikhpura",
@@ -2005,9 +2088,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sheohar Sadar": [
           "Sheohar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sheohar Rural": [
           "Gram Sheohar",
@@ -2021,9 +2104,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sitamarhi Sadar": [
           "Sitamarhi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sitamarhi Rural": [
           "Gram Sitamarhi",
@@ -2037,9 +2120,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Siwan Sadar": [
           "Siwan Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Siwan Rural": [
           "Gram Siwan",
@@ -2053,9 +2136,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Supaul Sadar": [
           "Supaul Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Supaul Rural": [
           "Gram Supaul",
@@ -2069,9 +2152,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Vaishali Sadar": [
           "Vaishali Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Vaishali Rural": [
           "Gram Vaishali",
@@ -2085,9 +2168,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "West Champaran Sadar": [
           "West Champaran Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "West Champaran Rural": [
           "Gram West Champaran",
@@ -2109,9 +2192,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Balod Sadar": [
           "Balod Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Balod Rural": [
           "Gram Balod",
@@ -2125,9 +2208,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Baloda Bazar Sadar": [
           "Baloda Bazar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Baloda Bazar Rural": [
           "Gram Baloda Bazar",
@@ -2141,9 +2224,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Balrampur Sadar": [
           "Balrampur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Balrampur Rural": [
           "Gram Balrampur",
@@ -2157,9 +2240,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bastar Sadar": [
           "Bastar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bastar Rural": [
           "Gram Bastar",
@@ -2173,9 +2256,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bemetara Sadar": [
           "Bemetara Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bemetara Rural": [
           "Gram Bemetara",
@@ -2189,9 +2272,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bijapur Sadar": [
           "Bijapur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bijapur Rural": [
           "Gram Bijapur",
@@ -2205,9 +2288,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bilaspur Sadar": [
           "Bilaspur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bilaspur Rural": [
           "Gram Bilaspur",
@@ -2221,9 +2304,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Dantewada Sadar": [
           "Dantewada Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dantewada Rural": [
           "Gram Dantewada",
@@ -2237,9 +2320,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Dhamtari Sadar": [
           "Dhamtari Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dhamtari Rural": [
           "Gram Dhamtari",
@@ -2250,20 +2333,28 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Durg": {
-        "Durg": [
-          "Bhilai Sector 6",
-          "Nehru Nagar",
-          "Supela",
-          "Kumhari"
+        "Durg Sadar": [
+          "Durg Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
+        ],
+        "Durg Rural": [
+          "Gram Durg",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ]
       },
       "Gariaband": {
         "Gariaband Sadar": [
           "Gariaband Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Gariaband Rural": [
           "Gram Gariaband",
@@ -2277,9 +2368,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Gaurela-Pendra-Marwahi Sadar": [
           "Gaurela-Pendra-Marwahi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Gaurela-Pendra-Marwahi Rural": [
           "Gram Gaurela-Pendra-Marwahi",
@@ -2293,9 +2384,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Janjgir-Champa Sadar": [
           "Janjgir-Champa Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Janjgir-Champa Rural": [
           "Gram Janjgir-Champa",
@@ -2309,9 +2400,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Jashpur Sadar": [
           "Jashpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jashpur Rural": [
           "Gram Jashpur",
@@ -2325,9 +2416,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kabirdham Sadar": [
           "Kabirdham Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kabirdham Rural": [
           "Gram Kabirdham",
@@ -2341,9 +2432,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kanker Sadar": [
           "Kanker Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kanker Rural": [
           "Gram Kanker",
@@ -2357,9 +2448,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kondagaon Sadar": [
           "Kondagaon Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kondagaon Rural": [
           "Gram Kondagaon",
@@ -2373,9 +2464,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Korba Sadar": [
           "Korba Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Korba Rural": [
           "Gram Korba",
@@ -2389,9 +2480,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Koriya Sadar": [
           "Koriya Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Koriya Rural": [
           "Gram Koriya",
@@ -2405,9 +2496,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Mahasamund Sadar": [
           "Mahasamund Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Mahasamund Rural": [
           "Gram Mahasamund",
@@ -2421,9 +2512,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Manendragarh-Chirmiri-Bharatpur Sadar": [
           "Manendragarh-Chirmiri-Bharatpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Manendragarh-Chirmiri-Bharatpur Rural": [
           "Gram Manendragarh-Chirmiri-Bharatpur",
@@ -2437,9 +2528,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Mohla-Manpur-Ambagarh Chowki Sadar": [
           "Mohla-Manpur-Ambagarh Chowki Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Mohla-Manpur-Ambagarh Chowki Rural": [
           "Gram Mohla-Manpur-Ambagarh Chowki",
@@ -2453,9 +2544,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Mungeli Sadar": [
           "Mungeli Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Mungeli Rural": [
           "Gram Mungeli",
@@ -2469,9 +2560,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Narayanpur Sadar": [
           "Narayanpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Narayanpur Rural": [
           "Gram Narayanpur",
@@ -2485,9 +2576,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Raigarh Sadar": [
           "Raigarh Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Raigarh Rural": [
           "Gram Raigarh",
@@ -2498,26 +2589,28 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Raipur": {
-        "Raipur": [
-          "Pandri",
-          "Telibandha",
-          "Shankar Nagar",
-          "VIP Road",
-          "Naya Raipur Atal Nagar"
+        "Raipur Sadar": [
+          "Raipur Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
         ],
-        "Arang": [
-          "Arang Town",
-          "Mandir Hasaud",
-          "Gullu"
+        "Raipur Rural": [
+          "Gram Raipur",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ]
       },
       "Rajnandgaon": {
         "Rajnandgaon Sadar": [
           "Rajnandgaon Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Rajnandgaon Rural": [
           "Gram Rajnandgaon",
@@ -2531,9 +2624,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sakti Sadar": [
           "Sakti Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sakti Rural": [
           "Gram Sakti",
@@ -2547,9 +2640,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sarangarh-Bilaigarh Sadar": [
           "Sarangarh-Bilaigarh Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sarangarh-Bilaigarh Rural": [
           "Gram Sarangarh-Bilaigarh",
@@ -2563,9 +2656,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sukma Sadar": [
           "Sukma Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sukma Rural": [
           "Gram Sukma",
@@ -2579,9 +2672,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Surajpur Sadar": [
           "Surajpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Surajpur Rural": [
           "Gram Surajpur",
@@ -2595,9 +2688,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Surguja Sadar": [
           "Surguja Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Surguja Rural": [
           "Gram Surguja",
@@ -2611,9 +2704,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Khairagarh-Chhuikhadan-Gandai Sadar": [
           "Khairagarh-Chhuikhadan-Gandai Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Khairagarh-Chhuikhadan-Gandai Rural": [
           "Gram Khairagarh-Chhuikhadan-Gandai",
@@ -2632,28 +2725,58 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
     "term_holding": "Property Card No",
     "districts": {
       "North Goa": {
-        "Tiswadi (Panaji)": [
-          "Panaji City",
-          "Miramar",
-          "Dona Paula",
-          "Old Goa",
-          "Ribandar"
+        "North Goa Sadar": [
+          "North Goa Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
         ],
-        "Bardez": [
-          "Mapusa",
-          "Calangute",
-          "Candolim",
+        "North Goa Rural": [
+          "Gram North Goa",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
+        ],
+        "Tiswadi (Panaji)": [
+          "Ribandar",
+          "Dona Paula",
+          "Miramar",
+          "Caranzalem"
+        ],
+        "Bardez (Mapusa)": [
           "Porvorim",
-          "Anjuna"
+          "Candolim",
+          "Anjuna",
+          "Calangute"
         ]
       },
       "South Goa": {
+        "South Goa Sadar": [
+          "South Goa Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
+        ],
+        "South Goa Rural": [
+          "Gram South Goa",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
+        ],
         "Salcete (Margao)": [
-          "Margao Town",
-          "Colva",
-          "Benaulim",
           "Fatorda",
-          "Navelim"
+          "Colva",
+          "Navelim",
+          "Benaulim"
+        ],
+        "Mormugao (Vasco)": [
+          "Bogmalo",
+          "Chicalim",
+          "Dabolim"
         ]
       }
     }
@@ -2665,36 +2788,39 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
     "term_holding": "Khata Number",
     "districts": {
       "Ahmedabad": {
+        "Ahmedabad Sadar": [
+          "Ahmedabad Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
+        ],
+        "Ahmedabad Rural": [
+          "Gram Ahmedabad",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
+        ],
         "Daskroi": [
-          "Bopal",
-          "Sanand Road",
+          "Sanand",
+          "Bavla",
           "Ghatlodia",
-          "Chandlodia",
-          "Vastrapur",
-          "Thaltej"
+          "Bopal"
         ],
-        "Ahmedabad City": [
-          "Navrangpura",
-          "Satellite",
-          "Paldi",
-          "Ellisbridge",
-          "Maninagar"
-        ],
-        "Sanand": [
-          "Sanand GIDC",
-          "Shela",
-          "Telav",
-          "Chekhla",
-          "Nidhrad"
+        "Dholka": [
+          "Chaloda",
+          "Dholka Khas",
+          "Koth"
         ]
       },
       "Amreli": {
         "Amreli Sadar": [
           "Amreli Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Amreli Rural": [
           "Gram Amreli",
@@ -2708,9 +2834,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Anand Sadar": [
           "Anand Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Anand Rural": [
           "Gram Anand",
@@ -2724,9 +2850,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Aravalli Sadar": [
           "Aravalli Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Aravalli Rural": [
           "Gram Aravalli",
@@ -2740,9 +2866,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Banaskantha Sadar": [
           "Banaskantha Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Banaskantha Rural": [
           "Gram Banaskantha",
@@ -2756,9 +2882,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bharuch Sadar": [
           "Bharuch Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bharuch Rural": [
           "Gram Bharuch",
@@ -2772,9 +2898,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bhavnagar Sadar": [
           "Bhavnagar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bhavnagar Rural": [
           "Gram Bhavnagar",
@@ -2788,9 +2914,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Botad Sadar": [
           "Botad Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Botad Rural": [
           "Gram Botad",
@@ -2804,9 +2930,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Chhota Udaipur Sadar": [
           "Chhota Udaipur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Chhota Udaipur Rural": [
           "Gram Chhota Udaipur",
@@ -2820,9 +2946,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Dahod Sadar": [
           "Dahod Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dahod Rural": [
           "Gram Dahod",
@@ -2836,9 +2962,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Dang Sadar": [
           "Dang Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dang Rural": [
           "Gram Dang",
@@ -2852,9 +2978,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Devbhumi Dwarka Sadar": [
           "Devbhumi Dwarka Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Devbhumi Dwarka Rural": [
           "Gram Devbhumi Dwarka",
@@ -2868,9 +2994,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Gandhinagar Sadar": [
           "Gandhinagar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Gandhinagar Rural": [
           "Gram Gandhinagar",
@@ -2884,9 +3010,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Gir Somnath Sadar": [
           "Gir Somnath Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Gir Somnath Rural": [
           "Gram Gir Somnath",
@@ -2900,9 +3026,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Jamnagar Sadar": [
           "Jamnagar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jamnagar Rural": [
           "Gram Jamnagar",
@@ -2916,9 +3042,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Junagadh Sadar": [
           "Junagadh Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Junagadh Rural": [
           "Gram Junagadh",
@@ -2932,9 +3058,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kheda Sadar": [
           "Kheda Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kheda Rural": [
           "Gram Kheda",
@@ -2948,9 +3074,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kutch Sadar": [
           "Kutch Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kutch Rural": [
           "Gram Kutch",
@@ -2964,9 +3090,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Mahisagar Sadar": [
           "Mahisagar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Mahisagar Rural": [
           "Gram Mahisagar",
@@ -2980,9 +3106,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Mehsana Sadar": [
           "Mehsana Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Mehsana Rural": [
           "Gram Mehsana",
@@ -2996,9 +3122,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Morbi Sadar": [
           "Morbi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Morbi Rural": [
           "Gram Morbi",
@@ -3012,9 +3138,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Narmada Sadar": [
           "Narmada Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Narmada Rural": [
           "Gram Narmada",
@@ -3028,9 +3154,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Navsari Sadar": [
           "Navsari Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Navsari Rural": [
           "Gram Navsari",
@@ -3044,9 +3170,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Panchmahal Sadar": [
           "Panchmahal Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Panchmahal Rural": [
           "Gram Panchmahal",
@@ -3060,9 +3186,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Patan Sadar": [
           "Patan Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Patan Rural": [
           "Gram Patan",
@@ -3076,9 +3202,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Porbandar Sadar": [
           "Porbandar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Porbandar Rural": [
           "Gram Porbandar",
@@ -3092,9 +3218,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Rajkot Sadar": [
           "Rajkot Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Rajkot Rural": [
           "Gram Rajkot",
@@ -3102,15 +3228,26 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Rajkot Taluka": [
+          "Kuvadva",
+          "Shapar",
+          "Metoda GIDC",
+          "Kalawad Road"
+        ],
+        "Gondal": [
+          "Gomta",
+          "Bhadla",
+          "Gondal Town"
         ]
       },
       "Sabarkantha": {
         "Sabarkantha Sadar": [
           "Sabarkantha Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sabarkantha Rural": [
           "Gram Sabarkantha",
@@ -3121,34 +3258,39 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Surat": {
+        "Surat Sadar": [
+          "Surat Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
+        ],
+        "Surat Rural": [
+          "Gram Surat",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
+        ],
+        "Olpad": [
+          "Olpad Khas",
+          "Sayan",
+          "Karanj"
+        ],
         "Chorasi": [
+          "Varachha",
           "Adajan",
           "Vesu",
-          "Piplod",
-          "Althan",
-          "Dumas",
-          "Bhimrad"
-        ],
-        "Majura": [
-          "Ghod Dod Road",
-          "City Light",
-          "Athwa Lines",
-          "Nanpura"
-        ],
-        "Kamrej": [
-          "Kamrej Town",
-          "Kholwad",
-          "Pasodara",
-          "Vav"
+          "Katargam"
         ]
       },
       "Surendranagar": {
         "Surendranagar Sadar": [
           "Surendranagar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Surendranagar Rural": [
           "Gram Surendranagar",
@@ -3162,9 +3304,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Tapi Sadar": [
           "Tapi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Tapi Rural": [
           "Gram Tapi",
@@ -3178,25 +3320,34 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Vadodara Sadar": [
           "Vadodara Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Vadodara Rural": [
           "Gram Vadodara",
           "Mauza Rampur",
           "Kalyanpur",
           "Govindpur",
-          "Shripur"
+          "Shripur",
+          "Gotri",
+          "Manjalpur",
+          "Makarpura",
+          "Alkapuri"
+        ],
+        "Padra": [
+          "Mobha",
+          "Padra Khas",
+          "Chokari"
         ]
       },
       "Valsad": {
         "Valsad Sadar": [
           "Valsad Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Valsad Rural": [
           "Gram Valsad",
@@ -3218,9 +3369,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Ambala Sadar": [
           "Ambala Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Ambala Rural": [
           "Gram Ambala",
@@ -3234,9 +3385,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bhiwani Sadar": [
           "Bhiwani Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bhiwani Rural": [
           "Gram Bhiwani",
@@ -3250,9 +3401,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Charkhi Dadri Sadar": [
           "Charkhi Dadri Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Charkhi Dadri Rural": [
           "Gram Charkhi Dadri",
@@ -3263,17 +3414,26 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Faridabad": {
-        "Faridabad": [
-          "Sector 15",
+        "Faridabad Sadar": [
+          "Faridabad Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony",
           "Sector 16",
           "NIT Faridabad",
-          "Greenfield",
-          "Surajkund"
+          "Sector 15"
+        ],
+        "Faridabad Rural": [
+          "Gram Faridabad",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ],
         "Ballabgarh": [
-          "Ballabgarh Town",
+          "Sector 58",
           "Chhainsa",
-          "Tigaon",
           "Prithla"
         ]
       },
@@ -3281,9 +3441,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Fatehabad Sadar": [
           "Fatehabad Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Fatehabad Rural": [
           "Gram Fatehabad",
@@ -3294,33 +3454,41 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Gurugram": {
-        "Gurugram": [
-          "DLF Cyber City",
+        "Gurugram Sadar": [
+          "Gurugram Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony",
           "Golf Course Road",
-          "Sohna Road",
-          "Sector 29",
-          "Sushant Lok"
+          "Cyber City",
+          "DLF Phase 1-5"
         ],
-        "Wazirabad": [
-          "Sector 56",
-          "Sector 57",
-          "Wazirabad Village",
-          "Tigra"
+        "Gurugram Rural": [
+          "Gram Gurugram",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ],
         "Manesar": [
-          "IMT Manesar",
           "Kasan",
-          "Naurangpur",
-          "Pachgaon"
+          "IMT Manesar",
+          "Naharpur"
+        ],
+        "Wazirabad": [
+          "Sushant Lok",
+          "Sector 57",
+          "Sector 56"
         ]
       },
       "Hisar": {
         "Hisar Sadar": [
           "Hisar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Hisar Rural": [
           "Gram Hisar",
@@ -3334,9 +3502,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Jhajjar Sadar": [
           "Jhajjar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jhajjar Rural": [
           "Gram Jhajjar",
@@ -3350,9 +3518,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Jind Sadar": [
           "Jind Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jind Rural": [
           "Gram Jind",
@@ -3366,9 +3534,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kaithal Sadar": [
           "Kaithal Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kaithal Rural": [
           "Gram Kaithal",
@@ -3382,9 +3550,12 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Karnal Sadar": [
           "Karnal Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony",
+          "Model Town",
+          "Kunjpura",
+          "Sector 6"
         ],
         "Karnal Rural": [
           "Gram Karnal",
@@ -3392,15 +3563,20 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Gharaunda": [
+          "Kohand",
+          "Bastara",
+          "Gharaunda Khas"
         ]
       },
       "Kurukshetra": {
         "Kurukshetra Sadar": [
           "Kurukshetra Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kurukshetra Rural": [
           "Gram Kurukshetra",
@@ -3414,9 +3590,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Mahendragarh Sadar": [
           "Mahendragarh Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Mahendragarh Rural": [
           "Gram Mahendragarh",
@@ -3430,9 +3606,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Nuh Sadar": [
           "Nuh Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Nuh Rural": [
           "Gram Nuh",
@@ -3446,9 +3622,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Palwal Sadar": [
           "Palwal Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Palwal Rural": [
           "Gram Palwal",
@@ -3462,9 +3638,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Panchkula Sadar": [
           "Panchkula Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Panchkula Rural": [
           "Gram Panchkula",
@@ -3478,9 +3654,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Panipat Sadar": [
           "Panipat Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Panipat Rural": [
           "Gram Panipat",
@@ -3494,9 +3670,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Rewari Sadar": [
           "Rewari Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Rewari Rural": [
           "Gram Rewari",
@@ -3510,9 +3686,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Rohtak Sadar": [
           "Rohtak Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Rohtak Rural": [
           "Gram Rohtak",
@@ -3526,9 +3702,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sirsa Sadar": [
           "Sirsa Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sirsa Rural": [
           "Gram Sirsa",
@@ -3542,9 +3718,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sonipat Sadar": [
           "Sonipat Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sonipat Rural": [
           "Gram Sonipat",
@@ -3558,9 +3734,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Yamunanagar Sadar": [
           "Yamunanagar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Yamunanagar Rural": [
           "Gram Yamunanagar",
@@ -3582,9 +3758,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bilaspur Sadar": [
           "Bilaspur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bilaspur Rural": [
           "Gram Bilaspur",
@@ -3598,9 +3774,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Chamba Sadar": [
           "Chamba Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Chamba Rural": [
           "Gram Chamba",
@@ -3614,9 +3790,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Hamirpur Sadar": [
           "Hamirpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Hamirpur Rural": [
           "Gram Hamirpur",
@@ -3627,25 +3803,36 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Kangra": {
-        "Dharamshala": [
-          "McLeod Ganj",
-          "Kotwali Bazar",
-          "Dari",
-          "Sidhpur"
-        ],
-        "Kangra": [
-          "Kangra Town",
+        "Kangra Sadar": [
+          "Kangra Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony",
+          "Nagrota Bagwan",
           "Gaggal",
-          "Nagrota Bagwan"
+          "Kangra Town"
+        ],
+        "Kangra Rural": [
+          "Gram Kangra",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
+        ],
+        "Dharamshala": [
+          "Kotwali",
+          "Dari",
+          "McLeod Ganj"
         ]
       },
       "Kinnaur": {
         "Kinnaur Sadar": [
           "Kinnaur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kinnaur Rural": [
           "Gram Kinnaur",
@@ -3659,9 +3846,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kullu Sadar": [
           "Kullu Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kullu Rural": [
           "Gram Kullu",
@@ -3675,9 +3862,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Lahaul and Spiti Sadar": [
           "Lahaul and Spiti Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Lahaul and Spiti Rural": [
           "Gram Lahaul and Spiti",
@@ -3691,9 +3878,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Mandi Sadar": [
           "Mandi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Mandi Rural": [
           "Gram Mandi",
@@ -3704,27 +3891,36 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Shimla": {
-        "Shimla Urban": [
-          "The Mall",
-          "Chhota Shimla",
-          "Sanjauli",
-          "Kasumpti",
-          "Jakhu"
+        "Shimla Sadar": [
+          "Shimla Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Shimla Rural": [
+          "Gram Shimla",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur",
+          "Kasumpti",
           "Dhalli",
-          "Mashobra",
-          "Kufri",
           "Totu"
+        ],
+        "Shimla Urban": [
+          "Chotta Shimla",
+          "The Mall",
+          "Sanjauli"
         ]
       },
       "Sirmaur": {
         "Sirmaur Sadar": [
           "Sirmaur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sirmaur Rural": [
           "Gram Sirmaur",
@@ -3738,9 +3934,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Solan Sadar": [
           "Solan Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Solan Rural": [
           "Gram Solan",
@@ -3754,9 +3950,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Una Sadar": [
           "Una Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Una Rural": [
           "Gram Una",
@@ -3775,79 +3971,41 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
     "term_holding": "Khata Number",
     "districts": {
       "Bokaro": {
+        "Bokaro Sadar": [
+          "Bokaro Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
+        ],
+        "Bokaro Rural": [
+          "Gram Bokaro",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
+        ],
         "Chas": [
           "Kura",
-          "Bhandaridih",
           "Bandhdih",
           "Tupkadih",
-          "Sultandih",
-          "Chas Khas",
-          "Kalamati",
-          "Pandra",
-          "Kailash Nagar"
+          "Pundru",
+          "Kamas"
         ],
         "Bermo": [
-          "Phusro",
-          "Bermo Khas",
-          "Jarangdih",
-          "Dhori",
-          "Baidkaro",
-          "Govindpur",
-          "Kargali"
-        ],
-        "Chandan Kiyari": [
-          "Silfor",
-          "Amlabad",
-          "Bhojudih",
-          "Mahal",
-          "Batbinor",
-          "Chandan Kiyari Khas"
-        ],
-        "Gomia": [
-          "Gomia Khas",
-          "Saram",
-          "Kathara",
-          "Swang",
-          "Hatia",
-          "Lalpania"
-        ],
-        "Jaridih": [
-          "Jainamore",
-          "Tantri",
-          "Jaridih Khas",
-          "Gura"
-        ],
-        "Kasmar": [
-          "Kasmar Khas",
-          "Khairachatar",
           "Durgapur",
-          "Manjhadadih"
-        ],
-        "Nawadih": [
-          "Nawadih Khas",
-          "Tarami",
-          "Bhandaro",
-          "Kanjkiro"
-        ],
-        "Peterbar": [
-          "Peterbar Khas",
-          "Angwali",
-          "Tenughat",
-          "Chalka"
-        ],
-        "Chandankiyari": [
-          "Chas Kura",
-          "Kumardaga",
-          "Pindrajora"
+          "Jarangdih",
+          "Bermo Khas",
+          "Phusro"
         ]
       },
       "Chatra": {
         "Chatra Sadar": [
           "Chatra Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Chatra Rural": [
           "Gram Chatra",
@@ -3858,88 +4016,64 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Deoghar": {
-        "Deoghar": [
-          "Deoghar Sadar",
+        "Deoghar Sadar": [
+          "Deoghar Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony",
           "Jasidih",
           "Kunda",
-          "Baidyanathdham",
-          "Rikhia"
+          "Rohini",
+          "Baidyanathpur"
+        ],
+        "Deoghar Rural": [
+          "Gram Deoghar",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ],
         "Madhupur": [
+          "Paharipur",
           "Madhupur Khas",
-          "Bhedwa",
-          "Sapatta",
-          "Pathrol"
-        ],
-        "Sarath": [
-          "Sarath Khas",
-          "Chitra",
-          "Borio",
-          "Palandaha"
+          "Bhedwa"
         ]
       },
       "Dhanbad": {
-        "Dhanbad": [
-          "Jharia",
-          "Saraidhela",
-          "Hirapur",
-          "Bank More",
-          "Dhansar",
-          "Kusunda"
+        "Dhanbad Sadar": [
+          "Dhanbad Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
         ],
-        "Nirsa": [
-          "Nirsa Khas",
-          "Chirkunda",
-          "Barakar",
-          "Mugma",
-          "Kumardhubi"
-        ],
-        "Baghmara": [
-          "Baghmara Khas",
-          "Katras",
-          "Mahuda",
-          "Malkera",
-          "Sijua"
+        "Dhanbad Rural": [
+          "Gram Dhanbad",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ],
         "Govindpur": [
-          "Govindpur Khas",
-          "Karmatand",
-          "Morabadi",
-          "Barwadda"
-        ],
-        "Baliapur": [
-          "Baliapur Khas",
-          "Pradhankhanta",
-          "Sindri",
-          "Alakdiha"
-        ],
-        "Tundi": [
-          "Tundi Khas",
-          "Manpur",
-          "Kamalpur",
-          "Rupaban"
-        ],
-        "Topchanchi": [
-          "Topchanchi Khas",
-          "Gomoh",
-          "Matari",
-          "Chalkari"
+          "Khartanga",
+          "Asanboni",
+          "Govindpur Khas"
         ],
         "Jharia": [
-          "Jharia Khas",
           "Bhaga",
-          "Lodna",
-          "Bhowra",
-          "Tisra"
+          "Jharia Khas",
+          "Tisra",
+          "Lodna"
         ]
       },
       "Dumka": {
         "Dumka Sadar": [
           "Dumka Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dumka Rural": [
           "Gram Dumka",
@@ -3950,58 +4084,39 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "East Singhbhum": {
-        "Golmuri-cum-Jugsalai": [
-          "Sakchi",
-          "Bistupur",
-          "Kadma",
+        "East Singhbhum Sadar": [
+          "East Singhbhum Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
+        ],
+        "East Singhbhum Rural": [
+          "Gram East Singhbhum",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
+        ],
+        "Jamshedpur": [
           "Sonari",
-          "Telco",
-          "Baridih",
+          "Kadma",
           "Mango",
           "Jugsalai"
         ],
         "Ghatshila": [
-          "Ghatshila Khas",
-          "Moubanda",
-          "Kashida",
-          "Dhalbhumgarh"
-        ],
-        "Potka": [
-          "Potka Khas",
-          "Haldipokhar",
-          "Kowali",
-          "Hata"
-        ],
-        "Patamda": [
-          "Patamda Khas",
-          "Kumir",
-          "Boro",
-          "Jabar"
-        ],
-        "Baharagora": [
-          "Baharagora Khas",
-          "Barasol",
-          "Khandamouda"
-        ],
-        "Chakulia": [
-          "Chakulia Khas",
-          "Kalyanchak",
-          "Digha"
-        ],
-        "Musabani": [
-          "Musabani Khas",
-          "Surda",
-          "Badia",
-          "Pathargora"
+          "Mouhanda",
+          "Dhalbhumgarh",
+          "Ghatshila Khas"
         ]
       },
       "Garhwa": {
         "Garhwa Sadar": [
           "Garhwa Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Garhwa Rural": [
           "Gram Garhwa",
@@ -4012,37 +4127,36 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Giridih": {
-        "Giridih": [
-          "Giridih Sadar",
-          "Pachamba",
-          "Baniyadih",
-          "Sirsiya"
+        "Giridih Sadar": [
+          "Giridih Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony",
+          "Sirsiya",
+          "Makatpur",
+          "Bhandaridih"
+        ],
+        "Giridih Rural": [
+          "Gram Giridih",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ],
         "Dumri": [
-          "Isri",
           "Dumri Khas",
-          "Parasnath",
-          "Madhuban"
-        ],
-        "Bagodar": [
-          "Bagodar Khas",
-          "Atka",
-          "Donlo",
-          "Hesla"
-        ],
-        "Gandey": [
-          "Gandey Khas",
-          "Ahilyapur",
-          "Jhalakdiha"
+          "Nimiaghat",
+          "Isri"
         ]
       },
       "Godda": {
         "Godda Sadar": [
           "Godda Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Godda Rural": [
           "Gram Godda",
@@ -4056,9 +4170,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Gumla Sadar": [
           "Gumla Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Gumla Rural": [
           "Gram Gumla",
@@ -4069,45 +4183,39 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Hazaribagh": {
-        "Hazaribagh": [
-          "Sadar",
-          "Matwari",
-          "Korrah",
-          "Okni",
-          "Nawabganj"
+        "Hazaribagh Sadar": [
+          "Hazaribagh Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
         ],
-        "Barhi": [
-          "Barhi Khas",
-          "Koliwada",
-          "Rasoia Dhamna",
-          "Konra"
+        "Hazaribagh Rural": [
+          "Gram Hazaribagh",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
+        ],
+        "Sadar": [
+          "Pelawal",
+          "Matwari",
+          "Demotand",
+          "Korrah"
         ],
         "Ichak": [
           "Ichak Khas",
-          "Barkagaon",
-          "Kariatu",
-          "Dadh"
-        ],
-        "Barkagaon": [
-          "Barkagaon Khas",
-          "Harli",
-          "Sikri",
-          "Gonda"
-        ],
-        "Chauparan": [
-          "Chauparan Khas",
-          "Danua",
-          "Padma",
-          "Tajpur"
+          "Kura",
+          "Gobardar"
         ]
       },
       "Jamtara": {
         "Jamtara Sadar": [
           "Jamtara Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jamtara Rural": [
           "Gram Jamtara",
@@ -4121,9 +4229,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Khunti Sadar": [
           "Khunti Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Khunti Rural": [
           "Gram Khunti",
@@ -4137,9 +4245,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Koderma Sadar": [
           "Koderma Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Koderma Rural": [
           "Gram Koderma",
@@ -4153,9 +4261,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Latehar Sadar": [
           "Latehar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Latehar Rural": [
           "Gram Latehar",
@@ -4169,9 +4277,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Lohardaga Sadar": [
           "Lohardaga Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Lohardaga Rural": [
           "Gram Lohardaga",
@@ -4185,9 +4293,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Pakur Sadar": [
           "Pakur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Pakur Rural": [
           "Gram Pakur",
@@ -4198,162 +4306,83 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Palamu": {
+        "Palamu Sadar": [
+          "Palamu Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
+        ],
+        "Palamu Rural": [
+          "Gram Palamu",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
+        ],
         "Medininagar": [
-          "Sadar",
-          "Chainpur",
+          "Chianki",
+          "Daltonganj",
           "Shahpur",
-          "Redma",
-          "Kandandu"
+          "Singra"
         ],
         "Hussainabad": [
           "Japla",
-          "Hussainabad Khas",
-          "Mohammadganj"
-        ],
-        "Chattarpur": [
-          "Chattarpur Khas",
-          "Kewaldag",
-          "Mahuawan"
+          "Deori",
+          "Kusumha"
         ]
       },
       "Ramgarh": {
-        "Ramgarh": [
-          "Ramgarh Cantonment",
-          "Kuju",
-          "Sirka",
-          "Marar"
+        "Ramgarh Sadar": [
+          "Ramgarh Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
         ],
-        "Patratu": [
-          "Patratu Khas",
-          "Bhurkunda",
-          "Balkudra",
-          "Sayal"
-        ],
-        "Gola": [
-          "Gola Khas",
-          "Barlanga",
-          "Chitarpur",
-          "Rajrappa"
+        "Ramgarh Rural": [
+          "Gram Ramgarh",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ]
       },
       "Ranchi": {
-        "Kanke": [
-          "Kanke Khas",
-          "Boreya",
-          "Arsande",
-          "Chiraudi",
-          "Gonda",
-          "Sukhurhutu"
+        "Ranchi Sadar": [
+          "Ranchi Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
         ],
-        "Namkum": [
-          "Tati Silwai",
-          "Sidrol",
-          "Lalpur",
-          "Rajaulatu",
-          "Samlong",
-          "Dungri"
-        ],
-        "Ratu": [
-          "Ratu Chawk",
-          "Kathitand",
-          "Kamre",
-          "Bajra",
-          "Pandra",
-          "Simaliya"
-        ],
-        "Nagri": [
-          "Nagri Khas",
-          "Tupudana",
-          "Daladili",
-          "Hulhundu",
-          "Baram"
+        "Ranchi Rural": [
+          "Gram Ranchi",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ],
         "Ormanjhi": [
-          "Ormanjhi Khas",
-          "Dudhmati",
+          "Dudri",
+          "Anandi",
           "Gagari",
-          "Kuchu",
-          "Hundru"
+          "Irba"
         ],
-        "Bundu": [
-          "Bundu Town",
-          "Humta",
-          "Taubandh",
-          "Kanchi",
-          "Edal"
-        ],
-        "Angara": [
-          "Jonha",
-          "Getalsud",
-          "Sita Falls",
-          "Angara Khas"
-        ],
-        "Mandar": [
-          "Mandar Khas",
-          "Bisrampur",
-          "Brambe",
-          "Karge"
-        ],
-        "Silli": [
-          "Silli Town",
-          "Lota",
-          "Muri",
-          "Banta"
-        ],
-        "Sonahatu": [
-          "Sonahatu Khas",
-          "Jamuda",
-          "Churgi",
-          "Pandadih"
-        ],
-        "Tamar": [
-          "Tamar Khas",
-          "Deori",
-          "Sarjamdih",
-          "Salgaradih"
-        ],
-        "Bero": [
-          "Bero Khas",
-          "Itki",
-          "Karanj",
-          "Tuko"
-        ],
-        "Lapung": [
-          "Lapung Khas",
-          "Karanjoli",
-          "Purnadih"
-        ],
-        "Chanho": [
-          "Chanho Khas",
-          "Ragho",
-          "Choreya",
-          "Patratu"
-        ],
-        "Burmu": [
-          "Burmu Khas",
-          "Chakme",
-          "Gonda",
-          "Umedanda"
-        ],
-        "Khelari": [
-          "Khelari Khas",
-          "Ray",
-          "Dakra",
-          "Lapra"
-        ],
-        "Itki": [
-          "Itki Thakurgaon",
-          "Chachkopi",
-          "Ranchi Road"
+        "Kanke": [
+          "Arsande",
+          "Pithoria",
+          "Sangkura",
+          "Boreya"
         ]
       },
       "Sahibganj": {
         "Sahibganj Sadar": [
           "Sahibganj Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sahibganj Rural": [
           "Gram Sahibganj",
@@ -4367,9 +4396,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Seraikela Kharsawan Sadar": [
           "Seraikela Kharsawan Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Seraikela Kharsawan Rural": [
           "Gram Seraikela Kharsawan",
@@ -4383,9 +4412,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Simdega Sadar": [
           "Simdega Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Simdega Rural": [
           "Gram Simdega",
@@ -4399,9 +4428,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "West Singhbhum Sadar": [
           "West Singhbhum Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "West Singhbhum Rural": [
           "Gram West Singhbhum",
@@ -4423,9 +4452,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bagalkote Sadar": [
           "Bagalkote Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bagalkote Rural": [
           "Gram Bagalkote",
@@ -4439,9 +4468,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Ballari Sadar": [
           "Ballari Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Ballari Rural": [
           "Gram Ballari",
@@ -4455,9 +4484,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Belagavi Sadar": [
           "Belagavi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Belagavi Rural": [
           "Gram Belagavi",
@@ -4465,70 +4494,74 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Gokak": [
+          "Konnur",
+          "Gokak Falls",
+          "Ghataprabha"
+        ],
+        "Belagavi Taluk": [
+          "Udyambag",
+          "Peeranwadi",
+          "Tilakwadi"
         ]
       },
       "Bengaluru Rural": {
-        "Devanahalli": [
-          "Kempegowda Airport Area",
-          "Devanahalli Town",
-          "Vijayapura",
-          "Kundana"
+        "Bengaluru Rural Sadar": [
+          "Bengaluru Rural Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
         ],
-        "Doddaballapura": [
-          "Doddaballapura Town",
-          "Tubagere",
-          "Kasaba",
-          "Sasalu"
-        ],
-        "Nelamangala": [
-          "Nelamangala Town",
-          "Sompur",
-          "Doddabele",
-          "Thyamagondlu"
+        "Bengaluru Rural Rural": [
+          "Gram Bengaluru Rural",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ]
       },
       "Bengaluru Urban": {
-        "Bengaluru South": [
-          "Electronic City",
-          "Begur",
-          "HSR Layout",
-          "Koramangala",
-          "JP Nagar",
-          "Banashankari",
-          "Uttarahalli"
+        "Bengaluru Urban Sadar": [
+          "Bengaluru Urban Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
+        ],
+        "Bengaluru Urban Rural": [
+          "Gram Bengaluru Urban",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ],
         "Bengaluru East": [
           "Whitefield",
-          "KR Puram",
-          "Marathahalli",
-          "Varthur",
-          "Mahadevapura",
           "Bellandur",
-          "Kadugodi"
+          "Marathahalli",
+          "Varthur"
+        ],
+        "Bengaluru South": [
+          "Jigani",
+          "Begur",
+          "Bannerghatta",
+          "Electronic City"
         ],
         "Bengaluru North": [
-          "Yelahanka",
+          "Jalahalli",
           "Hebbal",
-          "Manyata Tech Park",
-          "Jakkur",
-          "Sahakara Nagar",
-          "Vidyaranyapura"
-        ],
-        "Anekal": [
-          "Anekal Town",
-          "Attibele",
-          "Chandapura",
-          "Sarjapura",
-          "Jigani"
+          "Yelahanka"
         ]
       },
       "Bidar": {
         "Bidar Sadar": [
           "Bidar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bidar Rural": [
           "Gram Bidar",
@@ -4542,9 +4575,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Chamarajanagara Sadar": [
           "Chamarajanagara Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Chamarajanagara Rural": [
           "Gram Chamarajanagara",
@@ -4558,9 +4591,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Chikkaballapura Sadar": [
           "Chikkaballapura Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Chikkaballapura Rural": [
           "Gram Chikkaballapura",
@@ -4574,9 +4607,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Chikkamagaluru Sadar": [
           "Chikkamagaluru Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Chikkamagaluru Rural": [
           "Gram Chikkamagaluru",
@@ -4590,9 +4623,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Chitradurga Sadar": [
           "Chitradurga Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Chitradurga Rural": [
           "Gram Chitradurga",
@@ -4606,9 +4639,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Dakshina Kannada Sadar": [
           "Dakshina Kannada Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dakshina Kannada Rural": [
           "Gram Dakshina Kannada",
@@ -4616,15 +4649,26 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Bantwal": [
+          "Vittal",
+          "B.C. Road",
+          "Panemangalore"
+        ],
+        "Mangaluru": [
+          "Kadri",
+          "Kavoor",
+          "Panambur",
+          "Surathkal"
         ]
       },
       "Davanagere": {
         "Davanagere Sadar": [
           "Davanagere Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Davanagere Rural": [
           "Gram Davanagere",
@@ -4638,9 +4682,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Dharwad Sadar": [
           "Dharwad Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dharwad Rural": [
           "Gram Dharwad",
@@ -4648,15 +4692,25 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Dharwad": [
+          "Kelgerim",
+          "Malamaddi",
+          "Saptapur"
+        ],
+        "Hubballi Urban": [
+          "Vidyanagar",
+          "Gokul Road",
+          "Navanagar"
         ]
       },
       "Gadag": {
         "Gadag Sadar": [
           "Gadag Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Gadag Rural": [
           "Gram Gadag",
@@ -4670,9 +4724,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Hassan Sadar": [
           "Hassan Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Hassan Rural": [
           "Gram Hassan",
@@ -4686,9 +4740,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Haveri Sadar": [
           "Haveri Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Haveri Rural": [
           "Gram Haveri",
@@ -4702,9 +4756,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kalaburagi Sadar": [
           "Kalaburagi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kalaburagi Rural": [
           "Gram Kalaburagi",
@@ -4718,9 +4772,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kodagu Sadar": [
           "Kodagu Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kodagu Rural": [
           "Gram Kodagu",
@@ -4734,9 +4788,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kolar Sadar": [
           "Kolar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kolar Rural": [
           "Gram Kolar",
@@ -4750,9 +4804,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Koppal Sadar": [
           "Koppal Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Koppal Rural": [
           "Gram Koppal",
@@ -4766,9 +4820,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Mandya Sadar": [
           "Mandya Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Mandya Rural": [
           "Gram Mandya",
@@ -4779,33 +4833,39 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Mysuru": {
-        "Mysuru": [
-          "Gokulam",
-          "Vijayanagar",
-          "Jayalakshmipuram",
-          "Kuvempunagar",
-          "Saraswathipuram"
+        "Mysuru Sadar": [
+          "Mysuru Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
         ],
-        "Nanjangud": [
-          "Nanjangud Town",
-          "Kowlande",
-          "Hullahalli",
-          "Bilikere"
+        "Mysuru Rural": [
+          "Gram Mysuru",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
+        ],
+        "Mysuru Taluk": [
+          "Vijayanagar",
+          "Hebbal Industrial",
+          "Jayalakshmipuram",
+          "Gokulam"
         ],
         "Hunsur": [
-          "Hunsur Town",
-          "Bilikere",
           "Hanagod",
-          "Gavadagere"
+          "Bilikere",
+          "Hunsur Town"
         ]
       },
       "Raichur": {
         "Raichur Sadar": [
           "Raichur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Raichur Rural": [
           "Gram Raichur",
@@ -4819,9 +4879,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Ramanagara Sadar": [
           "Ramanagara Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Ramanagara Rural": [
           "Gram Ramanagara",
@@ -4835,9 +4895,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Shivamogga Sadar": [
           "Shivamogga Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Shivamogga Rural": [
           "Gram Shivamogga",
@@ -4851,9 +4911,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Tumakuru Sadar": [
           "Tumakuru Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Tumakuru Rural": [
           "Gram Tumakuru",
@@ -4867,9 +4927,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Udupi Sadar": [
           "Udupi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Udupi Rural": [
           "Gram Udupi",
@@ -4883,9 +4943,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Uttara Kannada Sadar": [
           "Uttara Kannada Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Uttara Kannada Rural": [
           "Gram Uttara Kannada",
@@ -4899,9 +4959,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Vijayanagara Sadar": [
           "Vijayanagara Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Vijayanagara Rural": [
           "Gram Vijayanagara",
@@ -4915,9 +4975,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Vijayapura Sadar": [
           "Vijayapura Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Vijayapura Rural": [
           "Gram Vijayapura",
@@ -4931,9 +4991,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Yadgir Sadar": [
           "Yadgir Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Yadgir Rural": [
           "Gram Yadgir",
@@ -4955,9 +5015,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Alappuzha Sadar": [
           "Alappuzha Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Alappuzha Rural": [
           "Gram Alappuzha",
@@ -4971,9 +5031,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Ernakulam Sadar": [
           "Ernakulam Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Ernakulam Rural": [
           "Gram Ernakulam",
@@ -4981,15 +5041,26 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Kanayannur": [
+          "Edappally",
+          "Kakkanad InfoPark",
+          "Kaloor",
+          "Marine Drive"
+        ],
+        "Aluva": [
+          "Nedumbassery Airport",
+          "Angamaly",
+          "Aluva Town"
         ]
       },
       "Idukki": {
         "Idukki Sadar": [
           "Idukki Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Idukki Rural": [
           "Gram Idukki",
@@ -5003,9 +5074,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kannur Sadar": [
           "Kannur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kannur Rural": [
           "Gram Kannur",
@@ -5019,9 +5090,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kasaragod Sadar": [
           "Kasaragod Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kasaragod Rural": [
           "Gram Kasaragod",
@@ -5035,9 +5106,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kollam Sadar": [
           "Kollam Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kollam Rural": [
           "Gram Kollam",
@@ -5051,9 +5122,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kottayam Sadar": [
           "Kottayam Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kottayam Rural": [
           "Gram Kottayam",
@@ -5067,9 +5138,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kozhikode Sadar": [
           "Kozhikode Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kozhikode Rural": [
           "Gram Kozhikode",
@@ -5083,9 +5154,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Malappuram Sadar": [
           "Malappuram Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Malappuram Rural": [
           "Gram Malappuram",
@@ -5099,9 +5170,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Palakkad Sadar": [
           "Palakkad Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Palakkad Rural": [
           "Gram Palakkad",
@@ -5115,9 +5186,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Pathanamthitta Sadar": [
           "Pathanamthitta Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Pathanamthitta Rural": [
           "Gram Pathanamthitta",
@@ -5128,26 +5199,39 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Thiruvananthapuram": {
-        "Thiruvananthapuram": [
-          "Kowdiar",
-          "Pattom",
-          "Technopark Kazhakkoottam",
-          "Vellayambalam",
-          "Varkala"
+        "Thiruvananthapuram Sadar": [
+          "Thiruvananthapuram Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
+        ],
+        "Thiruvananthapuram Rural": [
+          "Gram Thiruvananthapuram",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ],
         "Neyyattinkara": [
-          "Neyyattinkara Town",
-          "Vizhinjam Port Area",
-          "Poovar"
+          "Vizhinjam Port",
+          "Balaramapuram",
+          "Neyyattinkara Town"
+        ],
+        "Thiruvananthapuram": [
+          "Kazhakoottam",
+          "Kowdiar",
+          "Pattom",
+          "Technopark"
         ]
       },
       "Thrissur": {
         "Thrissur Sadar": [
           "Thrissur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Thrissur Rural": [
           "Gram Thrissur",
@@ -5161,9 +5245,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Wayanad Sadar": [
           "Wayanad Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Wayanad Rural": [
           "Gram Wayanad",
@@ -5185,9 +5269,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Agar Malwa Sadar": [
           "Agar Malwa Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Agar Malwa Rural": [
           "Gram Agar Malwa",
@@ -5201,9 +5285,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Alirajpur Sadar": [
           "Alirajpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Alirajpur Rural": [
           "Gram Alirajpur",
@@ -5217,9 +5301,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Anuppur Sadar": [
           "Anuppur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Anuppur Rural": [
           "Gram Anuppur",
@@ -5233,9 +5317,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Ashoknagar Sadar": [
           "Ashoknagar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Ashoknagar Rural": [
           "Gram Ashoknagar",
@@ -5249,9 +5333,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Balaghat Sadar": [
           "Balaghat Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Balaghat Rural": [
           "Gram Balaghat",
@@ -5265,9 +5349,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Barwani Sadar": [
           "Barwani Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Barwani Rural": [
           "Gram Barwani",
@@ -5281,9 +5365,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Betul Sadar": [
           "Betul Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Betul Rural": [
           "Gram Betul",
@@ -5297,9 +5381,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bhind Sadar": [
           "Bhind Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bhind Rural": [
           "Gram Bhind",
@@ -5310,27 +5394,38 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Bhopal": {
-        "Huzur": [
-          "Arera Colony",
-          "MP Nagar",
-          "Kolar Road",
-          "Bairagarh",
-          "Hoshangabad Road"
+        "Bhopal Sadar": [
+          "Bhopal Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
+        ],
+        "Bhopal Rural": [
+          "Gram Bhopal",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ],
         "Berasia": [
-          "Berasia Town",
-          "Runaha",
-          "Damkheda",
-          "Lalariya"
+          "Narsinghgarh Road",
+          "Berasia Khas"
+        ],
+        "Huzur": [
+          "MP Nagar",
+          "Arera Colony",
+          "Kolar Road",
+          "Bairagarh"
         ]
       },
       "Burhanpur": {
         "Burhanpur Sadar": [
           "Burhanpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Burhanpur Rural": [
           "Gram Burhanpur",
@@ -5344,9 +5439,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Chhatarpur Sadar": [
           "Chhatarpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Chhatarpur Rural": [
           "Gram Chhatarpur",
@@ -5360,9 +5455,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Chhindwara Sadar": [
           "Chhindwara Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Chhindwara Rural": [
           "Gram Chhindwara",
@@ -5376,9 +5471,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Damoh Sadar": [
           "Damoh Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Damoh Rural": [
           "Gram Damoh",
@@ -5392,9 +5487,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Datia Sadar": [
           "Datia Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Datia Rural": [
           "Gram Datia",
@@ -5408,9 +5503,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Dewas Sadar": [
           "Dewas Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dewas Rural": [
           "Gram Dewas",
@@ -5424,9 +5519,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Dhar Sadar": [
           "Dhar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dhar Rural": [
           "Gram Dhar",
@@ -5440,9 +5535,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Dindori Sadar": [
           "Dindori Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dindori Rural": [
           "Gram Dindori",
@@ -5456,9 +5551,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Guna Sadar": [
           "Guna Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Guna Rural": [
           "Gram Guna",
@@ -5472,9 +5567,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Gwalior Sadar": [
           "Gwalior Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Gwalior Rural": [
           "Gram Gwalior",
@@ -5482,15 +5577,25 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Dabra": [
+          "Dabra Khas",
+          "Bhitarwar"
+        ],
+        "Gwalior City": [
+          "Thatipur",
+          "City Centre",
+          "Lashkar",
+          "Morar"
         ]
       },
       "Harda": {
         "Harda Sadar": [
           "Harda Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Harda Rural": [
           "Gram Harda",
@@ -5504,9 +5609,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Hoshangabad (Narmadapuram) Sadar": [
           "Hoshangabad (Narmadapuram) Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Hoshangabad (Narmadapuram) Rural": [
           "Gram Hoshangabad (Narmadapuram)",
@@ -5517,28 +5622,40 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Indore": {
-        "Indore": [
-          "Vijay Nagar",
+        "Indore Sadar": [
+          "Indore Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony",
           "Palasia",
-          "MG Road",
-          "Rau",
-          "Bicholi Mardana",
-          "Super Corridor"
+          "Vijay Nagar",
+          "Bhawarkua",
+          "Rau"
+        ],
+        "Indore Rural": [
+          "Gram Indore",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ],
         "Sanwer": [
-          "Sanwer Town",
-          "Kshipra",
-          "Dharampuri",
-          "Ajnod"
+          "Manglia",
+          "Sanwer Khas",
+          "Dharampuri"
         ]
       },
       "Jabalpur": {
         "Jabalpur Sadar": [
           "Jabalpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony",
+          "Wright Town",
+          "Gorakhpur",
+          "Adhartal"
         ],
         "Jabalpur Rural": [
           "Gram Jabalpur",
@@ -5546,15 +5663,19 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Sihora": [
+          "Sihora Khas",
+          "Majholi"
         ]
       },
       "Jhabua": {
         "Jhabua Sadar": [
           "Jhabua Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jhabua Rural": [
           "Gram Jhabua",
@@ -5568,9 +5689,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Katni Sadar": [
           "Katni Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Katni Rural": [
           "Gram Katni",
@@ -5584,9 +5705,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Khandwa Sadar": [
           "Khandwa Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Khandwa Rural": [
           "Gram Khandwa",
@@ -5600,9 +5721,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Khargone Sadar": [
           "Khargone Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Khargone Rural": [
           "Gram Khargone",
@@ -5616,9 +5737,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Maihar Sadar": [
           "Maihar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Maihar Rural": [
           "Gram Maihar",
@@ -5632,9 +5753,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Mandla Sadar": [
           "Mandla Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Mandla Rural": [
           "Gram Mandla",
@@ -5648,9 +5769,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Mandsaur Sadar": [
           "Mandsaur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Mandsaur Rural": [
           "Gram Mandsaur",
@@ -5664,9 +5785,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Mauganj Sadar": [
           "Mauganj Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Mauganj Rural": [
           "Gram Mauganj",
@@ -5680,9 +5801,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Morena Sadar": [
           "Morena Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Morena Rural": [
           "Gram Morena",
@@ -5696,9 +5817,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Narsinghpur Sadar": [
           "Narsinghpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Narsinghpur Rural": [
           "Gram Narsinghpur",
@@ -5712,9 +5833,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Neemuch Sadar": [
           "Neemuch Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Neemuch Rural": [
           "Gram Neemuch",
@@ -5728,9 +5849,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Niwari Sadar": [
           "Niwari Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Niwari Rural": [
           "Gram Niwari",
@@ -5744,9 +5865,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Panna Sadar": [
           "Panna Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Panna Rural": [
           "Gram Panna",
@@ -5760,9 +5881,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Pandhurna Sadar": [
           "Pandhurna Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Pandhurna Rural": [
           "Gram Pandhurna",
@@ -5776,9 +5897,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Raisen Sadar": [
           "Raisen Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Raisen Rural": [
           "Gram Raisen",
@@ -5792,9 +5913,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Rajgarh Sadar": [
           "Rajgarh Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Rajgarh Rural": [
           "Gram Rajgarh",
@@ -5808,9 +5929,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Ratlam Sadar": [
           "Ratlam Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Ratlam Rural": [
           "Gram Ratlam",
@@ -5824,9 +5945,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Rewa Sadar": [
           "Rewa Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Rewa Rural": [
           "Gram Rewa",
@@ -5840,9 +5961,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sagar Sadar": [
           "Sagar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sagar Rural": [
           "Gram Sagar",
@@ -5856,9 +5977,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Satna Sadar": [
           "Satna Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Satna Rural": [
           "Gram Satna",
@@ -5872,9 +5993,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sehore Sadar": [
           "Sehore Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sehore Rural": [
           "Gram Sehore",
@@ -5888,9 +6009,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Seoni Sadar": [
           "Seoni Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Seoni Rural": [
           "Gram Seoni",
@@ -5904,9 +6025,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Shahdol Sadar": [
           "Shahdol Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Shahdol Rural": [
           "Gram Shahdol",
@@ -5920,9 +6041,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Shajapur Sadar": [
           "Shajapur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Shajapur Rural": [
           "Gram Shajapur",
@@ -5936,9 +6057,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sheopur Sadar": [
           "Sheopur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sheopur Rural": [
           "Gram Sheopur",
@@ -5952,9 +6073,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Shivpuri Sadar": [
           "Shivpuri Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Shivpuri Rural": [
           "Gram Shivpuri",
@@ -5968,9 +6089,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sidhi Sadar": [
           "Sidhi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sidhi Rural": [
           "Gram Sidhi",
@@ -5984,9 +6105,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Singrauli Sadar": [
           "Singrauli Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Singrauli Rural": [
           "Gram Singrauli",
@@ -6000,9 +6121,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Tikamgarh Sadar": [
           "Tikamgarh Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Tikamgarh Rural": [
           "Gram Tikamgarh",
@@ -6016,9 +6137,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Ujjain Sadar": [
           "Ujjain Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Ujjain Rural": [
           "Gram Ujjain",
@@ -6032,9 +6153,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Umaria Sadar": [
           "Umaria Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Umaria Rural": [
           "Gram Umaria",
@@ -6048,9 +6169,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Vidisha Sadar": [
           "Vidisha Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Vidisha Rural": [
           "Gram Vidisha",
@@ -6072,9 +6193,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Ahmednagar Sadar": [
           "Ahmednagar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Ahmednagar Rural": [
           "Gram Ahmednagar",
@@ -6088,9 +6209,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Akola Sadar": [
           "Akola Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Akola Rural": [
           "Gram Akola",
@@ -6104,9 +6225,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Amravati Sadar": [
           "Amravati Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Amravati Rural": [
           "Gram Amravati",
@@ -6120,9 +6241,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Chhatrapati Sambhajinagar Sadar": [
           "Chhatrapati Sambhajinagar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Chhatrapati Sambhajinagar Rural": [
           "Gram Chhatrapati Sambhajinagar",
@@ -6130,15 +6251,26 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Paithan": [
+          "Paithan Khas",
+          "Bidkin",
+          "Pachod"
+        ],
+        "Aurangabad": [
+          "Chikalthana",
+          "CIDCO",
+          "Waluj",
+          "Shendra"
         ]
       },
       "Bhandara": {
         "Bhandara Sadar": [
           "Bhandara Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bhandara Rural": [
           "Gram Bhandara",
@@ -6152,9 +6284,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Beed Sadar": [
           "Beed Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Beed Rural": [
           "Gram Beed",
@@ -6168,9 +6300,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Buldhana Sadar": [
           "Buldhana Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Buldhana Rural": [
           "Gram Buldhana",
@@ -6184,9 +6316,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Chandrapur Sadar": [
           "Chandrapur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Chandrapur Rural": [
           "Gram Chandrapur",
@@ -6200,9 +6332,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Dhule Sadar": [
           "Dhule Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dhule Rural": [
           "Gram Dhule",
@@ -6216,9 +6348,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Gadchiroli Sadar": [
           "Gadchiroli Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Gadchiroli Rural": [
           "Gram Gadchiroli",
@@ -6232,9 +6364,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Gondia Sadar": [
           "Gondia Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Gondia Rural": [
           "Gram Gondia",
@@ -6248,9 +6380,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Hingoli Sadar": [
           "Hingoli Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Hingoli Rural": [
           "Gram Hingoli",
@@ -6264,9 +6396,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Jalgaon Sadar": [
           "Jalgaon Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jalgaon Rural": [
           "Gram Jalgaon",
@@ -6280,9 +6412,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Jalna Sadar": [
           "Jalna Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jalna Rural": [
           "Gram Jalna",
@@ -6296,9 +6428,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kolhapur Sadar": [
           "Kolhapur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kolhapur Rural": [
           "Gram Kolhapur",
@@ -6306,15 +6438,25 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Hatkanangale": [
+          "Hupari",
+          "Peth Vadgaon",
+          "Ichalkaranji"
+        ],
+        "Karveer": [
+          "Rajarampuri",
+          "Shiroli",
+          "Tarabai Park"
         ]
       },
       "Latur": {
         "Latur Sadar": [
           "Latur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Latur Rural": [
           "Gram Latur",
@@ -6328,9 +6470,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Mumbai City Sadar": [
           "Mumbai City Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Mumbai City Rural": [
           "Gram Mumbai City",
@@ -6341,58 +6483,69 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Mumbai Suburban": {
-        "Andheri": [
-          "Andheri East",
-          "Andheri West",
-          "Juhu",
-          "Versova",
-          "Vile Parle",
-          "Lokhandwala"
+        "Mumbai Suburban Sadar": [
+          "Mumbai Suburban Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
+        ],
+        "Mumbai Suburban Rural": [
+          "Gram Mumbai Suburban",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ],
         "Borivali": [
-          "Borivali West",
           "Kandivali",
-          "Dahisar",
-          "Gorai",
-          "Charkop"
+          "Malad",
+          "Dahisar"
         ],
         "Kurla": [
-          "Powai",
+          "Trombay",
           "Chembur",
-          "Ghatkopar",
-          "Vidyavihar",
-          "Kurla West"
+          "Ghatkopar"
+        ],
+        "Andheri": [
+          "Vile Parle",
+          "Juhu",
+          "Versova",
+          "Marol"
         ]
       },
       "Nagpur": {
-        "Nagpur Urban": [
+        "Nagpur Sadar": [
+          "Nagpur Khas",
           "Civil Lines",
-          "Dharampeth",
-          "Ramdaspeth",
-          "Sadar",
-          "Sitabuldi"
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Nagpur Rural": [
+          "Gram Nagpur",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur",
           "Hingna",
-          "Wadi",
           "Kamptee",
-          "Besa",
-          "Beltarodi"
+          "Wadi"
         ],
-        "Katol": [
-          "Katol Khas",
-          "Narkhed",
-          "Kondhali",
-          "Sawargaon"
+        "Nagpur Urban": [
+          "Dharampeth",
+          "Wardha Road",
+          "Sitabuldi",
+          "Manewada"
         ]
       },
       "Nanded": {
         "Nanded Sadar": [
           "Nanded Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Nanded Rural": [
           "Gram Nanded",
@@ -6406,9 +6559,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Nandurbar Sadar": [
           "Nandurbar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Nandurbar Rural": [
           "Gram Nandurbar",
@@ -6419,33 +6572,39 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Nashik": {
+        "Nashik Sadar": [
+          "Nashik Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
+        ],
+        "Nashik Rural": [
+          "Gram Nashik",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
+        ],
         "Nashik": [
-          "Panchavati",
-          "Satpur",
-          "CIDCO",
           "Indira Nagar",
+          "Satpur",
+          "Panchavati",
           "Ambad"
         ],
         "Niphad": [
-          "Pimpalgaon Baswant",
-          "Ozar",
-          "Niphad Town",
+          "Niphad Khas",
+          "Pimpalgaon",
           "Lasalgaon"
-        ],
-        "Malegaon": [
-          "Malegaon Camp",
-          "Dabhad",
-          "Ravalgad",
-          "Zodga"
         ]
       },
       "Dharashiv": {
         "Dharashiv Sadar": [
           "Dharashiv Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dharashiv Rural": [
           "Gram Dharashiv",
@@ -6459,9 +6618,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Palghar Sadar": [
           "Palghar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Palghar Rural": [
           "Gram Palghar",
@@ -6475,9 +6634,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Parbhani Sadar": [
           "Parbhani Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Parbhani Rural": [
           "Gram Parbhani",
@@ -6488,57 +6647,46 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Pune": {
+        "Pune Sadar": [
+          "Pune Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
+        ],
+        "Pune Rural": [
+          "Gram Pune",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
+        ],
         "Haveli": [
           "Hinjawadi",
-          "Wakad",
-          "Baner",
-          "Kharadi",
           "Hadapsar",
-          "Wagholi",
-          "Kothrud",
-          "Bavdhan"
-        ],
-        "Pune City": [
-          "Shivajinagar",
-          "Kothrud",
-          "Deccan Gymkhana",
-          "Camp",
-          "Swargate"
-        ],
-        "Mawal": [
-          "Lonavala",
-          "Khandala",
-          "Taleghar",
-          "Kamshet",
-          "Talegaon Dabhade"
-        ],
-        "Shirur": [
-          "Ranjangaon",
-          "Sanaswadi",
-          "Koregaon Bhima",
-          "Shikrapur"
+          "Kharadi",
+          "Wakad",
+          "Baner"
         ],
         "Mulshi": [
-          "Pirangut",
-          "Lavasa",
           "Paud",
           "Bhugaon",
-          "Kolwan"
+          "Pirangut",
+          "Lavale"
         ],
-        "Baramati": [
-          "Baramati Khas",
-          "Malegaon",
-          "Supi",
-          "Someshwar"
+        "Khed": [
+          "Alandi",
+          "Chakan",
+          "Rajgurunagar"
         ]
       },
       "Raigad": {
         "Raigad Sadar": [
           "Raigad Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Raigad Rural": [
           "Gram Raigad",
@@ -6552,9 +6700,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Ratnagiri Sadar": [
           "Ratnagiri Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Ratnagiri Rural": [
           "Gram Ratnagiri",
@@ -6568,9 +6716,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sangli Sadar": [
           "Sangli Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sangli Rural": [
           "Gram Sangli",
@@ -6584,9 +6732,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Satara Sadar": [
           "Satara Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Satara Rural": [
           "Gram Satara",
@@ -6600,9 +6748,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sindhudurg Sadar": [
           "Sindhudurg Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sindhudurg Rural": [
           "Gram Sindhudurg",
@@ -6616,9 +6764,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Solapur Sadar": [
           "Solapur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Solapur Rural": [
           "Gram Solapur",
@@ -6629,33 +6777,44 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Thane": {
+        "Thane Sadar": [
+          "Thane Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
+        ],
+        "Thane Rural": [
+          "Gram Thane",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
+        ],
         "Thane": [
-          "Thane West",
+          "Kopri",
+          "Ghodbunder",
           "Naupada",
-          "Ghodbunder Road",
-          "Majiwada",
-          "Kopri"
+          "Majiwada"
         ],
         "Kalyan": [
-          "Kalyan West",
-          "Dombivli East",
-          "Kalyan East",
-          "Thakurli"
+          "Dombivli",
+          "Titwala",
+          "Kalyan West"
         ],
-        "Mira-Bhayandar": [
-          "Mira Road",
+        "Mira Bhayandar": [
+          "Uttan",
           "Bhayandar East",
-          "Bhayandar West",
-          "Kashimira"
+          "Mira Road"
         ]
       },
       "Wardha": {
         "Wardha Sadar": [
           "Wardha Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Wardha Rural": [
           "Gram Wardha",
@@ -6669,9 +6828,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Washim Sadar": [
           "Washim Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Washim Rural": [
           "Gram Washim",
@@ -6685,9 +6844,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Yavatmal Sadar": [
           "Yavatmal Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Yavatmal Rural": [
           "Gram Yavatmal",
@@ -6709,9 +6868,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bishnupur Sadar": [
           "Bishnupur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bishnupur Rural": [
           "Gram Bishnupur",
@@ -6725,9 +6884,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Chandel Sadar": [
           "Chandel Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Chandel Rural": [
           "Gram Chandel",
@@ -6741,9 +6900,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Churachandpur Sadar": [
           "Churachandpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Churachandpur Rural": [
           "Gram Churachandpur",
@@ -6757,9 +6916,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Imphal East Sadar": [
           "Imphal East Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Imphal East Rural": [
           "Gram Imphal East",
@@ -6770,21 +6929,28 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Imphal West": {
-        "Lamphelpat": [
-          "Imphal City",
-          "Lamphel",
-          "Thangmeiband",
-          "Uripok",
-          "Keishamthong"
+        "Imphal West Sadar": [
+          "Imphal West Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
+        ],
+        "Imphal West Rural": [
+          "Gram Imphal West",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ]
       },
       "Jiribam": {
         "Jiribam Sadar": [
           "Jiribam Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jiribam Rural": [
           "Gram Jiribam",
@@ -6798,9 +6964,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kakching Sadar": [
           "Kakching Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kakching Rural": [
           "Gram Kakching",
@@ -6814,9 +6980,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kamjong Sadar": [
           "Kamjong Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kamjong Rural": [
           "Gram Kamjong",
@@ -6830,9 +6996,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kangpokpi Sadar": [
           "Kangpokpi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kangpokpi Rural": [
           "Gram Kangpokpi",
@@ -6846,9 +7012,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Noney Sadar": [
           "Noney Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Noney Rural": [
           "Gram Noney",
@@ -6862,9 +7028,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Pherzawl Sadar": [
           "Pherzawl Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Pherzawl Rural": [
           "Gram Pherzawl",
@@ -6878,9 +7044,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Senapati Sadar": [
           "Senapati Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Senapati Rural": [
           "Gram Senapati",
@@ -6894,9 +7060,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Tamenglong Sadar": [
           "Tamenglong Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Tamenglong Rural": [
           "Gram Tamenglong",
@@ -6910,9 +7076,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Tengnoupal Sadar": [
           "Tengnoupal Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Tengnoupal Rural": [
           "Gram Tengnoupal",
@@ -6926,9 +7092,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Thoubal Sadar": [
           "Thoubal Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Thoubal Rural": [
           "Gram Thoubal",
@@ -6942,9 +7108,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Ukhrul Sadar": [
           "Ukhrul Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Ukhrul Rural": [
           "Gram Ukhrul",
@@ -6966,9 +7132,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "East Garo Hills Sadar": [
           "East Garo Hills Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "East Garo Hills Rural": [
           "Gram East Garo Hills",
@@ -6982,9 +7148,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "East Jaintia Hills Sadar": [
           "East Jaintia Hills Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "East Jaintia Hills Rural": [
           "Gram East Jaintia Hills",
@@ -6998,9 +7164,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "East Khasi Hills Sadar": [
           "East Khasi Hills Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "East Khasi Hills Rural": [
           "Gram East Khasi Hills",
@@ -7014,9 +7180,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Eastern West Khasi Hills Sadar": [
           "Eastern West Khasi Hills Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Eastern West Khasi Hills Rural": [
           "Gram Eastern West Khasi Hills",
@@ -7030,9 +7196,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "North Garo Hills Sadar": [
           "North Garo Hills Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "North Garo Hills Rural": [
           "Gram North Garo Hills",
@@ -7046,9 +7212,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Ri Bhoi Sadar": [
           "Ri Bhoi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Ri Bhoi Rural": [
           "Gram Ri Bhoi",
@@ -7062,9 +7228,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "South Garo Hills Sadar": [
           "South Garo Hills Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "South Garo Hills Rural": [
           "Gram South Garo Hills",
@@ -7078,9 +7244,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "South West Garo Hills Sadar": [
           "South West Garo Hills Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "South West Garo Hills Rural": [
           "Gram South West Garo Hills",
@@ -7094,9 +7260,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "South West Khasi Hills Sadar": [
           "South West Khasi Hills Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "South West Khasi Hills Rural": [
           "Gram South West Khasi Hills",
@@ -7110,9 +7276,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "West Garo Hills Sadar": [
           "West Garo Hills Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "West Garo Hills Rural": [
           "Gram West Garo Hills",
@@ -7126,9 +7292,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "West Jaintia Hills Sadar": [
           "West Jaintia Hills Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "West Jaintia Hills Rural": [
           "Gram West Jaintia Hills",
@@ -7142,9 +7308,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "West Khasi Hills Sadar": [
           "West Khasi Hills Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "West Khasi Hills Rural": [
           "Gram West Khasi Hills",
@@ -7166,9 +7332,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Aizawl Sadar": [
           "Aizawl Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Aizawl Rural": [
           "Gram Aizawl",
@@ -7182,9 +7348,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Champhai Sadar": [
           "Champhai Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Champhai Rural": [
           "Gram Champhai",
@@ -7198,9 +7364,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Hnahthial Sadar": [
           "Hnahthial Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Hnahthial Rural": [
           "Gram Hnahthial",
@@ -7214,9 +7380,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Khawzawl Sadar": [
           "Khawzawl Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Khawzawl Rural": [
           "Gram Khawzawl",
@@ -7230,9 +7396,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kolasib Sadar": [
           "Kolasib Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kolasib Rural": [
           "Gram Kolasib",
@@ -7246,9 +7412,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Lawngtlai Sadar": [
           "Lawngtlai Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Lawngtlai Rural": [
           "Gram Lawngtlai",
@@ -7262,9 +7428,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Lunglei Sadar": [
           "Lunglei Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Lunglei Rural": [
           "Gram Lunglei",
@@ -7278,9 +7444,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Mamit Sadar": [
           "Mamit Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Mamit Rural": [
           "Gram Mamit",
@@ -7294,9 +7460,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Saitual Sadar": [
           "Saitual Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Saitual Rural": [
           "Gram Saitual",
@@ -7310,9 +7476,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Serchhip Sadar": [
           "Serchhip Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Serchhip Rural": [
           "Gram Serchhip",
@@ -7326,9 +7492,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Siaha Sadar": [
           "Siaha Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Siaha Rural": [
           "Gram Siaha",
@@ -7350,9 +7516,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Chümoukedima Sadar": [
           "Chümoukedima Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Chümoukedima Rural": [
           "Gram Chümoukedima",
@@ -7366,9 +7532,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Dimapur Sadar": [
           "Dimapur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dimapur Rural": [
           "Gram Dimapur",
@@ -7382,9 +7548,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kiphire Sadar": [
           "Kiphire Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kiphire Rural": [
           "Gram Kiphire",
@@ -7398,9 +7564,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kohima Sadar": [
           "Kohima Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kohima Rural": [
           "Gram Kohima",
@@ -7414,9 +7580,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Longleng Sadar": [
           "Longleng Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Longleng Rural": [
           "Gram Longleng",
@@ -7430,9 +7596,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Mokokchung Sadar": [
           "Mokokchung Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Mokokchung Rural": [
           "Gram Mokokchung",
@@ -7446,9 +7612,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Mon Sadar": [
           "Mon Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Mon Rural": [
           "Gram Mon",
@@ -7462,9 +7628,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Niuland Sadar": [
           "Niuland Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Niuland Rural": [
           "Gram Niuland",
@@ -7478,9 +7644,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Noklak Sadar": [
           "Noklak Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Noklak Rural": [
           "Gram Noklak",
@@ -7494,9 +7660,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Peren Sadar": [
           "Peren Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Peren Rural": [
           "Gram Peren",
@@ -7510,9 +7676,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Phek Sadar": [
           "Phek Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Phek Rural": [
           "Gram Phek",
@@ -7526,9 +7692,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Shamator Sadar": [
           "Shamator Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Shamator Rural": [
           "Gram Shamator",
@@ -7542,9 +7708,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Tseminyü Sadar": [
           "Tseminyü Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Tseminyü Rural": [
           "Gram Tseminyü",
@@ -7558,9 +7724,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Tuensang Sadar": [
           "Tuensang Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Tuensang Rural": [
           "Gram Tuensang",
@@ -7574,9 +7740,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Wokha Sadar": [
           "Wokha Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Wokha Rural": [
           "Gram Wokha",
@@ -7590,9 +7756,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Zünheboto Sadar": [
           "Zünheboto Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Zünheboto Rural": [
           "Gram Zünheboto",
@@ -7614,9 +7780,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Angul Sadar": [
           "Angul Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Angul Rural": [
           "Gram Angul",
@@ -7630,9 +7796,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Balangir Sadar": [
           "Balangir Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Balangir Rural": [
           "Gram Balangir",
@@ -7646,9 +7812,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Balasore Sadar": [
           "Balasore Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Balasore Rural": [
           "Gram Balasore",
@@ -7662,9 +7828,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bargarh Sadar": [
           "Bargarh Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bargarh Rural": [
           "Gram Bargarh",
@@ -7678,9 +7844,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bhadrak Sadar": [
           "Bhadrak Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bhadrak Rural": [
           "Gram Bhadrak",
@@ -7694,9 +7860,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Boudh Sadar": [
           "Boudh Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Boudh Rural": [
           "Gram Boudh",
@@ -7708,19 +7874,34 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
       },
       "Cuttack": {
         "Cuttack Sadar": [
-          "Badambadi",
+          "Cuttack Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony",
           "CDA Sector 9",
-          "Choudwar",
-          "Bidanasi"
+          "Badambadi",
+          "Choudwar"
+        ],
+        "Cuttack Rural": [
+          "Gram Cuttack",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
+        ],
+        "Salipur": [
+          "Nischintakoili",
+          "Salipur Khas"
         ]
       },
       "Deogarh": {
         "Deogarh Sadar": [
           "Deogarh Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Deogarh Rural": [
           "Gram Deogarh",
@@ -7734,9 +7915,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Dhenkanal Sadar": [
           "Dhenkanal Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dhenkanal Rural": [
           "Gram Dhenkanal",
@@ -7750,9 +7931,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Gajapati Sadar": [
           "Gajapati Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Gajapati Rural": [
           "Gram Gajapati",
@@ -7766,9 +7947,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Ganjam Sadar": [
           "Ganjam Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Ganjam Rural": [
           "Gram Ganjam",
@@ -7782,9 +7963,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Jagatsinghpur Sadar": [
           "Jagatsinghpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jagatsinghpur Rural": [
           "Gram Jagatsinghpur",
@@ -7798,9 +7979,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Jajpur Sadar": [
           "Jajpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jajpur Rural": [
           "Gram Jajpur",
@@ -7814,9 +7995,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Jharsuguda Sadar": [
           "Jharsuguda Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jharsuguda Rural": [
           "Gram Jharsuguda",
@@ -7830,9 +8011,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kalahandi Sadar": [
           "Kalahandi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kalahandi Rural": [
           "Gram Kalahandi",
@@ -7846,9 +8027,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kandhamal Sadar": [
           "Kandhamal Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kandhamal Rural": [
           "Gram Kandhamal",
@@ -7862,9 +8043,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kendrapara Sadar": [
           "Kendrapara Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kendrapara Rural": [
           "Gram Kendrapara",
@@ -7878,9 +8059,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kendujhar Sadar": [
           "Kendujhar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kendujhar Rural": [
           "Gram Kendujhar",
@@ -7894,9 +8075,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Khordha Sadar": [
           "Khordha Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Khordha Rural": [
           "Gram Khordha",
@@ -7904,15 +8085,26 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Jatni": [
+          "Khurda Road",
+          "IIT Area",
+          "Jatni Town"
+        ],
+        "Bhubaneswar": [
+          "Saheed Nagar",
+          "Patia",
+          "Chandrasekharpur",
+          "Khandagiri"
         ]
       },
       "Koraput": {
         "Koraput Sadar": [
           "Koraput Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Koraput Rural": [
           "Gram Koraput",
@@ -7926,9 +8118,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Malkangiri Sadar": [
           "Malkangiri Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Malkangiri Rural": [
           "Gram Malkangiri",
@@ -7942,9 +8134,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Mayurbhanj Sadar": [
           "Mayurbhanj Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Mayurbhanj Rural": [
           "Gram Mayurbhanj",
@@ -7958,9 +8150,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Nabarangpur Sadar": [
           "Nabarangpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Nabarangpur Rural": [
           "Gram Nabarangpur",
@@ -7974,9 +8166,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Nayagarh Sadar": [
           "Nayagarh Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Nayagarh Rural": [
           "Gram Nayagarh",
@@ -7990,9 +8182,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Nuapada Sadar": [
           "Nuapada Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Nuapada Rural": [
           "Gram Nuapada",
@@ -8006,9 +8198,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Puri Sadar": [
           "Puri Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Puri Rural": [
           "Gram Puri",
@@ -8022,9 +8214,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Rayagada Sadar": [
           "Rayagada Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Rayagada Rural": [
           "Gram Rayagada",
@@ -8038,9 +8230,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sambalpur Sadar": [
           "Sambalpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sambalpur Rural": [
           "Gram Sambalpur",
@@ -8054,9 +8246,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Subarnapur Sadar": [
           "Subarnapur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Subarnapur Rural": [
           "Gram Subarnapur",
@@ -8070,9 +8262,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sundargarh Sadar": [
           "Sundargarh Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sundargarh Rural": [
           "Gram Sundargarh",
@@ -8094,9 +8286,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Amritsar Sadar": [
           "Amritsar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Amritsar Rural": [
           "Gram Amritsar",
@@ -8104,15 +8296,25 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Amritsar-I": [
+          "Ranjit Avenue",
+          "Mall Road",
+          "Civil Lines"
+        ],
+        "Amritsar-II": [
+          "Majitha",
+          "Chheharta",
+          "Verka"
         ]
       },
       "Barnala": {
         "Barnala Sadar": [
           "Barnala Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Barnala Rural": [
           "Gram Barnala",
@@ -8126,9 +8328,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bathinda Sadar": [
           "Bathinda Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bathinda Rural": [
           "Gram Bathinda",
@@ -8142,9 +8344,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Faridkot Sadar": [
           "Faridkot Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Faridkot Rural": [
           "Gram Faridkot",
@@ -8158,9 +8360,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Fatehgarh Sahib Sadar": [
           "Fatehgarh Sahib Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Fatehgarh Sahib Rural": [
           "Gram Fatehgarh Sahib",
@@ -8174,9 +8376,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Fazilka Sadar": [
           "Fazilka Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Fazilka Rural": [
           "Gram Fazilka",
@@ -8190,9 +8392,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Ferozepur Sadar": [
           "Ferozepur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Ferozepur Rural": [
           "Gram Ferozepur",
@@ -8206,9 +8408,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Gurdaspur Sadar": [
           "Gurdaspur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Gurdaspur Rural": [
           "Gram Gurdaspur",
@@ -8222,9 +8424,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Hoshiarpur Sadar": [
           "Hoshiarpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Hoshiarpur Rural": [
           "Gram Hoshiarpur",
@@ -8238,9 +8440,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Jalandhar Sadar": [
           "Jalandhar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jalandhar Rural": [
           "Gram Jalandhar",
@@ -8254,9 +8456,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kapurthala Sadar": [
           "Kapurthala Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kapurthala Rural": [
           "Gram Kapurthala",
@@ -8267,25 +8469,38 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Ludhiana": {
-        "Ludhiana East": [
-          "Model Town",
+        "Ludhiana Sadar": [
+          "Ludhiana Khas",
           "Civil Lines",
-          "Sarabha Nagar",
-          "BRS Nagar"
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
+        ],
+        "Ludhiana Rural": [
+          "Gram Ludhiana",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ],
         "Ludhiana West": [
+          "Pakhowal",
           "Ferozepur Road",
-          "South City",
-          "Ayali Kalan"
+          "BRS Nagar"
+        ],
+        "Ludhiana East": [
+          "Sarabha Nagar",
+          "Civil Lines",
+          "Model Town"
         ]
       },
       "Malerkotla": {
         "Malerkotla Sadar": [
           "Malerkotla Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Malerkotla Rural": [
           "Gram Malerkotla",
@@ -8299,9 +8514,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Mansa Sadar": [
           "Mansa Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Mansa Rural": [
           "Gram Mansa",
@@ -8315,9 +8530,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Moga Sadar": [
           "Moga Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Moga Rural": [
           "Gram Moga",
@@ -8331,9 +8546,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Muktsar Sadar": [
           "Muktsar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Muktsar Rural": [
           "Gram Muktsar",
@@ -8347,9 +8562,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Pathankot Sadar": [
           "Pathankot Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Pathankot Rural": [
           "Gram Pathankot",
@@ -8363,9 +8578,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Patiala Sadar": [
           "Patiala Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Patiala Rural": [
           "Gram Patiala",
@@ -8379,9 +8594,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Rupnagar Sadar": [
           "Rupnagar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Rupnagar Rural": [
           "Gram Rupnagar",
@@ -8395,9 +8610,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sahibzada Ajit Singh Nagar Sadar": [
           "Sahibzada Ajit Singh Nagar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sahibzada Ajit Singh Nagar Rural": [
           "Gram Sahibzada Ajit Singh Nagar",
@@ -8405,15 +8620,25 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Mohali": [
+          "Sector 68",
+          "Sector 82 IT City",
+          "Aerocity"
+        ],
+        "Kharar": [
+          "Sunny Enclave",
+          "Kharar Town",
+          "Kurali"
         ]
       },
       "Sangrur": {
         "Sangrur Sadar": [
           "Sangrur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sangrur Rural": [
           "Gram Sangrur",
@@ -8427,9 +8652,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Shahid Bhagat Singh Nagar Sadar": [
           "Shahid Bhagat Singh Nagar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Shahid Bhagat Singh Nagar Rural": [
           "Gram Shahid Bhagat Singh Nagar",
@@ -8443,9 +8668,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Tarn Taran Sadar": [
           "Tarn Taran Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Tarn Taran Rural": [
           "Gram Tarn Taran",
@@ -8467,9 +8692,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Ajmer Sadar": [
           "Ajmer Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Ajmer Rural": [
           "Gram Ajmer",
@@ -8483,9 +8708,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Alwar Sadar": [
           "Alwar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Alwar Rural": [
           "Gram Alwar",
@@ -8499,9 +8724,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Anupgarh Sadar": [
           "Anupgarh Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Anupgarh Rural": [
           "Gram Anupgarh",
@@ -8515,9 +8740,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Balotra Sadar": [
           "Balotra Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Balotra Rural": [
           "Gram Balotra",
@@ -8531,9 +8756,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Banswara Sadar": [
           "Banswara Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Banswara Rural": [
           "Gram Banswara",
@@ -8547,9 +8772,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Baran Sadar": [
           "Baran Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Baran Rural": [
           "Gram Baran",
@@ -8563,9 +8788,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Barmer Sadar": [
           "Barmer Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Barmer Rural": [
           "Gram Barmer",
@@ -8579,9 +8804,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Beawar Sadar": [
           "Beawar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Beawar Rural": [
           "Gram Beawar",
@@ -8595,9 +8820,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bharatpur Sadar": [
           "Bharatpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bharatpur Rural": [
           "Gram Bharatpur",
@@ -8611,9 +8836,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bhilwara Sadar": [
           "Bhilwara Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bhilwara Rural": [
           "Gram Bhilwara",
@@ -8627,9 +8852,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bikaner Sadar": [
           "Bikaner Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bikaner Rural": [
           "Gram Bikaner",
@@ -8643,9 +8868,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bundi Sadar": [
           "Bundi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bundi Rural": [
           "Gram Bundi",
@@ -8659,9 +8884,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Chittorgarh Sadar": [
           "Chittorgarh Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Chittorgarh Rural": [
           "Gram Chittorgarh",
@@ -8675,9 +8900,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Churu Sadar": [
           "Churu Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Churu Rural": [
           "Gram Churu",
@@ -8691,9 +8916,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Dausa Sadar": [
           "Dausa Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dausa Rural": [
           "Gram Dausa",
@@ -8707,9 +8932,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Deeg Sadar": [
           "Deeg Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Deeg Rural": [
           "Gram Deeg",
@@ -8723,9 +8948,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Didwana-Kuchaman Sadar": [
           "Didwana-Kuchaman Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Didwana-Kuchaman Rural": [
           "Gram Didwana-Kuchaman",
@@ -8739,9 +8964,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Dholpur Sadar": [
           "Dholpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dholpur Rural": [
           "Gram Dholpur",
@@ -8755,9 +8980,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Dudu Sadar": [
           "Dudu Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dudu Rural": [
           "Gram Dudu",
@@ -8771,9 +8996,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Dungarpur Sadar": [
           "Dungarpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dungarpur Rural": [
           "Gram Dungarpur",
@@ -8787,9 +9012,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Ganganagar Sadar": [
           "Ganganagar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Ganganagar Rural": [
           "Gram Ganganagar",
@@ -8803,9 +9028,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Gangapur City Sadar": [
           "Gangapur City Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Gangapur City Rural": [
           "Gram Gangapur City",
@@ -8819,9 +9044,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Hanumangarh Sadar": [
           "Hanumangarh Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Hanumangarh Rural": [
           "Gram Hanumangarh",
@@ -8835,9 +9060,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Hindaun Sadar": [
           "Hindaun Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Hindaun Rural": [
           "Gram Hindaun",
@@ -8848,34 +9073,42 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Jaipur": {
-        "Jaipur": [
-          "Vaishali Nagar",
+        "Jaipur Sadar": [
+          "Jaipur Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony",
+          "Jagatpura",
           "Malviya Nagar",
-          "Mansarovar",
-          "C-Scheme",
-          "Bani Park",
-          "Jagatpura"
+          "Vaishali Nagar"
+        ],
+        "Jaipur Rural": [
+          "Gram Jaipur",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ],
         "Sanganer": [
-          "Sanganer Town",
-          "Sitapura Industrial Area",
-          "Pratap Nagar",
-          "Muhana"
+          "Muhana",
+          "Sitapura",
+          "Mansarovar",
+          "Pratap Nagar"
         ],
         "Amer": [
-          "Amer Town",
-          "Kukas",
-          "Chandwaji",
-          "Achrol"
+          "Amer Khas",
+          "Jal Mahal",
+          "Kukas"
         ]
       },
       "Jaipur Rural": {
         "Jaipur Rural Sadar": [
           "Jaipur Rural Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jaipur Rural Rural": [
           "Gram Jaipur Rural",
@@ -8889,9 +9122,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Jaisalmer Sadar": [
           "Jaisalmer Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jaisalmer Rural": [
           "Gram Jaisalmer",
@@ -8905,9 +9138,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Jalore Sadar": [
           "Jalore Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jalore Rural": [
           "Gram Jalore",
@@ -8921,9 +9154,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Jhalawar Sadar": [
           "Jhalawar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jhalawar Rural": [
           "Gram Jhalawar",
@@ -8937,9 +9170,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Jhunjhunu Sadar": [
           "Jhunjhunu Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jhunjhunu Rural": [
           "Gram Jhunjhunu",
@@ -8950,26 +9183,37 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Jodhpur": {
-        "Jodhpur": [
-          "Ratanada",
+        "Jodhpur Sadar": [
+          "Jodhpur Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony",
           "Shastri Nagar",
-          "Paota",
-          "Sardarpura"
+          "Mandore",
+          "Ratanada",
+          "Pal"
+        ],
+        "Jodhpur Rural": [
+          "Gram Jodhpur",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ],
         "Luni": [
-          "Luni Khas",
-          "Salawas",
-          "Rohat",
-          "Mogra"
+          "Kudi",
+          "Boronada",
+          "Luni Khas"
         ]
       },
       "Jodhpur Rural": {
         "Jodhpur Rural Sadar": [
           "Jodhpur Rural Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jodhpur Rural Rural": [
           "Gram Jodhpur Rural",
@@ -8983,9 +9227,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Karauli Sadar": [
           "Karauli Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Karauli Rural": [
           "Gram Karauli",
@@ -8999,9 +9243,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kekri Sadar": [
           "Kekri Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kekri Rural": [
           "Gram Kekri",
@@ -9015,9 +9259,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Khairthal-Tijara Sadar": [
           "Khairthal-Tijara Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Khairthal-Tijara Rural": [
           "Gram Khairthal-Tijara",
@@ -9031,9 +9275,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kota Sadar": [
           "Kota Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kota Rural": [
           "Gram Kota",
@@ -9041,15 +9285,24 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Digod": [
+          "Sultanpur",
+          "Digod Khas"
+        ],
+        "Kota Ladpura": [
+          "Vigyan Nagar",
+          "Talwandi",
+          "Mahaveer Nagar"
         ]
       },
       "Kotputli-Behror": {
         "Kotputli-Behror Sadar": [
           "Kotputli-Behror Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kotputli-Behror Rural": [
           "Gram Kotputli-Behror",
@@ -9063,9 +9316,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Nagaur Sadar": [
           "Nagaur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Nagaur Rural": [
           "Gram Nagaur",
@@ -9079,9 +9332,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Neem Ka Thana Sadar": [
           "Neem Ka Thana Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Neem Ka Thana Rural": [
           "Gram Neem Ka Thana",
@@ -9095,9 +9348,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Pali Sadar": [
           "Pali Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Pali Rural": [
           "Gram Pali",
@@ -9111,9 +9364,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Phalodi Sadar": [
           "Phalodi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Phalodi Rural": [
           "Gram Phalodi",
@@ -9127,9 +9380,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Pratapgarh Sadar": [
           "Pratapgarh Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Pratapgarh Rural": [
           "Gram Pratapgarh",
@@ -9143,9 +9396,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Rajsamand Sadar": [
           "Rajsamand Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Rajsamand Rural": [
           "Gram Rajsamand",
@@ -9159,9 +9412,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Salumbar Sadar": [
           "Salumbar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Salumbar Rural": [
           "Gram Salumbar",
@@ -9175,9 +9428,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sanchore Sadar": [
           "Sanchore Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sanchore Rural": [
           "Gram Sanchore",
@@ -9191,9 +9444,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sawai Madhopur Sadar": [
           "Sawai Madhopur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sawai Madhopur Rural": [
           "Gram Sawai Madhopur",
@@ -9207,9 +9460,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Shahpura Sadar": [
           "Shahpura Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Shahpura Rural": [
           "Gram Shahpura",
@@ -9223,9 +9476,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sikar Sadar": [
           "Sikar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sikar Rural": [
           "Gram Sikar",
@@ -9239,9 +9492,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sirohi Sadar": [
           "Sirohi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sirohi Rural": [
           "Gram Sirohi",
@@ -9255,9 +9508,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Tonk Sadar": [
           "Tonk Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Tonk Rural": [
           "Gram Tonk",
@@ -9271,9 +9524,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Udaipur Sadar": [
           "Udaipur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Udaipur Rural": [
           "Gram Udaipur",
@@ -9281,6 +9534,16 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Girwa": [
+          "Bhuwana",
+          "Sukher",
+          "Hiran Magri",
+          "Fatehpura"
+        ],
+        "Vallabhnagar": [
+          "Bhindar",
+          "Kanoor"
         ]
       }
     }
@@ -9295,9 +9558,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Gangtok Sadar": [
           "Gangtok Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Gangtok Rural": [
           "Gram Gangtok",
@@ -9311,9 +9574,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Gyalshing Sadar": [
           "Gyalshing Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Gyalshing Rural": [
           "Gram Gyalshing",
@@ -9327,9 +9590,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Mangan Sadar": [
           "Mangan Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Mangan Rural": [
           "Gram Mangan",
@@ -9343,9 +9606,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Namchi Sadar": [
           "Namchi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Namchi Rural": [
           "Gram Namchi",
@@ -9359,9 +9622,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Pakyong Sadar": [
           "Pakyong Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Pakyong Rural": [
           "Gram Pakyong",
@@ -9375,9 +9638,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Soreng Sadar": [
           "Soreng Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Soreng Rural": [
           "Gram Soreng",
@@ -9399,9 +9662,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Ariyalur Sadar": [
           "Ariyalur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Ariyalur Rural": [
           "Gram Ariyalur",
@@ -9415,9 +9678,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Chengalpattu Sadar": [
           "Chengalpattu Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Chengalpattu Rural": [
           "Gram Chengalpattu",
@@ -9425,72 +9688,85 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Chengalpattu": [
+          "Maraimalai Nagar",
+          "Kelambakkam",
+          "Mahabalipuram"
+        ],
+        "Tambaram": [
+          "Chromepet",
+          "Medavakkam",
+          "Guduvanchery",
+          "Pallavaram"
         ]
       },
       "Chennai": {
-        "Egmore": [
-          "Egmore",
-          "Nungambakkam",
-          "Chetpet",
-          "Kilpauk"
+        "Chennai Sadar": [
+          "Chennai Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
         ],
-        "Mylapore": [
-          "Mylapore",
-          "Mandaveli",
-          "Alwarpet",
-          "RA Puram",
-          "Santhome"
+        "Chennai Rural": [
+          "Gram Chennai",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ],
-        "Guindy": [
+        "Velachery": [
+          "Guindy",
+          "Taramani",
           "Adyar",
-          "Velachery",
-          "Saidapet",
-          "Thiruvanmiyur",
           "Besant Nagar"
         ],
-        "Ambattur": [
-          "Ambattur OT",
-          "Padi",
-          "Mogappair",
-          "Korattur",
-          "Mannurpet"
+        "Egmore": [
+          "Chetpet",
+          "Kilpauk",
+          "Nungambakkam"
         ],
-        "Sholinganallur": [
-          "Sholinganallur",
-          "OMR IT Corridor",
-          "Perungudi",
-          "Thoraipakkam",
-          "Karapakkam"
+        "Mylapore": [
+          "Alwarpet",
+          "Triplicane",
+          "Royapettah"
         ]
       },
       "Coimbatore": {
+        "Coimbatore Sadar": [
+          "Coimbatore Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
+        ],
+        "Coimbatore Rural": [
+          "Gram Coimbatore",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
+        ],
         "Coimbatore North": [
-          "RS Puram",
           "Gandhipuram",
-          "Saibaba Colony",
+          "Saravanampatti",
           "Ganapathy",
-          "Saravanampatti"
+          "Peelamedu"
         ],
         "Coimbatore South": [
+          "Kuniyamuthur",
           "Singanallur",
-          "Peelamedu",
-          "Ramanathapuram",
-          "Kuniyamuthur"
-        ],
-        "Pollachi": [
-          "Pollachi Town",
-          "Kinathukadavu",
-          "Anaimalai",
-          "Kottur"
+          "Sundarapuram"
         ]
       },
       "Cuddalore": {
         "Cuddalore Sadar": [
           "Cuddalore Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Cuddalore Rural": [
           "Gram Cuddalore",
@@ -9504,9 +9780,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Dharmapuri Sadar": [
           "Dharmapuri Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dharmapuri Rural": [
           "Gram Dharmapuri",
@@ -9520,9 +9796,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Dindigul Sadar": [
           "Dindigul Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dindigul Rural": [
           "Gram Dindigul",
@@ -9536,9 +9812,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Erode Sadar": [
           "Erode Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Erode Rural": [
           "Gram Erode",
@@ -9552,9 +9828,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kallakurichi Sadar": [
           "Kallakurichi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kallakurichi Rural": [
           "Gram Kallakurichi",
@@ -9568,9 +9844,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kancheepuram Sadar": [
           "Kancheepuram Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kancheepuram Rural": [
           "Gram Kancheepuram",
@@ -9584,9 +9860,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Karur Sadar": [
           "Karur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Karur Rural": [
           "Gram Karur",
@@ -9600,9 +9876,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Krishnagiri Sadar": [
           "Krishnagiri Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Krishnagiri Rural": [
           "Gram Krishnagiri",
@@ -9616,9 +9892,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Madurai Sadar": [
           "Madurai Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Madurai Rural": [
           "Gram Madurai",
@@ -9626,15 +9902,26 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Madurai North": [
+          "Othakadai",
+          "Thallakulam",
+          "Anna Nagar",
+          "K.K. Nagar"
+        ],
+        "Madurai South": [
+          "Villapuram",
+          "Avaniyapuram",
+          "Tirupparankundram"
         ]
       },
       "Mayiladuthurai": {
         "Mayiladuthurai Sadar": [
           "Mayiladuthurai Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Mayiladuthurai Rural": [
           "Gram Mayiladuthurai",
@@ -9648,9 +9935,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Nagapattinam Sadar": [
           "Nagapattinam Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Nagapattinam Rural": [
           "Gram Nagapattinam",
@@ -9664,9 +9951,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kanniyakumari Sadar": [
           "Kanniyakumari Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kanniyakumari Rural": [
           "Gram Kanniyakumari",
@@ -9680,9 +9967,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Namakkal Sadar": [
           "Namakkal Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Namakkal Rural": [
           "Gram Namakkal",
@@ -9696,9 +9983,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Perambalur Sadar": [
           "Perambalur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Perambalur Rural": [
           "Gram Perambalur",
@@ -9712,9 +9999,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Pudukkottai Sadar": [
           "Pudukkottai Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Pudukkottai Rural": [
           "Gram Pudukkottai",
@@ -9728,9 +10015,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Ramanathapuram Sadar": [
           "Ramanathapuram Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Ramanathapuram Rural": [
           "Gram Ramanathapuram",
@@ -9744,9 +10031,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Ranipet Sadar": [
           "Ranipet Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Ranipet Rural": [
           "Gram Ranipet",
@@ -9760,9 +10047,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Salem Sadar": [
           "Salem Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Salem Rural": [
           "Gram Salem",
@@ -9776,9 +10063,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sivaganga Sadar": [
           "Sivaganga Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sivaganga Rural": [
           "Gram Sivaganga",
@@ -9792,9 +10079,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Tenkasi Sadar": [
           "Tenkasi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Tenkasi Rural": [
           "Gram Tenkasi",
@@ -9808,9 +10095,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Thanjavur Sadar": [
           "Thanjavur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Thanjavur Rural": [
           "Gram Thanjavur",
@@ -9824,9 +10111,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Theni Sadar": [
           "Theni Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Theni Rural": [
           "Gram Theni",
@@ -9840,9 +10127,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Thoothukudi Sadar": [
           "Thoothukudi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Thoothukudi Rural": [
           "Gram Thoothukudi",
@@ -9856,9 +10143,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Tiruchirappalli Sadar": [
           "Tiruchirappalli Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Tiruchirappalli Rural": [
           "Gram Tiruchirappalli",
@@ -9872,9 +10159,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Tirunelveli Sadar": [
           "Tirunelveli Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Tirunelveli Rural": [
           "Gram Tirunelveli",
@@ -9888,9 +10175,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Tirupathur Sadar": [
           "Tirupathur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Tirupathur Rural": [
           "Gram Tirupathur",
@@ -9904,9 +10191,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Tiruppur Sadar": [
           "Tiruppur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Tiruppur Rural": [
           "Gram Tiruppur",
@@ -9920,9 +10207,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Tiruvallur Sadar": [
           "Tiruvallur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Tiruvallur Rural": [
           "Gram Tiruvallur",
@@ -9936,9 +10223,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Tiruvannamalai Sadar": [
           "Tiruvannamalai Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Tiruvannamalai Rural": [
           "Gram Tiruvannamalai",
@@ -9952,9 +10239,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Tiruvarur Sadar": [
           "Tiruvarur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Tiruvarur Rural": [
           "Gram Tiruvarur",
@@ -9968,9 +10255,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Vellore Sadar": [
           "Vellore Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Vellore Rural": [
           "Gram Vellore",
@@ -9984,9 +10271,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Viluppuram Sadar": [
           "Viluppuram Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Viluppuram Rural": [
           "Gram Viluppuram",
@@ -10000,9 +10287,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Virudhunagar Sadar": [
           "Virudhunagar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Virudhunagar Rural": [
           "Gram Virudhunagar",
@@ -10024,9 +10311,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Adilabad Sadar": [
           "Adilabad Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Adilabad Rural": [
           "Gram Adilabad",
@@ -10040,9 +10327,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bhadradri Kothagudem Sadar": [
           "Bhadradri Kothagudem Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bhadradri Kothagudem Rural": [
           "Gram Bhadradri Kothagudem",
@@ -10056,9 +10343,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Hanumakonda Sadar": [
           "Hanumakonda Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Hanumakonda Rural": [
           "Gram Hanumakonda",
@@ -10069,26 +10356,44 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Hyderabad": {
-        "Shaikpet": [
-          "Jubilee Hills",
-          "Banjara Hills",
+        "Hyderabad Sadar": [
+          "Hyderabad Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
+        ],
+        "Hyderabad Rural": [
+          "Gram Hyderabad",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
+        ],
+        "Serilingampally": [
+          "HITEC City",
           "Madhapur",
-          "Film Nagar"
+          "Gachibowli",
+          "Kondapur"
         ],
         "Secunderabad": [
+          "Tarnaka",
           "Begumpet",
-          "Marredpally",
-          "Bowenpally",
-          "Tarnaka"
+          "Marredpally"
+        ],
+        "Shaikpet": [
+          "Tolichowki",
+          "Banjara Hills",
+          "Jubilee Hills"
         ]
       },
       "Jagtial": {
         "Jagtial Sadar": [
           "Jagtial Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jagtial Rural": [
           "Gram Jagtial",
@@ -10102,9 +10407,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Jangaon Sadar": [
           "Jangaon Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jangaon Rural": [
           "Gram Jangaon",
@@ -10118,9 +10423,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Jayashankar Bhupalpally Sadar": [
           "Jayashankar Bhupalpally Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jayashankar Bhupalpally Rural": [
           "Gram Jayashankar Bhupalpally",
@@ -10134,9 +10439,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Jogulamba Gadwal Sadar": [
           "Jogulamba Gadwal Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jogulamba Gadwal Rural": [
           "Gram Jogulamba Gadwal",
@@ -10150,9 +10455,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kamareddy Sadar": [
           "Kamareddy Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kamareddy Rural": [
           "Gram Kamareddy",
@@ -10166,9 +10471,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Karimnagar Sadar": [
           "Karimnagar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Karimnagar Rural": [
           "Gram Karimnagar",
@@ -10182,9 +10487,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Khammam Sadar": [
           "Khammam Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Khammam Rural": [
           "Gram Khammam",
@@ -10198,9 +10503,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kumuram Bheem Asifabad Sadar": [
           "Kumuram Bheem Asifabad Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kumuram Bheem Asifabad Rural": [
           "Gram Kumuram Bheem Asifabad",
@@ -10214,9 +10519,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Mahabubabad Sadar": [
           "Mahabubabad Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Mahabubabad Rural": [
           "Gram Mahabubabad",
@@ -10230,9 +10535,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Mahabubnagar Sadar": [
           "Mahabubnagar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Mahabubnagar Rural": [
           "Gram Mahabubnagar",
@@ -10246,9 +10551,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Mancherial Sadar": [
           "Mancherial Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Mancherial Rural": [
           "Gram Mancherial",
@@ -10262,9 +10567,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Medak Sadar": [
           "Medak Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Medak Rural": [
           "Gram Medak",
@@ -10278,9 +10583,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Medchal-Malkajgiri Sadar": [
           "Medchal-Malkajgiri Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Medchal-Malkajgiri Rural": [
           "Gram Medchal-Malkajgiri",
@@ -10288,15 +10593,25 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Kukatpally": [
+          "KPHB Colony",
+          "Moosapet",
+          "Nizampet"
+        ],
+        "Uppal": [
+          "Nacharam",
+          "Mallapur",
+          "Uppal Khas"
         ]
       },
       "Mulugu": {
         "Mulugu Sadar": [
           "Mulugu Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Mulugu Rural": [
           "Gram Mulugu",
@@ -10310,9 +10625,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Nagarkurnool Sadar": [
           "Nagarkurnool Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Nagarkurnool Rural": [
           "Gram Nagarkurnool",
@@ -10326,9 +10641,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Nalgonda Sadar": [
           "Nalgonda Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Nalgonda Rural": [
           "Gram Nalgonda",
@@ -10342,9 +10657,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Narayanpet Sadar": [
           "Narayanpet Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Narayanpet Rural": [
           "Gram Narayanpet",
@@ -10358,9 +10673,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Nirmal Sadar": [
           "Nirmal Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Nirmal Rural": [
           "Gram Nirmal",
@@ -10374,9 +10689,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Nizamabad Sadar": [
           "Nizamabad Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Nizamabad Rural": [
           "Gram Nizamabad",
@@ -10390,9 +10705,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Peddapalli Sadar": [
           "Peddapalli Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Peddapalli Rural": [
           "Gram Peddapalli",
@@ -10406,9 +10721,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Rajanna Sircilla Sadar": [
           "Rajanna Sircilla Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Rajanna Sircilla Rural": [
           "Gram Rajanna Sircilla",
@@ -10422,9 +10737,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Ranga Reddy Sadar": [
           "Ranga Reddy Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Ranga Reddy Rural": [
           "Gram Ranga Reddy",
@@ -10432,15 +10747,24 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Rajendranagar": [
+          "Budvel",
+          "Shamshabad",
+          "Attapur"
+        ],
+        "Maheshwaram": [
+          "Mansanpally",
+          "Thummalur"
         ]
       },
       "Sangareddy": {
         "Sangareddy Sadar": [
           "Sangareddy Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sangareddy Rural": [
           "Gram Sangareddy",
@@ -10454,9 +10778,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Siddipet Sadar": [
           "Siddipet Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Siddipet Rural": [
           "Gram Siddipet",
@@ -10470,9 +10794,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Suryapet Sadar": [
           "Suryapet Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Suryapet Rural": [
           "Gram Suryapet",
@@ -10486,9 +10810,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Vikarabad Sadar": [
           "Vikarabad Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Vikarabad Rural": [
           "Gram Vikarabad",
@@ -10502,9 +10826,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Wanaparthy Sadar": [
           "Wanaparthy Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Wanaparthy Rural": [
           "Gram Wanaparthy",
@@ -10518,9 +10842,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Warangal Sadar": [
           "Warangal Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Warangal Rural": [
           "Gram Warangal",
@@ -10534,9 +10858,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Yadadri Bhuvanagiri Sadar": [
           "Yadadri Bhuvanagiri Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Yadadri Bhuvanagiri Rural": [
           "Gram Yadadri Bhuvanagiri",
@@ -10558,9 +10882,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Dhalai Sadar": [
           "Dhalai Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dhalai Rural": [
           "Gram Dhalai",
@@ -10574,9 +10898,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Gomati Sadar": [
           "Gomati Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Gomati Rural": [
           "Gram Gomati",
@@ -10590,9 +10914,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Khowai Sadar": [
           "Khowai Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Khowai Rural": [
           "Gram Khowai",
@@ -10606,9 +10930,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "North Tripura Sadar": [
           "North Tripura Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "North Tripura Rural": [
           "Gram North Tripura",
@@ -10622,9 +10946,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sepahijala Sadar": [
           "Sepahijala Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sepahijala Rural": [
           "Gram Sepahijala",
@@ -10638,9 +10962,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "South Tripura Sadar": [
           "South Tripura Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "South Tripura Rural": [
           "Gram South Tripura",
@@ -10654,9 +10978,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Unakoti Sadar": [
           "Unakoti Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Unakoti Rural": [
           "Gram Unakoti",
@@ -10670,9 +10994,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "West Tripura Sadar": [
           "West Tripura Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "West Tripura Rural": [
           "Gram West Tripura",
@@ -10691,30 +11015,37 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
     "term_holding": "Khata Number",
     "districts": {
       "Agra": {
-        "Sadar": [
-          "Tajganj",
+        "Agra Sadar": [
+          "Agra Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony",
           "Dayalbagh",
           "Kamla Nagar",
-          "Sanjay Place"
+          "Bodla",
+          "Tajganj"
+        ],
+        "Agra Rural": [
+          "Gram Agra",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ],
         "Fatehabad": [
-          "Fatehabad Khas",
           "Doki",
-          "Shamsabad"
-        ],
-        "Kiraoli": [
-          "Fatehpur Sikri",
-          "Kiraoli Khas",
-          "Achhnera"
+          "Fatehabad Khas",
+          "Shamshabad"
         ]
       },
       "Aligarh": {
         "Aligarh Sadar": [
           "Aligarh Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Aligarh Rural": [
           "Gram Aligarh",
@@ -10728,9 +11059,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Ambedkar Nagar Sadar": [
           "Ambedkar Nagar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Ambedkar Nagar Rural": [
           "Gram Ambedkar Nagar",
@@ -10744,9 +11075,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Amethi Sadar": [
           "Amethi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Amethi Rural": [
           "Gram Amethi",
@@ -10760,9 +11091,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Amroha Sadar": [
           "Amroha Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Amroha Rural": [
           "Gram Amroha",
@@ -10776,9 +11107,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Auraiya Sadar": [
           "Auraiya Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Auraiya Rural": [
           "Gram Auraiya",
@@ -10792,9 +11123,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Ayodhya Sadar": [
           "Ayodhya Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Ayodhya Rural": [
           "Gram Ayodhya",
@@ -10808,9 +11139,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Azamgarh Sadar": [
           "Azamgarh Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Azamgarh Rural": [
           "Gram Azamgarh",
@@ -10824,9 +11155,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Baghpat Sadar": [
           "Baghpat Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Baghpat Rural": [
           "Gram Baghpat",
@@ -10840,9 +11171,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bahraich Sadar": [
           "Bahraich Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bahraich Rural": [
           "Gram Bahraich",
@@ -10856,9 +11187,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Ballia Sadar": [
           "Ballia Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Ballia Rural": [
           "Gram Ballia",
@@ -10872,9 +11203,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Balrampur Sadar": [
           "Balrampur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Balrampur Rural": [
           "Gram Balrampur",
@@ -10888,9 +11219,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Banda Sadar": [
           "Banda Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Banda Rural": [
           "Gram Banda",
@@ -10904,9 +11235,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Barabanki Sadar": [
           "Barabanki Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Barabanki Rural": [
           "Gram Barabanki",
@@ -10920,9 +11251,12 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bareilly Sadar": [
           "Bareilly Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony",
+          "Izzatnagar",
+          "Rithora",
+          "CB Ganj"
         ],
         "Bareilly Rural": [
           "Gram Bareilly",
@@ -10930,15 +11264,20 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Aonla": [
+          "Ramnagar",
+          "Aonla Khas",
+          "Sirauli"
         ]
       },
       "Basti": {
         "Basti Sadar": [
           "Basti Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Basti Rural": [
           "Gram Basti",
@@ -10952,9 +11291,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bhadohi Sadar": [
           "Bhadohi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bhadohi Rural": [
           "Gram Bhadohi",
@@ -10968,9 +11307,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bijnor Sadar": [
           "Bijnor Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bijnor Rural": [
           "Gram Bijnor",
@@ -10984,9 +11323,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Budaun Sadar": [
           "Budaun Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Budaun Rural": [
           "Gram Budaun",
@@ -11000,9 +11339,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bulandshahr Sadar": [
           "Bulandshahr Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bulandshahr Rural": [
           "Gram Bulandshahr",
@@ -11016,9 +11355,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Chandauli Sadar": [
           "Chandauli Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Chandauli Rural": [
           "Gram Chandauli",
@@ -11032,9 +11371,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Chitrakoot Sadar": [
           "Chitrakoot Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Chitrakoot Rural": [
           "Gram Chitrakoot",
@@ -11048,9 +11387,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Deoria Sadar": [
           "Deoria Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Deoria Rural": [
           "Gram Deoria",
@@ -11064,9 +11403,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Etah Sadar": [
           "Etah Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Etah Rural": [
           "Gram Etah",
@@ -11080,9 +11419,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Etawah Sadar": [
           "Etawah Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Etawah Rural": [
           "Gram Etawah",
@@ -11096,9 +11435,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Farrukhabad Sadar": [
           "Farrukhabad Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Farrukhabad Rural": [
           "Gram Farrukhabad",
@@ -11112,9 +11451,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Fatehpur Sadar": [
           "Fatehpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Fatehpur Rural": [
           "Gram Fatehpur",
@@ -11128,9 +11467,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Firozabad Sadar": [
           "Firozabad Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Firozabad Rural": [
           "Gram Firozabad",
@@ -11141,64 +11480,68 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Gautam Buddha Nagar": {
+        "Gautam Buddha Nagar Sadar": [
+          "Gautam Buddha Nagar Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
+        ],
+        "Gautam Buddha Nagar Rural": [
+          "Gram Gautam Buddha Nagar",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
+        ],
         "Dadri": [
           "Bhangel",
-          "Surajpur",
           "Tilapta",
-          "Greater Noida West",
-          "Bisrakh",
-          "Chhapraula",
-          "Dujana"
-        ],
-        "Sadar": [
-          "Noida Sector 62",
-          "Barola",
-          "Atta",
-          "Chhalera",
-          "Nithari",
-          "Sorkha",
-          "Salarpur"
+          "Surajpur"
         ],
         "Jewar": [
-          "Jewar Khas",
-          "Rabupura",
-          "Jahangirpur",
           "Rohi",
-          "Kishorepur",
+          "Jewar Bangar",
           "Dayanatpur"
+        ],
+        "Sadar Noida": [
+          "Mamura",
+          "Barola",
+          "Atta",
+          "Sector 62"
         ]
       },
       "Ghaziabad": {
-        "Ghaziabad": [
-          "Indirapuram",
-          "Vaishali",
+        "Ghaziabad Sadar": [
+          "Ghaziabad Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony",
+          "Sahibabad",
           "Raj Nagar",
-          "Kavi Nagar",
-          "Sanjay Nagar",
-          "Sahibabad"
+          "Muradnagar"
+        ],
+        "Ghaziabad Rural": [
+          "Gram Ghaziabad",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ],
         "Modinagar": [
-          "Modinagar Khas",
           "Bhojpur",
-          "Niwari",
-          "Patla",
-          "Begumabad"
-        ],
-        "Loni": [
-          "Loni Khas",
-          "Banthla",
-          "Tronica City",
-          "Mandoli",
-          "Pavi Sadakpur"
+          "Modinagar Khas",
+          "Niwari"
         ]
       },
       "Ghazipur": {
         "Ghazipur Sadar": [
           "Ghazipur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Ghazipur Rural": [
           "Gram Ghazipur",
@@ -11212,9 +11555,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Gonda Sadar": [
           "Gonda Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Gonda Rural": [
           "Gram Gonda",
@@ -11225,30 +11568,36 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Gorakhpur": {
-        "Sadar": [
-          "Gorakhpur Sadar",
-          "Shahpur",
-          "Basharatpur",
-          "Taramandal"
+        "Gorakhpur Sadar": [
+          "Gorakhpur Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony",
+          "Medical College",
+          "Pipraich",
+          "Bargadwa"
+        ],
+        "Gorakhpur Rural": [
+          "Gram Gorakhpur",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ],
         "Sahjanwa": [
-          "Sahjanwa Khas",
           "Ghaghar",
-          "Bhilora"
-        ],
-        "Chauri Chaura": [
-          "Mundera Bazar",
-          "Bhopatpur",
-          "Sardarnagar"
+          "Sahjanwa Khas",
+          "Rithia"
         ]
       },
       "Hamirpur": {
         "Hamirpur Sadar": [
           "Hamirpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Hamirpur Rural": [
           "Gram Hamirpur",
@@ -11262,9 +11611,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Hapur Sadar": [
           "Hapur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Hapur Rural": [
           "Gram Hapur",
@@ -11278,9 +11627,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Hardoi Sadar": [
           "Hardoi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Hardoi Rural": [
           "Gram Hardoi",
@@ -11294,9 +11643,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Hathras Sadar": [
           "Hathras Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Hathras Rural": [
           "Gram Hathras",
@@ -11310,9 +11659,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Jalaun Sadar": [
           "Jalaun Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jalaun Rural": [
           "Gram Jalaun",
@@ -11326,9 +11675,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Jaunpur Sadar": [
           "Jaunpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jaunpur Rural": [
           "Gram Jaunpur",
@@ -11342,9 +11691,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Jhansi Sadar": [
           "Jhansi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jhansi Rural": [
           "Gram Jhansi",
@@ -11358,9 +11707,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kannauj Sadar": [
           "Kannauj Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kannauj Rural": [
           "Gram Kannauj",
@@ -11374,9 +11723,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kanpur Dehat Sadar": [
           "Kanpur Dehat Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kanpur Dehat Rural": [
           "Gram Kanpur Dehat",
@@ -11387,33 +11736,39 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Kanpur Nagar": {
-        "Sadar": [
+        "Kanpur Nagar Sadar": [
+          "Kanpur Nagar Khas",
           "Civil Lines",
-          "Swaroop Nagar",
-          "Kakadeo",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
+        ],
+        "Kanpur Nagar Rural": [
+          "Gram Kanpur Nagar",
+          "Mauza Rampur",
           "Kalyanpur",
-          "Govind Nagar"
+          "Govindpur",
+          "Shripur"
         ],
         "Ghatampur": [
-          "Ghatampur Khas",
-          "Patara",
           "Bhitargaon",
-          "Sadh"
+          "Sajeti",
+          "Ghatampur Khas"
         ],
-        "Bilhaur": [
-          "Bilhaur Khas",
-          "Shivrajpur",
-          "Araul",
-          "Chaubepur"
+        "Kanpur Sadar": [
+          "Rawatpur",
+          "Kalyanpur",
+          "Panki",
+          "Govind Nagar"
         ]
       },
       "Kasganj": {
         "Kasganj Sadar": [
           "Kasganj Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kasganj Rural": [
           "Gram Kasganj",
@@ -11427,9 +11782,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kaushambi Sadar": [
           "Kaushambi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kaushambi Rural": [
           "Gram Kaushambi",
@@ -11443,9 +11798,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kheri Sadar": [
           "Kheri Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kheri Rural": [
           "Gram Kheri",
@@ -11459,9 +11814,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kushinagar Sadar": [
           "Kushinagar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kushinagar Rural": [
           "Gram Kushinagar",
@@ -11475,9 +11830,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Lalitpur Sadar": [
           "Lalitpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Lalitpur Rural": [
           "Gram Lalitpur",
@@ -11488,48 +11843,42 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Lucknow": {
-        "Sadar": [
-          "Hazratganj",
-          "Gomti Nagar",
-          "Aliganj",
+        "Lucknow Sadar": [
+          "Lucknow Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony",
+          "Alambagh",
           "Mahanagar",
-          "Indira Nagar",
-          "Charbagh"
+          "Gomti Nagar"
+        ],
+        "Lucknow Rural": [
+          "Gram Lucknow",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ],
         "Sarojini Nagar": [
+          "Hindnagar",
           "Amausi",
-          "Banthra",
-          "Gauri",
-          "Natkur",
-          "Piparsand"
+          "Transport Nagar",
+          "Banthra"
         ],
         "Bakshi Ka Talab": [
-          "BKT Khas",
-          "Itaunja",
-          "Mandiaon",
-          "Asthi",
-          "Bhitauli"
-        ],
-        "Malihabad": [
-          "Malihabad Khas",
-          "Rahimabad",
-          "Kakori",
-          "Gosainganj"
-        ],
-        "Mohanlalganj": [
-          "Mohanlalganj Khas",
-          "Kalli Pashchim",
-          "Khujauli",
-          "Nagram"
+          "Asta",
+          "Bhaisamau",
+          "Itaunja"
         ]
       },
       "Maharajganj": {
         "Maharajganj Sadar": [
           "Maharajganj Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Maharajganj Rural": [
           "Gram Maharajganj",
@@ -11543,9 +11892,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Mahoba Sadar": [
           "Mahoba Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Mahoba Rural": [
           "Gram Mahoba",
@@ -11559,9 +11908,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Mainpuri Sadar": [
           "Mainpuri Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Mainpuri Rural": [
           "Gram Mainpuri",
@@ -11572,26 +11921,28 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Mathura": {
-        "Mathura": [
-          "Mathura Sadar",
-          "Vrindavan",
-          "Goverdhan",
-          "Radha Kund"
+        "Mathura Sadar": [
+          "Mathura Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
         ],
-        "Chhata": [
-          "Barsana",
-          "Kosi Kalan",
-          "Nandgaon",
-          "Chaumuhan"
+        "Mathura Rural": [
+          "Gram Mathura",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ]
       },
       "Mau": {
         "Mau Sadar": [
           "Mau Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Mau Rural": [
           "Gram Mau",
@@ -11602,30 +11953,36 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Meerut": {
-        "Meerut": [
-          "Meerut Sadar",
-          "Kankerkhera",
-          "Shastri Nagar",
-          "Pallavpuram"
+        "Meerut Sadar": [
+          "Meerut Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony",
+          "Partapur",
+          "Daurala",
+          "Kankerkhera"
+        ],
+        "Meerut Rural": [
+          "Gram Meerut",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ],
         "Mawana": [
-          "Mawana Khas",
           "Hastinapur",
-          "Parikshitgarh"
-        ],
-        "Sardhana": [
-          "Sardhana Khas",
-          "Daurala",
-          "Lawar"
+          "Parikshitgarh",
+          "Mawana Khas"
         ]
       },
       "Mirzapur": {
         "Mirzapur Sadar": [
           "Mirzapur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Mirzapur Rural": [
           "Gram Mirzapur",
@@ -11639,9 +11996,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Moradabad Sadar": [
           "Moradabad Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Moradabad Rural": [
           "Gram Moradabad",
@@ -11655,9 +12012,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Muzaffarnagar Sadar": [
           "Muzaffarnagar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Muzaffarnagar Rural": [
           "Gram Muzaffarnagar",
@@ -11671,9 +12028,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Pilibhit Sadar": [
           "Pilibhit Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Pilibhit Rural": [
           "Gram Pilibhit",
@@ -11687,9 +12044,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Pratapgarh Sadar": [
           "Pratapgarh Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Pratapgarh Rural": [
           "Gram Pratapgarh",
@@ -11700,34 +12057,39 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Prayagraj": {
-        "Sadar": [
+        "Prayagraj Sadar": [
+          "Prayagraj Khas",
           "Civil Lines",
-          "Daraganj",
-          "Katra",
-          "Allahpur",
-          "George Town"
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
+        ],
+        "Prayagraj Rural": [
+          "Gram Prayagraj",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
+        ],
+        "Sadar": [
+          "Naini",
+          "Phaphamau",
+          "Jhunsi",
+          "Civil Lines"
         ],
         "Phulpur": [
           "Phulpur Khas",
-          "Jhunsi",
           "Andawa",
           "Sahson"
-        ],
-        "Naini": [
-          "Naini Khas",
-          "Chaka",
-          "Dandi",
-          "Jasra",
-          "Shankargarh"
         ]
       },
       "Raebareli": {
         "Raebareli Sadar": [
           "Raebareli Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Raebareli Rural": [
           "Gram Raebareli",
@@ -11741,9 +12103,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Rampur Sadar": [
           "Rampur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Rampur Rural": [
           "Gram Rampur",
@@ -11757,9 +12119,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Saharanpur Sadar": [
           "Saharanpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Saharanpur Rural": [
           "Gram Saharanpur",
@@ -11773,9 +12135,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sambhal Sadar": [
           "Sambhal Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sambhal Rural": [
           "Gram Sambhal",
@@ -11789,9 +12151,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sant Kabir Nagar Sadar": [
           "Sant Kabir Nagar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sant Kabir Nagar Rural": [
           "Gram Sant Kabir Nagar",
@@ -11805,9 +12167,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Shahjahanpur Sadar": [
           "Shahjahanpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Shahjahanpur Rural": [
           "Gram Shahjahanpur",
@@ -11821,9 +12183,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Shamli Sadar": [
           "Shamli Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Shamli Rural": [
           "Gram Shamli",
@@ -11837,9 +12199,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Shrawasti Sadar": [
           "Shrawasti Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Shrawasti Rural": [
           "Gram Shrawasti",
@@ -11853,9 +12215,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Siddharthnagar Sadar": [
           "Siddharthnagar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Siddharthnagar Rural": [
           "Gram Siddharthnagar",
@@ -11869,9 +12231,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sitapur Sadar": [
           "Sitapur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sitapur Rural": [
           "Gram Sitapur",
@@ -11885,9 +12247,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sonbhadra Sadar": [
           "Sonbhadra Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sonbhadra Rural": [
           "Gram Sonbhadra",
@@ -11901,9 +12263,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Sultanpur Sadar": [
           "Sultanpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Sultanpur Rural": [
           "Gram Sultanpur",
@@ -11917,9 +12279,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Unnao Sadar": [
           "Unnao Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Unnao Rural": [
           "Gram Unnao",
@@ -11930,26 +12292,28 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Varanasi": {
-        "Sadar": [
-          "Lanka",
+        "Varanasi Sadar": [
+          "Varanasi Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony",
+          "Pandeypur",
+          "Ramnagar",
           "Shivpur",
-          "Cantonment",
-          "Assi",
-          "Dashashwamedh",
-          "Pandeypur"
+          "Sarnath"
+        ],
+        "Varanasi Rural": [
+          "Gram Varanasi",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ],
         "Pindra": [
           "Pindra Khas",
-          "Babatpur",
-          "Phulpur",
-          "Mangari",
-          "Sindhora"
-        ],
-        "Raja Talab": [
-          "Raja Talab Khas",
-          "Kachhwa",
-          "Rohania",
-          "Jakhini"
+          "Sindhora",
+          "Phoolpur"
         ]
       }
     }
@@ -11964,9 +12328,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Almora Sadar": [
           "Almora Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Almora Rural": [
           "Gram Almora",
@@ -11980,9 +12344,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bageshwar Sadar": [
           "Bageshwar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bageshwar Rural": [
           "Gram Bageshwar",
@@ -11996,9 +12360,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Chamoli Sadar": [
           "Chamoli Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Chamoli Rural": [
           "Gram Chamoli",
@@ -12012,9 +12376,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Champawat Sadar": [
           "Champawat Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Champawat Rural": [
           "Gram Champawat",
@@ -12025,41 +12389,60 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "Dehradun": {
-        "Dehradun": [
-          "Rajpur Road",
+        "Dehradun Sadar": [
+          "Dehradun Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony",
           "Clement Town",
-          "Sahastradhara Road",
-          "Vasant Vihar",
-          "Mussoorie"
+          "Sahastradhara",
+          "Rajpur Road"
+        ],
+        "Dehradun Rural": [
+          "Gram Dehradun",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ],
         "Rishikesh": [
-          "Rishikesh Town",
           "Tapovan",
           "Raiwala",
-          "Shyampur"
-        ],
-        "Vikasnagar": [
-          "Vikasnagar Town",
-          "Herbertpur",
-          "Dakpathar"
+          "Rishikesh Town"
         ]
       },
       "Haridwar": {
-        "Haridwar": [
-          "Kankhal",
+        "Haridwar Sadar": [
+          "Haridwar Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony",
+          "SIDCUL",
           "Jwalapur",
-          "BHEL Township",
-          "Shivalik Nagar",
-          "Roorkee"
+          "Kankhal"
+        ],
+        "Haridwar Rural": [
+          "Gram Haridwar",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
+        ],
+        "Roorkee": [
+          "Bhagwanpur",
+          "IIT Area",
+          "Roorkee Cantt"
         ]
       },
       "Nainital": {
         "Nainital Sadar": [
           "Nainital Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Nainital Rural": [
           "Gram Nainital",
@@ -12073,9 +12456,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Pauri Garhwal Sadar": [
           "Pauri Garhwal Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Pauri Garhwal Rural": [
           "Gram Pauri Garhwal",
@@ -12089,9 +12472,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Pithoragarh Sadar": [
           "Pithoragarh Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Pithoragarh Rural": [
           "Gram Pithoragarh",
@@ -12105,9 +12488,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Rudraprayag Sadar": [
           "Rudraprayag Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Rudraprayag Rural": [
           "Gram Rudraprayag",
@@ -12121,9 +12504,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Tehri Garhwal Sadar": [
           "Tehri Garhwal Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Tehri Garhwal Rural": [
           "Gram Tehri Garhwal",
@@ -12137,9 +12520,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Udham Singh Nagar Sadar": [
           "Udham Singh Nagar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Udham Singh Nagar Rural": [
           "Gram Udham Singh Nagar",
@@ -12153,9 +12536,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Uttarkashi Sadar": [
           "Uttarkashi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Uttarkashi Rural": [
           "Gram Uttarkashi",
@@ -12177,9 +12560,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Alipurduar Sadar": [
           "Alipurduar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Alipurduar Rural": [
           "Gram Alipurduar",
@@ -12193,9 +12576,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bankura Sadar": [
           "Bankura Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bankura Rural": [
           "Gram Bankura",
@@ -12209,9 +12592,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Birbhum Sadar": [
           "Birbhum Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Birbhum Rural": [
           "Gram Birbhum",
@@ -12225,9 +12608,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Cooch Behar Sadar": [
           "Cooch Behar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Cooch Behar Rural": [
           "Gram Cooch Behar",
@@ -12241,9 +12624,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Dakshin Dinajpur Sadar": [
           "Dakshin Dinajpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dakshin Dinajpur Rural": [
           "Gram Dakshin Dinajpur",
@@ -12257,9 +12640,12 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Darjeeling Sadar": [
           "Darjeeling Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony",
+          "Kurseong",
+          "Ghoom",
+          "Mirik"
         ],
         "Darjeeling Rural": [
           "Gram Darjeeling",
@@ -12267,15 +12653,20 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Siliguri": [
+          "Matigara",
+          "Phansidewa",
+          "Naxalbari"
         ]
       },
       "Hooghly": {
         "Hooghly Sadar": [
           "Hooghly Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Hooghly Rural": [
           "Gram Hooghly",
@@ -12289,9 +12680,13 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Howrah Sadar": [
           "Howrah Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony",
+          "Shibpur",
+          "Liluah",
+          "Santragachi",
+          "Bally"
         ],
         "Howrah Rural": [
           "Gram Howrah",
@@ -12299,15 +12694,20 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Uluberia": [
+          "Uluberia Khas",
+          "Bagnan",
+          "Amta"
         ]
       },
       "Jalpaiguri": {
         "Jalpaiguri Sadar": [
           "Jalpaiguri Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jalpaiguri Rural": [
           "Gram Jalpaiguri",
@@ -12321,9 +12721,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Jhargram Sadar": [
           "Jhargram Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jhargram Rural": [
           "Gram Jhargram",
@@ -12337,9 +12737,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kalimpong Sadar": [
           "Kalimpong Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kalimpong Rural": [
           "Gram Kalimpong",
@@ -12351,21 +12751,27 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
       },
       "Kolkata": {
         "Kolkata Sadar": [
-          "Alipore",
-          "Ballygunge",
-          "Salt Lake City",
-          "New Town",
-          "Park Street",
-          "Behala"
+          "Kolkata Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
+        ],
+        "Kolkata Rural": [
+          "Gram Kolkata",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ]
       },
       "Malda": {
         "Malda Sadar": [
           "Malda Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Malda Rural": [
           "Gram Malda",
@@ -12379,9 +12785,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Murshidabad Sadar": [
           "Murshidabad Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Murshidabad Rural": [
           "Gram Murshidabad",
@@ -12395,9 +12801,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Nadia Sadar": [
           "Nadia Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Nadia Rural": [
           "Gram Nadia",
@@ -12408,25 +12814,39 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "North 24 Parganas": {
-        "Bidhannagar": [
-          "Sector V IT Hub",
-          "Rajarhat Action Area",
-          "Baguiati",
-          "Kestopur"
+        "North 24 Parganas Sadar": [
+          "North 24 Parganas Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
+        ],
+        "North 24 Parganas Rural": [
+          "Gram North 24 Parganas",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ],
         "Barasat": [
-          "Barasat Sadar",
           "Madhyamgram",
-          "Hridaypur"
+          "Rajarhat / Newtown",
+          "Salt Lake",
+          "Dum Dum"
+        ],
+        "Barrackpore": [
+          "Khardaha",
+          "Titagarh",
+          "Naihati"
         ]
       },
       "Paschim Bardhaman": {
         "Paschim Bardhaman Sadar": [
           "Paschim Bardhaman Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Paschim Bardhaman Rural": [
           "Gram Paschim Bardhaman",
@@ -12440,9 +12860,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Paschim Medinipur Sadar": [
           "Paschim Medinipur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Paschim Medinipur Rural": [
           "Gram Paschim Medinipur",
@@ -12456,9 +12876,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Purba Bardhaman Sadar": [
           "Purba Bardhaman Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Purba Bardhaman Rural": [
           "Gram Purba Bardhaman",
@@ -12472,9 +12892,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Purba Medinipur Sadar": [
           "Purba Medinipur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Purba Medinipur Rural": [
           "Gram Purba Medinipur",
@@ -12488,9 +12908,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Purulia Sadar": [
           "Purulia Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Purulia Rural": [
           "Gram Purulia",
@@ -12504,9 +12924,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "South 24 Parganas Sadar": [
           "South 24 Parganas Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "South 24 Parganas Rural": [
           "Gram South 24 Parganas",
@@ -12514,15 +12934,26 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Baruipur": [
+          "Rajpur",
+          "Sonarpur",
+          "Baruipur Khas"
+        ],
+        "Alipore": [
+          "Ballygunge",
+          "Behala",
+          "Garia",
+          "Jadavpur"
         ]
       },
       "Uttar Dinajpur": {
         "Uttar Dinajpur Sadar": [
           "Uttar Dinajpur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Uttar Dinajpur Rural": [
           "Gram Uttar Dinajpur",
@@ -12544,9 +12975,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Nicobar Sadar": [
           "Nicobar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Nicobar Rural": [
           "Gram Nicobar",
@@ -12560,9 +12991,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "North and Middle Andaman Sadar": [
           "North and Middle Andaman Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "North and Middle Andaman Rural": [
           "Gram North and Middle Andaman",
@@ -12576,9 +13007,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "South Andaman Sadar": [
           "South Andaman Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "South Andaman Rural": [
           "Gram South Andaman",
@@ -12600,9 +13031,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Chandigarh Sadar": [
           "Chandigarh Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Chandigarh Rural": [
           "Gram Chandigarh",
@@ -12610,6 +13041,16 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Chandigarh South": [
+          "Sector 44",
+          "Sector 43",
+          "Manimajra"
+        ],
+        "Chandigarh Central": [
+          "Sector 35",
+          "Sector 17",
+          "Sector 8"
         ]
       }
     }
@@ -12624,9 +13065,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Dadra and Nagar Haveli Sadar": [
           "Dadra and Nagar Haveli Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Dadra and Nagar Haveli Rural": [
           "Gram Dadra and Nagar Haveli",
@@ -12640,9 +13081,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Daman Sadar": [
           "Daman Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Daman Rural": [
           "Gram Daman",
@@ -12656,9 +13097,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Diu Sadar": [
           "Diu Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Diu Rural": [
           "Gram Diu",
@@ -12680,9 +13121,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Central Delhi Sadar": [
           "Central Delhi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Central Delhi Rural": [
           "Gram Central Delhi",
@@ -12696,9 +13137,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "East Delhi Sadar": [
           "East Delhi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "East Delhi Rural": [
           "Gram East Delhi",
@@ -12706,27 +13147,41 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Preet Vihar": [
+          "Patparganj",
+          "Shakarpur",
+          "Mayur Vihar"
+        ],
+        "Gandhi Nagar": [
+          "Krishna Nagar",
+          "Geeta Colony",
+          "Kanti Nagar"
         ]
       },
       "New Delhi": {
-        "Chanakyapuri": [
-          "Diplomatic Enclave",
-          "Jor Bagh",
-          "Lodhi Colony"
+        "New Delhi Sadar": [
+          "New Delhi Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
         ],
-        "Connaught Place": [
-          "CP Inner Circle",
-          "Barakhamba",
-          "Janpath"
+        "New Delhi Rural": [
+          "Gram New Delhi",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
         ]
       },
       "North Delhi": {
         "North Delhi Sadar": [
           "North Delhi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "North Delhi Rural": [
           "Gram North Delhi",
@@ -12740,9 +13195,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "North East Delhi Sadar": [
           "North East Delhi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "North East Delhi Rural": [
           "Gram North East Delhi",
@@ -12753,15 +13208,27 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "North West Delhi": {
+        "North West Delhi Sadar": [
+          "North West Delhi Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
+        ],
+        "North West Delhi Rural": [
+          "Gram North West Delhi",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
+        ],
         "Rohini": [
-          "Sector 3",
-          "Sector 8",
-          "Sector 15",
-          "Sector 24",
+          "Begumpur",
+          "Budh Vihar",
           "Rithala"
         ],
         "Kanjhawala": [
-          "Kanjhawala Village",
+          "Holambi Kalan",
           "Bawana",
           "Narela",
           "Alipur"
@@ -12771,9 +13238,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Shahdara Sadar": [
           "Shahdara Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Shahdara Rural": [
           "Gram Shahdara",
@@ -12784,26 +13251,39 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "South Delhi": {
-        "Hauz Khas": [
-          "Green Park",
-          "Safdarjung Enclave",
-          "IIT Delhi Area",
-          "Malviya Nagar"
+        "South Delhi Sadar": [
+          "South Delhi Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
         ],
-        "Mehrauli": [
-          "Qutub Area",
-          "Sultanpur",
-          "Chattarpur",
-          "Gadaipur"
+        "South Delhi Rural": [
+          "Gram South Delhi",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
+        ],
+        "Hauz Khas": [
+          "Mehrauli",
+          "Sainik Farm",
+          "Neb Sarai",
+          "Chattarpur"
+        ],
+        "Saket": [
+          "Khanpur",
+          "Tigri",
+          "Saidulajab"
         ]
       },
       "South East Delhi": {
         "South East Delhi Sadar": [
           "South East Delhi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "South East Delhi Rural": [
           "Gram South East Delhi",
@@ -12814,28 +13294,39 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         ]
       },
       "South West Delhi": {
-        "Dwarka": [
-          "Sector 6",
-          "Sector 10",
-          "Sector 12",
-          "Sector 21",
-          "Kakrola",
-          "Bijwasan"
+        "South West Delhi Sadar": [
+          "South West Delhi Khas",
+          "Civil Lines",
+          "Main Market",
+          "Sector 1",
+          "Revenue Colony"
         ],
-        "Najafgarh": [
-          "Najafgarh Town",
-          "Dhansa",
-          "Mitraon",
-          "Kanganheri"
+        "South West Delhi Rural": [
+          "Gram South West Delhi",
+          "Mauza Rampur",
+          "Kalyanpur",
+          "Govindpur",
+          "Shripur"
+        ],
+        "Dwarka": [
+          "Najafgarh",
+          "Matiala",
+          "Bijwasan",
+          "Kakrola"
+        ],
+        "Vasant Vihar": [
+          "Kapashera",
+          "Mahipalpur",
+          "Rangpuri"
         ]
       },
       "West Delhi": {
         "West Delhi Sadar": [
           "West Delhi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "West Delhi Rural": [
           "Gram West Delhi",
@@ -12857,9 +13348,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Anantnag Sadar": [
           "Anantnag Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Anantnag Rural": [
           "Gram Anantnag",
@@ -12873,9 +13364,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Bandipora Sadar": [
           "Bandipora Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Bandipora Rural": [
           "Gram Bandipora",
@@ -12889,9 +13380,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Baramulla Sadar": [
           "Baramulla Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Baramulla Rural": [
           "Gram Baramulla",
@@ -12905,9 +13396,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Budgam Sadar": [
           "Budgam Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Budgam Rural": [
           "Gram Budgam",
@@ -12921,9 +13412,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Doda Sadar": [
           "Doda Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Doda Rural": [
           "Gram Doda",
@@ -12937,9 +13428,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Ganderbal Sadar": [
           "Ganderbal Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Ganderbal Rural": [
           "Gram Ganderbal",
@@ -12953,9 +13444,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Jammu Sadar": [
           "Jammu Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Jammu Rural": [
           "Gram Jammu",
@@ -12963,15 +13454,25 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Jammu South": [
+          "Bahu Fort",
+          "Trikuta Nagar",
+          "Gandhi Nagar"
+        ],
+        "Jammu North": [
+          "Bantalab",
+          "Janipur",
+          "Roop Nagar"
         ]
       },
       "Kathua": {
         "Kathua Sadar": [
           "Kathua Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kathua Rural": [
           "Gram Kathua",
@@ -12985,9 +13486,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kishtwar Sadar": [
           "Kishtwar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kishtwar Rural": [
           "Gram Kishtwar",
@@ -13001,9 +13502,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kulgam Sadar": [
           "Kulgam Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kulgam Rural": [
           "Gram Kulgam",
@@ -13017,9 +13518,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kupwara Sadar": [
           "Kupwara Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kupwara Rural": [
           "Gram Kupwara",
@@ -13033,9 +13534,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Poonch Sadar": [
           "Poonch Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Poonch Rural": [
           "Gram Poonch",
@@ -13049,9 +13550,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Pulwama Sadar": [
           "Pulwama Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Pulwama Rural": [
           "Gram Pulwama",
@@ -13065,9 +13566,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Rajouri Sadar": [
           "Rajouri Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Rajouri Rural": [
           "Gram Rajouri",
@@ -13081,9 +13582,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Ramban Sadar": [
           "Ramban Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Ramban Rural": [
           "Gram Ramban",
@@ -13097,9 +13598,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Reasi Sadar": [
           "Reasi Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Reasi Rural": [
           "Gram Reasi",
@@ -13113,9 +13614,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Samba Sadar": [
           "Samba Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Samba Rural": [
           "Gram Samba",
@@ -13129,9 +13630,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Shopian Sadar": [
           "Shopian Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Shopian Rural": [
           "Gram Shopian",
@@ -13145,9 +13646,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Srinagar Sadar": [
           "Srinagar Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Srinagar Rural": [
           "Gram Srinagar",
@@ -13155,15 +13656,25 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Srinagar South": [
+          "Rajbagh",
+          "Lal Chowk",
+          "Jawahar Nagar"
+        ],
+        "Srinagar North": [
+          "Soura",
+          "Zadibal",
+          "Hazratbal"
         ]
       },
       "Udhampur": {
         "Udhampur Sadar": [
           "Udhampur Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Udhampur Rural": [
           "Gram Udhampur",
@@ -13185,9 +13696,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Kargil Sadar": [
           "Kargil Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Kargil Rural": [
           "Gram Kargil",
@@ -13201,9 +13712,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Leh Sadar": [
           "Leh Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Leh Rural": [
           "Gram Leh",
@@ -13225,9 +13736,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Lakshadweep Sadar": [
           "Lakshadweep Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Lakshadweep Rural": [
           "Gram Lakshadweep",
@@ -13249,9 +13760,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Karaikal Sadar": [
           "Karaikal Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Karaikal Rural": [
           "Gram Karaikal",
@@ -13265,9 +13776,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Mahe Sadar": [
           "Mahe Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Mahe Rural": [
           "Gram Mahe",
@@ -13281,9 +13792,9 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
         "Puducherry Sadar": [
           "Puducherry Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Puducherry Rural": [
           "Gram Puducherry",
@@ -13291,15 +13802,24 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Kalyanpur",
           "Govindpur",
           "Shripur"
+        ],
+        "Puducherry": [
+          "Ariyankuppam",
+          "White Town",
+          "Lawspet"
+        ],
+        "Villianur": [
+          "Koodapakkam",
+          "Villianur Khas"
         ]
       },
       "Yanam": {
         "Yanam Sadar": [
           "Yanam Khas",
           "Civil Lines",
-          "Sector 1",
           "Main Market",
-          "Revenue Block A"
+          "Sector 1",
+          "Revenue Colony"
         ],
         "Yanam Rural": [
           "Gram Yanam",
@@ -13317,7 +13837,10 @@ export const getMasterStateInfo = (stateName: string): StateLocationInfo => {
   if (PAN_INDIA_MASTER_TREE[stateName]) {
     return PAN_INDIA_MASTER_TREE[stateName];
   }
-  // Default to Jharkhand if not found
+  // Handle common aliases
+  if (stateName === "Delhi" && PAN_INDIA_MASTER_TREE["Delhi (NCT)"]) return PAN_INDIA_MASTER_TREE["Delhi (NCT)"];
+  if (stateName === "Jammu and Kashmir" && PAN_INDIA_MASTER_TREE["Jammu & Kashmir"]) return PAN_INDIA_MASTER_TREE["Jammu & Kashmir"];
+  
   return PAN_INDIA_MASTER_TREE["Jharkhand"];
 };
 

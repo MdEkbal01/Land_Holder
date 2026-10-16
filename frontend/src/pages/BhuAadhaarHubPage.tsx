@@ -14,6 +14,7 @@ export const BhuAadhaarHubPage: React.FC = () => {
   const [genDistrict, setGenDistrict] = useState<string>('Bokaro');
   const [genAnchal, setGenAnchal] = useState<string>('Chas');
   const [genVillage, setGenVillage] = useState<string>('Kura');
+  const [isCustomVillage, setIsCustomVillage] = useState<boolean>(false);
   const [genKhata, setGenKhata] = useState<string>('125');
   const [genPlot, setGenPlot] = useState<string>('450/2');
   const [generatedCard, setGeneratedCard] = useState<any>(null);
@@ -235,14 +236,41 @@ export const BhuAadhaarHubPage: React.FC = () => {
               </div>
 
               <div>
-                <label className="block text-[11px] font-bold text-slate-700 dark:text-slate-300 mb-1">Mauza / Village</label>
-                <select
-                  value={genVillage}
-                  onChange={(e) => setGenVillage(e.target.value)}
-                  className="w-full p-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl text-xs font-semibold text-slate-900 dark:text-white"
-                >
-                  {villList.map(v => <option key={v} value={v}>{v}</option>)}
-                </select>
+                <div className="flex items-center justify-between mb-1">
+                  <label className="text-[11px] font-bold text-slate-700 dark:text-slate-300">Mauza / Village</label>
+                  <button
+                    type="button"
+                    onClick={() => setIsCustomVillage(!isCustomVillage)}
+                    className="text-[10px] text-indigo-600 dark:text-indigo-400 font-semibold hover:underline"
+                  >
+                    {isCustomVillage ? "← Choose Listed" : "+ Other Village"}
+                  </button>
+                </div>
+                {isCustomVillage ? (
+                  <input
+                    type="text"
+                    value={genVillage}
+                    onChange={(e) => setGenVillage(e.target.value)}
+                    placeholder="Enter any village name..."
+                    className="w-full p-2.5 bg-slate-50 dark:bg-slate-800 border border-indigo-500 rounded-xl text-xs font-semibold text-slate-900 dark:text-white"
+                  />
+                ) : (
+                  <select
+                    value={genVillage}
+                    onChange={(e) => {
+                      if (e.target.value === '__OTHER__') {
+                        setIsCustomVillage(true);
+                        setGenVillage('');
+                      } else {
+                        setGenVillage(e.target.value);
+                      }
+                    }}
+                    className="w-full p-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl text-xs font-semibold text-slate-900 dark:text-white"
+                  >
+                    {villList.map(v => <option key={v} value={v}>{v}</option>)}
+                    <option value="__OTHER__">+ Enter Custom / Rural Village...</option>
+                  </select>
+                )}
               </div>
 
               <div>

@@ -17,6 +17,7 @@ export const LandSearchPage: React.FC<LandSearchPageProps> = ({ lang }) => {
   const [selectedDistrict, setSelectedDistrict] = useState<string>('Bokaro');
   const [selectedAnchal, setSelectedAnchal] = useState<string>('Chas');
   const [selectedMauza, setSelectedMauza] = useState<string>('Kura');
+  const [isCustomMauza, setIsCustomMauza] = useState<boolean>(false);
   const [khataNo, setKhataNo] = useState<string>('');
   const [khesraNo, setKhesraNo] = useState<string>('');
   const [ownerName, setOwnerName] = useState<string>('');
@@ -202,18 +203,45 @@ export const LandSearchPage: React.FC<LandSearchPageProps> = ({ lang }) => {
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">
-                Village / Mauza (मौजा / ग्राम)
-              </label>
-              <select
-                value={selectedMauza}
-                onChange={(e) => setSelectedMauza(e.target.value)}
-                className="w-full bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg px-3 py-2 text-xs text-slate-900 dark:text-slate-100 focus:outline-none focus:border-sky-500"
-              >
-                {mauzaList.map(m => (
-                  <option key={m} value={m}>{m}</option>
-                ))}
-              </select>
+              <div className="flex items-center justify-between mb-1">
+                <label className="text-xs font-semibold text-slate-700 dark:text-slate-300">
+                  Village / Mauza (मौजा / ग्राम)
+                </label>
+                <button
+                  type="button"
+                  onClick={() => setIsCustomMauza(!isCustomMauza)}
+                  className="text-[11px] text-sky-600 dark:text-sky-400 hover:underline font-medium"
+                >
+                  {isCustomMauza ? "← Choose Listed" : "+ Other Village"}
+                </button>
+              </div>
+              {isCustomMauza ? (
+                <input
+                  type="text"
+                  value={selectedMauza}
+                  onChange={(e) => setSelectedMauza(e.target.value)}
+                  placeholder="Type any village/mauza name..."
+                  className="w-full bg-slate-50 dark:bg-slate-800 border border-sky-400 dark:border-sky-500 rounded-lg px-3 py-2 text-xs text-slate-900 dark:text-slate-100 focus:outline-none"
+                />
+              ) : (
+                <select
+                  value={selectedMauza}
+                  onChange={(e) => {
+                    if (e.target.value === '__CUSTOM__') {
+                      setIsCustomMauza(true);
+                      setSelectedMauza('');
+                    } else {
+                      setSelectedMauza(e.target.value);
+                    }
+                  }}
+                  className="w-full bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg px-3 py-2 text-xs text-slate-900 dark:text-slate-100 focus:outline-none focus:border-sky-500"
+                >
+                  {mauzaList.map(m => (
+                    <option key={m} value={m}>{m}</option>
+                  ))}
+                  <option value="__CUSTOM__">+ Other / Enter Any Village Name...</option>
+                </select>
+              )}
             </div>
           </div>
 
