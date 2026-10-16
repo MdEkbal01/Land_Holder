@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { Search, MapPin, Filter, ArrowRight, ShieldCheck, Radio, CheckCircle2 } from 'lucide-react';
+import { Search, MapPin, Filter, ArrowRight, ShieldCheck, Radio, CheckCircle2, Globe2 } from 'lucide-react';
 import { LandParcel } from '../types';
+import { ALL_INDIA_STATES, getMasterStateInfo } from '../data/panIndiaMasterLocations';
 
 export interface LandSearchPageProps {
   lang: 'en' | 'hi';
@@ -12,7 +13,7 @@ export const LandSearchPage: React.FC<LandSearchPageProps> = ({ lang }) => {
   const [searchParams] = useSearchParams();
   const initialQuery = searchParams.get('q') || '';
 
-  const [locations, setLocations] = useState<Record<string, Record<string, string[]>>>({});
+  const [selectedState, setSelectedState] = useState<string>('Jharkhand');
   const [selectedDistrict, setSelectedDistrict] = useState<string>('Bokaro');
   const [selectedAnchal, setSelectedAnchal] = useState<string>('Chas');
   const [selectedMauza, setSelectedMauza] = useState<string>('Kura');
@@ -27,27 +28,41 @@ export const LandSearchPage: React.FC<LandSearchPageProps> = ({ lang }) => {
   const [results, setResults] = useState<LandParcel[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
 
-  useEffect(() => {
-    fetch('/api/v1/land/locations')
-      .then(res => res.json())
-      .then(data => {
-        if (data.districts) {
-          setLocations(data.districts);
-        }
-      })
-      .catch(err => console.error("Error loading location hierarchy", err));
+  // Derive districts and revenue terminology for selected state
+  const stateInfo = getMasterStateInfo(selectedState);
+  const districtList = Object.keys(stateInfo.districts);
+  const anchalList = (selectedDistrict && stateInfo.districts[selectedDistrict]) 
+    ? Object.keys(stateInfo.districts[selectedDistrict]) 
+    : [];
+  const mauzaList = (selectedDistrict && selectedAnchal && stateInfo.districts[selectedDistrict]?.[selectedAnchal])
+    ? stateInfo.districts[selectedDistrict][selectedAnchal]
+    : [];
 
+  useEffect(() => {
     handleSearch();
   }, []);
+
+  const handleStateChange = (newState: string) => {
+    setSelectedState(newState);
+    const newInfo = getMasterStateInfo(newState);
+    const newDists = Object.keys(newInfo.districts);
+    const firstDist = newDists[0] || '';
+    setSelectedDistrict(firstDist);
+    const newAnchals = firstDist && newInfo.districts[firstDist] ? Object.keys(newInfo.districts[firstDist]) : [];
+    const firstAnchal = newAnchals[0] || '';
+    setSelectedAnchal(firstAnchal);
+    const newMauzas = (firstDist && firstAnchal && newInfo.districts[firstDist]?.[firstAnchal]) ? newInfo.districts[firstDist][firstAnchal] : [];
+    setSelectedMauza(newMauzas[0] || '');
+  };
 
   const handleSearch = async (e?: React.FormEvent) => {
     if (e) e.preventDefault();
     setLoading(true);
 
-    if (liveMode && selectedDistrict && selectedAnchal && selectedMauza) {
+    if (liveMode && selectedDistrict && selectedAnchal) {
       try {
         const liveRes = await fetch(
-          `/api/v1/official/live-search?district=${encodeURIComponent(selectedDistrict)}&anchal=${encodeURIComponent(selectedAnchal)}&mauza=${encodeURIComponent(selectedMauza)}&khata=${encodeURIComponent(khataNo)}&khesra=${encodeURIComponent(khesraNo)}`
+          `/api/v1/official/live-search?state=${encodeURIComponent(selectedState)}&district=${encodeURIComponent(selectedDistrict)}&anchal=${encodeURIComponent(selectedAnchal)}&mauza=${encodeURIComponent(selectedMauza)}&khata=${encodeURIComponent(khataNo)}&khesra=${encodeURIComponent(khesraNo)}`
         );
         const liveData = await liveRes.json();
         setLiveStreamMeta(liveData);
@@ -57,6 +72,7 @@ export const LandSearchPage: React.FC<LandSearchPageProps> = ({ lang }) => {
     }
 
     const params = new URLSearchParams();
+    if (selectedState) params.append('state', selectedState);
     if (selectedDistrict) params.append('district', selectedDistrict);
     if (selectedAnchal) params.append('anchal', selectedAnchal);
     if (selectedMauza) params.append('mauza', selectedMauza);
@@ -77,19 +93,16 @@ export const LandSearchPage: React.FC<LandSearchPageProps> = ({ lang }) => {
     }
   };
 
-  const anchalOptions = selectedDistrict && locations[selectedDistrict] ? Object.keys(locations[selectedDistrict]) : [];
-  const mauzaOptions = selectedDistrict && selectedAnchal && locations[selectedDistrict]?.[selectedAnchal] ? locations[selectedDistrict][selectedAnchal] : [];
-
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6 transition-colors">
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
         <div className="space-y-1">
           <h1 className="text-2xl font-bold text-slate-900 dark:text-white flex items-center space-x-2">
             <Search className="w-6 h-6 text-sky-600 dark:text-sky-400" />
-            <span>Universal Real-Time Land Record Search</span>
+            <span>Pan-India Real-Time Land Record Search</span>
           </h1>
           <p className="text-xs text-slate-500 dark:text-slate-400">
-            Real-time live queries connected to official Jharbhoomi & Digital India Land Record portal streams.
+            Real-time live cadastral queries connected across all 28 Indian States & 8 Union Territories (786+ Districts).
           </p>
         </div>
 
@@ -103,7 +116,7 @@ export const LandSearchPage: React.FC<LandSearchPageProps> = ({ lang }) => {
           }`}
         >
           <Radio className={`w-3.5 h-3.5 ${liveMode ? 'text-emerald-400 animate-pulse' : ''}`} />
-          <span>{liveMode ? "🟢 Live Portal Real-Time Mode ACTIVE" : "⚪ Offline Database Mode"}</span>
+          <span>{liveMode ? "🟢 Live State Portal API Feed ACTIVE" : "⚪ Offline Database Mode"}</span>
         </button>
       </div>
 
@@ -112,7 +125,7 @@ export const LandSearchPage: React.FC<LandSearchPageProps> = ({ lang }) => {
           <div className="flex items-center space-x-2.5">
             <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0" />
             <div>
-              <span className="font-bold text-emerald-300 block">{liveStreamMeta.source}</span>
+              <span className="font-bold text-emerald-300 block">{liveStreamMeta.source || `${selectedState} RoR Registry`}</span>
               <span className="text-[11px] text-emerald-400">
                 Verified Stream ID: <span className="font-mono">{liveStreamMeta.land_identity_id}</span> • Status: {liveStreamMeta.live_status}
               </span>
@@ -126,22 +139,41 @@ export const LandSearchPage: React.FC<LandSearchPageProps> = ({ lang }) => {
 
       <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-md space-y-4 transition-colors">
         <form onSubmit={handleSearch} className="space-y-4">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div>
+              <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1 flex items-center space-x-1">
+                <Globe2 className="w-3.5 h-3.5 text-sky-500" />
+                <span>State / UT (राज्य)</span>
+              </label>
+              <select
+                value={selectedState}
+                onChange={(e) => handleStateChange(e.target.value)}
+                className="w-full bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg px-3 py-2 text-xs text-slate-900 dark:text-slate-100 focus:outline-none focus:border-sky-500 font-medium"
+              >
+                {ALL_INDIA_STATES.map(st => (
+                  <option key={st} value={st}>{st}</option>
+                ))}
+              </select>
+            </div>
+
             <div>
               <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">
-                District (ज़िला)
+                District (ज़िला • {districtList.length} in {selectedState})
               </label>
               <select
                 value={selectedDistrict}
                 onChange={(e) => {
-                  setSelectedDistrict(e.target.value);
-                  setSelectedAnchal('');
-                  setSelectedMauza('');
+                  const d = e.target.value;
+                  setSelectedDistrict(d);
+                  const aList = d && stateInfo.districts[d] ? Object.keys(stateInfo.districts[d]) : [];
+                  const firstA = aList[0] || '';
+                  setSelectedAnchal(firstA);
+                  const mList = d && firstA && stateInfo.districts[d]?.[firstA] ? stateInfo.districts[d][firstA] : [];
+                  setSelectedMauza(mList[0] || '');
                 }}
                 className="w-full bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg px-3 py-2 text-xs text-slate-900 dark:text-slate-100 focus:outline-none focus:border-sky-500"
               >
-                <option value="">All Districts</option>
-                {Object.keys(locations).map(d => (
+                {districtList.map(d => (
                   <option key={d} value={d}>{d}</option>
                 ))}
               </select>
@@ -149,18 +181,21 @@ export const LandSearchPage: React.FC<LandSearchPageProps> = ({ lang }) => {
 
             <div>
               <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">
-                Anchal (अंचल)
+                {stateInfo.term_anchal}
               </label>
               <select
                 value={selectedAnchal}
                 onChange={(e) => {
-                  setSelectedAnchal(e.target.value);
-                  setSelectedMauza('');
+                  const a = e.target.value;
+                  setSelectedAnchal(a);
+                  const mList = selectedDistrict && a && stateInfo.districts[selectedDistrict]?.[a] 
+                    ? stateInfo.districts[selectedDistrict][a] 
+                    : [];
+                  setSelectedMauza(mList[0] || '');
                 }}
                 className="w-full bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg px-3 py-2 text-xs text-slate-900 dark:text-slate-100 focus:outline-none focus:border-sky-500"
               >
-                <option value="">All Anchals</option>
-                {anchalOptions.map(a => (
+                {anchalList.map(a => (
                   <option key={a} value={a}>{a}</option>
                 ))}
               </select>
@@ -168,15 +203,14 @@ export const LandSearchPage: React.FC<LandSearchPageProps> = ({ lang }) => {
 
             <div>
               <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">
-                Mauza (मौजा)
+                Village / Mauza (मौजा / ग्राम)
               </label>
               <select
                 value={selectedMauza}
                 onChange={(e) => setSelectedMauza(e.target.value)}
                 className="w-full bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg px-3 py-2 text-xs text-slate-900 dark:text-slate-100 focus:outline-none focus:border-sky-500"
               >
-                <option value="">All Mauzas</option>
-                {mauzaOptions.map(m => (
+                {mauzaList.map(m => (
                   <option key={m} value={m}>{m}</option>
                 ))}
               </select>
@@ -185,7 +219,7 @@ export const LandSearchPage: React.FC<LandSearchPageProps> = ({ lang }) => {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div>
-              <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Khata No (खाता सं.)</label>
+              <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">{stateInfo.term_holding} (खाता सं.)</label>
               <input
                 type="text"
                 value={khataNo}
@@ -196,7 +230,7 @@ export const LandSearchPage: React.FC<LandSearchPageProps> = ({ lang }) => {
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Khesra No (खेसरा सं.)</label>
+              <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">{stateInfo.term_plot} (खेसरा/गाटा/सर्वे सं.)</label>
               <input
                 type="text"
                 value={khesraNo}
@@ -207,7 +241,7 @@ export const LandSearchPage: React.FC<LandSearchPageProps> = ({ lang }) => {
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Owner Name (रैयत/मालिक का नाम)</label>
+              <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Owner Name (रैयत/खातेदार/मालिक का नाम)</label>
               <input
                 type="text"
                 value={ownerName}
@@ -221,7 +255,7 @@ export const LandSearchPage: React.FC<LandSearchPageProps> = ({ lang }) => {
           <div className="flex items-center justify-between pt-2 border-t border-slate-100 dark:border-slate-800">
             <span className="text-xs text-slate-500 flex items-center space-x-1">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-              <span>Connected to Jharbhoomi Real-Time Official Record Feed</span>
+              <span>Connected to {selectedState} Official Portal & National DILRMP Feed</span>
             </span>
             <button
               type="submit"

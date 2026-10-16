@@ -28,3 +28,5 @@ backend/generated_reports/*.pdf
 *.log
 *.zip
 
+
+scratch/

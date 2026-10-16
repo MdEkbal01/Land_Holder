@@ -17,7 +17,7 @@ from app.services.pdf_service import generate_land_verification_pdf, REPORTS_DIR
 from app.services.complaint_service import generate_official_complaint_pdf, COMPLAINTS_DIR
 from app.services.valuation_service import calculate_stamp_duty_and_valuation
 from app.engine.state_portals_registry import ALL_PORTALS_REGISTRY, get_all_registered_portals, get_portal_by_state
-from app.engine.india_administrative_master import PAN_INDIA_ADMIN_TREE, get_complete_admin_tree, get_all_states_list, resolve_location_hierarchy
+from app.engine.india_administrative_master import PAN_INDIA_ADMIN_TREE, get_complete_admin_tree, get_all_states_list, resolve_location_hierarchy, ALL_36_STATES_AND_UTS
 from app.engine.bhu_aadhaar_engine import generate_bhu_aadhaar_ulpin, verify_bhu_aadhaar_ulpin
 from app.engine.ecourts_engine import search_ecourts_litigation, get_case_by_cnr
 from app.engine.jharbhoomi_portal_data import JHARBHOOMI_OFFICIAL_SERVICES
@@ -285,7 +285,7 @@ def add_to_vault(req: VaultAddItemRequest):
 _CACHED_LOCATIONS = None
 
 @router.get("/land/locations")
-def get_locations():
+def get_locations(state: Optional[str] = None):
     conn = get_db_connection()
     cursor = conn.cursor()
     cursor.execute("SELECT DISTINCT district, anchal, mauza FROM land_parcels LIMIT 500")
@@ -298,8 +298,33 @@ def get_locations():
         if d not in loc_map: loc_map[d] = {}
         if a not in loc_map[d]: loc_map[d][a] = []
         if m not in loc_map[d][a]: loc_map[d][a].append(m)
+
+    target_state = state if state and state in PAN_INDIA_ADMIN_TREE else ("Jharkhand" if not state else state)
+    state_info = PAN_INDIA_ADMIN_TREE.get(target_state, {})
+    master_districts = state_info.get("districts", {})
+    
+    # Merge master districts with live DB entries
+    combined = {**master_districts}
+    if target_state == "Jharkhand":
+        for d, anchals in loc_map.items():
+            if d in combined:
+                for a, mauzas in anchals.items():
+                    if a in combined[d]:
+                        combined[d][a] = list(dict.fromkeys(combined[d][a] + mauzas))
+                    else:
+                        combined[d][a] = mauzas
+            else:
+                combined[d] = anchals
             
-    return {"districts": loc_map}
+    return {
+        "state": target_state,
+        "term_anchal": state_info.get("term_anchal", "Tehsil / Anchal"),
+        "term_record": state_info.get("term_record", "Record of Rights"),
+        "term_plot": state_info.get("term_plot", "Plot / Khesra No"),
+        "term_holding": state_info.get("term_holding", "Holding / Khata No"),
+        "districts": combined,
+        "states": ALL_36_STATES_AND_UTS
+    }
 
 @router.get("/land/search")
 def search_land(
