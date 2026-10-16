@@ -221,14 +221,23 @@ def health_check():
 
 @router.get("/official/live-search")
 def live_official_portal_search(
-    district: str,
-    anchal: str,
-    mauza: str,
+    state: Optional[str] = "Jharkhand",
+    district: str = "Bokaro",
+    anchal: str = "Chas",
+    mauza: str = "Kura",
     khata: Optional[str] = None,
     khesra: Optional[str] = None,
     owner: Optional[str] = None
 ):
-    return fetch_live_official_records(district, anchal, mauza, khata, khesra, owner)
+    return fetch_live_official_records(
+        state=state or "Jharkhand",
+        district=district,
+        subdistrict=anchal,
+        village=mauza,
+        primary_no=khata,
+        plot_no=khesra,
+        owner=owner
+    )
 
 @router.get("/valuation/calculate")
 def get_stamp_duty_valuation(

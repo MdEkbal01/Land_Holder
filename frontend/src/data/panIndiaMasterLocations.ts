@@ -3997,6 +3997,55 @@ export const PAN_INDIA_MASTER_TREE: Record<string, StateLocationInfo> = {
           "Jarangdih",
           "Bermo Khas",
           "Phusro"
+        ],
+        "Chandrapura": [
+          "Telo",
+          "Telo Khas",
+          "Alargo",
+          "Tari",
+          "Pipradih",
+          "Narra",
+          "Tarmi",
+          "Rangamati",
+          "Chandrapura Khas"
+        ],
+        "Chandankiyari": [
+          "Chandankiyari Khas",
+          "Bhojudih",
+          "Amlabad",
+          "Batbinor",
+          "Silphor"
+        ],
+        "Gomia": [
+          "Gomia Khas",
+          "Saram",
+          "Swang",
+          "Kathara",
+          "Hosir"
+        ],
+        "Nawadih": [
+          "Nawadih Khas",
+          "Surhi",
+          "Chirudih",
+          "Bhandaro"
+        ],
+        "Petarwar": [
+          "Petarwar Khas",
+          "Angwali",
+          "Chalka",
+          "Ordan"
+        ],
+        "Kasmar": [
+          "Kasmar Khas",
+          "Dantoo",
+          "Khairachatar",
+          "Manjhidih"
+        ],
+        "Jaridih": [
+          "Jaridih Khas",
+          "Baidmara",
+          "Jena",
+          "Tand Balidih"
         ]
       },
       "Chatra": {

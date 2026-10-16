@@ -15,7 +15,17 @@ PAN_INDIA_DATA = {
         "plot_no_name": "Khesra No (खेसरा सं.)",
         "record_type": "Sabik Khatian & Register-II",
         "districts": {
-            "Bokaro": {"subdistricts": {"Chas": ["Kura", "Bandhdih", "Kamas", "Tupkadih", "Pundru"], "Bermo": ["Phusro", "Bermo Khas", "Jarangdih", "Durgapur"]}},
+            "Bokaro": {"subdistricts": {
+                "Chas": ["Kura", "Bandhdih", "Kamas", "Tupkadih", "Pundru"],
+                "Bermo": ["Phusro", "Bermo Khas", "Jarangdih", "Durgapur"],
+                "Chandrapura": ["Telo", "Telo Khas", "Alargo", "Tari", "Pipradih", "Narra", "Tarmi", "Rangamati"],
+                "Chandankiyari": ["Chandankiyari Khas", "Bhojudih", "Amlabad"],
+                "Gomia": ["Gomia Khas", "Saram", "Swang", "Kathara"],
+                "Nawadih": ["Nawadih Khas", "Surhi", "Chirudih"],
+                "Petarwar": ["Petarwar Khas", "Angwali", "Chalka"],
+                "Kasmar": ["Kasmar Khas", "Dantoo", "Khairachatar"],
+                "Jaridih": ["Jaridih Khas", "Baidmara", "Jena"]
+            }},
             "Ranchi": {"subdistricts": {"Kanke": ["Boreya", "Sangkura", "Arsande", "Pithoria"], "Ormanjhi": ["Dudri", "Irba", "Gagari", "Anandi"]}},
             "Dhanbad": {"subdistricts": {"Jharia": ["Bhaga", "Tisra", "Jharia Khas", "Lodna"], "Govindpur": ["Govindpur Khas", "Khartanga", "Asanboni"]}},
             "East Singhbhum": {"subdistricts": {"Jamshedpur": ["Kadma", "Sonari", "Jugsalai", "Mango"], "Ghatshila": ["Ghatshila Khas", "Dhalbhumgarh", "Mouhanda"]}},

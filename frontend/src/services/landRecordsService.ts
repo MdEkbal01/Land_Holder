@@ -90,6 +90,21 @@ export const INITIAL_LAND_PARCELS: LandParcel[] = [
     created_at: "2024-01-15"
   },
   {
+    id: 101,
+    land_identity_id: "JH-BOK-CHA-TELO-P62-PL241",
+    state: "Jharkhand",
+    district: "Bokaro",
+    anchal: "Chandrapura",
+    halka: "Halka 04",
+    mauza: "Telo (Thana No. 100)",
+    khata_no: "62",
+    khesra_no: "241",
+    area_acre: 1.45,
+    land_type: "Rayati (Don-II / Agricultural)",
+    owner_name: "Rameshwar Mahto, Ganesh Mahto & Suresh Mahto",
+    created_at: "2024-01-20"
+  },
+  {
     id: 2,
     land_identity_id: "UP-GAU-DAD-BHAN-P340-PL112-1",
     state: "Uttar Pradesh",
