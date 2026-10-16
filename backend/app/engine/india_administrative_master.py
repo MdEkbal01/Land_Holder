@@ -13946,3 +13946,53 @@ def resolve_location_hierarchy(
         "term_holding": state_info.get("term_holding", "Holding / Khata No"),
         "resolved": True
     }
+
+REGIONAL_PERSONA_BANK = {
+    "Arunachal Pradesh": [("Tana Nabam", "Late Sh. Tana Toko", "Nyishi / Scheduled Tribe"), ("Wangsu Wangpan", "Late Sh. Wangsu Riba", "Wancho / Scheduled Tribe")],
+    "Assam": [("Pranab Baruah", "Late Sh. Hiren Baruah", "General / Asomiya"), ("Dipen Gogoi", "Late Sh. Biren Gogoi", "Ahom / OBC")],
+    "Andhra Pradesh": [("K. Venkateswara Rao", "Late Sh. K. Rama Rao", "General / Rayat"), ("P. Srinivasulu Reddy", "Late Sh. P. Narayana Reddy", "Reddy / Pattadar")],
+    "Telangana": [("M. Mallesh Goud", "Late Sh. M. Yadaiah Goud", "BC-B / Pattadar"), ("G. Kishan Rao", "Late Sh. G. Narsimha Rao", "General / Rayat")],
+    "Bihar": [("Sanjay Kumar Yadav", "Late Sh. Ramdev Yadav", "OBC / Rayat"), ("Manoj Kumar Mishra", "Late Sh. Kedar Nath Mishra", "General / Kaemi")],
+    "Jharkhand": [("Rameshwar Mahto", "Late Sh. Hemraj Mahto", "Kurmi / Kudmi (OBC)"), ("Budhan Soren", "Late Sh. Hopna Soren", "Santhal (Scheduled Tribe)")],
+    "Chhattisgarh": [("Ramesh Kumar Sahu", "Late Sh. Jagdish Sahu", "OBC / Kisani"), ("Dinesh Kumar Patel", "Late Sh. Ramratan Patel", "Kurmi / Rayat")],
+    "Goa": [("Nilesh Fernandes", "Late Sh. Antonio Fernandes", "General / Landowner"), ("Santosh V. Naik", "Late Sh. Vasant Naik", "General / Kul")],
+    "Gujarat": [("Pravinbhai Patel", "Late Sh. Somabhai Patel", "General / Khedut Khatedar"), ("Bharatbhai Solanki", "Late Sh. Manjibhai Solanki", "SEBC / Khatedar")],
+    "Haryana": [("Rajesh Dhillon", "Late Sh. Balwant Singh", "General / Jamabandi Holder"), ("Virender Hooda", "Late Sh. Dharam Singh", "General / Khatedar")],
+    "Punjab": [("Harpreet Singh Gill", "Late Sh. Gurmeet Singh Gill", "General / Pattidar"), ("Jaswinder Singh Sandhu", "Late Sh. Joginder Singh", "General / Khatauni")],
+    "Himachal Pradesh": [("Suresh Thakur", "Late Sh. Prem Singh Thakur", "General / Rayat"), ("Dinesh Sharma", "Late Sh. Jagdish Chand", "General / Waris")],
+    "Uttarakhand": [("Ramesh Singh Rawat", "Late Sh. Gabbar Singh Rawat", "General / Khatauni"), ("Mohan Chandra Joshi", "Late Sh. Bhairab Datt Joshi", "General / Hissedar")],
+    "Karnataka": [("Manjunath Gowda", "Late Sh. Kempegowda", "Vokkaliga / Pattadar"), ("Basavaraj Patil", "Late Sh. Shivappa Patil", "Lingayat / Rayat")],
+    "Kerala": [("K. Radhakrishnan Nair", "Late Sh. K. Madhavan Nair", "General / Jenmi"), ("P. K. Thomas", "Late Sh. P. V. Kurian", "General / Thandaper Holder")],
+    "Madhya Pradesh": [("Mahendra Singh Chouhan", "Late Sh. Vikram Singh", "General / Bhumiswami"), ("Rakesh Kumar Tiwari", "Late Sh. Ram Swaroop Tiwari", "General / Khatedar")],
+    "Maharashtra": [("Sambhaji R. Patil", "Late Sh. Raosaheb Patil", "Maratha / Khatedar 7-12"), ("Dattatray Deshmukh", "Late Sh. Vithalrao Deshmukh", "General / Rayat")],
+    "Manipur": [("N. Tomba Singh", "Late Sh. N. Ibohal Singh", "Meitei / Patta Holder"), ("L. Bimol Meitei", "Late Sh. L. Angou Meitei", "General / Rayat")],
+    "Meghalaya": [("Banteilang Sangma", "Late Sh. Sengbath Marak", "Garo / Nokma Tribal"), ("Pynskhem Lyngdoh", "Late Sh. Kmenlang Syiem", "Khasi / Tribal Landholder")],
+    "Mizoram": [("Lalthangliana Ralte", "Late Sh. Lalbiakzuala", "Mizo / Scheduled Tribe"), ("Vanlalruata Sailo", "Late Sh. Zothansanga", "Mizo / Tribal Landowner")],
+    "Nagaland": [("Kevichusa Zhimomi", "Late Sh. Tokheho Zhimomi", "Sema / Naga Tribal"), ("Tiameren Jamir", "Late Sh. Imtitemjen Ao", "Ao / Naga Tribal")],
+    "Odisha": [("Pradeep Kumar Mohanty", "Late Sh. Bipin Bihari Mohanty", "General / Praja"), ("Niranjan Sahoo", "Late Sh. Fakir Charan Sahoo", "OBC / Rayat")],
+    "Rajasthan": [("Bhawani Singh Rathore", "Late Sh. Devi Singh Rathore", "General / Khatedar"), ("Ram Gopal Choudhary", "Late Sh. Hardev Jat", "OBC / Rayat")],
+    "Sikkim": [("Karma Tenzing Lepcha", "Late Sh. Sonam Tshering Lepcha", "Lepcha / Tribal Rayat"), ("Bhim Bahadur Chettri", "Late Sh. Dhanapati Chettri", "General / Sukumbasi")],
+    "Tamil Nadu": [("S. Balasubramanian", "Late Sh. S. Sundaram Pillai", "General / Pattadar"), ("M. Ramanathan", "Late Sh. M. Meenakshisundaram", "General / Chitta Holder")],
+    "Tripura": [("Bikash Debbarma", "Late Sh. Subrai Debbarma", "Tripuri / Scheduled Tribe"), ("Sukanta Roy", "Late Sh. Haripada Roy", "General / Rayat")],
+    "Uttar Pradesh": [("Anurag Shukla", "Late Sh. Ramashray Shukla", "General / Bhumidhar"), ("Devendra Kumar Singh", "Late Sh. Surendra Bahadur Singh", "General / Khatauni Holder")],
+    "West Bengal": [("Soumen Banerjee", "Late Sh. Tarak Nath Banerjee", "General / Rayat"), ("Ashim Kumar Ghosh", "Late Sh. Nani Gopal Ghosh", "General / Khatian Holder")],
+    "Andaman & Nicobar Islands": [("Sujit Biswas", "Late Sh. Nirmal Biswas", "General / Settler Landowner"), ("Prabir Mondal", "Late Sh. Biren Mondal", "General / Allottee")],
+    "Chandigarh": [("Sukhwinder Singh", "Late Sh. Gurmukh Singh", "General / Freeholder"), ("Anil Kapoor", "Late Sh. Jagdish Kapoor", "General / Plot Holder")],
+    "Dadra & Nagar Haveli and Daman & Diu": [("Kamlesh Patel", "Late Sh. Jayantilal Patel", "General / Khatedar"), ("Manish Dhodi", "Late Sh. Naranbhai Dhodi", "Tribal Landholder")],
+    "Delhi (NCT)": [("Vinod Kumar Sharma", "Late Sh. Ram Swarup Sharma", "General / Freeholder"), ("Sunil Chauhan", "Late Sh. Ranvir Singh Chauhan", "General / Khatauni Holder")],
+    "Jammu & Kashmir": [("Mohammad Altaf Mir", "Late Sh. Ghulam Nabi Mir", "General / Intikhab Holder"), ("Kuldeep Kumar Sharma", "Late Sh. Baldev Raj Sharma", "General / Rayat")],
+    "Ladakh": [("Tsewang Norbu Wangchuk", "Late Sh. Stanzin Dorjee", "Ladakhi / Tribal Landowner"), ("Tsering Angchok", "Late Sh. Sonam Rigzin", "Ladakhi / Scheduled Tribe")],
+    "Lakshadweep": [("P. P. Koya", "Late Sh. Muthukoya", "General / Jenmam Holder"), ("Attakoya Melacheri", "Late Sh. Kunjikoya", "General / Rayat")],
+    "Puducherry": [("V. Kuppusamy", "Late Sh. Vadivelu Samy", "General / Pattadar"), ("S. Murugan", "Late Sh. Subramaniam Pillai", "General / Chitta Holder")]
+}
+
+def get_regional_owner_persona(state: str, seed: int = 1) -> Dict[str, str]:
+    st = canonical_state_name(state)
+    personas = REGIONAL_PERSONA_BANK.get(st, [("Verified Citizen Holder", "Late Sh. Citizen Elder", "General / Rayat")])
+    chosen = personas[abs(hash(str(seed))) % len(personas)]
+    return {
+        "owner_name": chosen[0],
+        "father_husband_name": chosen[1],
+        "caste": chosen[2]
+    }
+

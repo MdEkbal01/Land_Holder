@@ -27,6 +27,7 @@ backend/generated_complaints/*.pdf
 backend/generated_reports/*.pdf
 *.log
 *.zip
+.wrangler/
 
 
 scratch/
